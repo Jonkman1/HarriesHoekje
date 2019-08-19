@@ -1,0 +1,48 @@
+---
+title: "Harrie's Hoekje"
+description: |
+  Met deze blog wil ik enkele ontwikkelingen op het terrein van moderne data-analyse bijhouden. Op dit terrein gebeurt op dit moment zoveel dat het onmogelijk is om het allemaal in je eentje bij te houden. Het zo nu en dan erover schrijven is voor mij een manier om een beetje bij te blijven en ontwikkelingen zichtbaar te maken.   
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Dit zijn blogs die ik graag volg:
+
+[Simply Statistics](https://simplystatistics.org/)   
+[Rbloggers](https://www.r-bloggers.com/)   
+[R4stats](http://r4stats.com/)   
+[DataCamp](https://www.datacamp.com/)  
+[JASP](https://jasp-stats.org/)   
+[MLwiN](http://www.bristol.ac.uk/cmm/software/mlwin/)   
+[STATA](https://www.stata.com/)   
+
+Individuen die ik graag volg:   
+
+[Kieran Healey](https://github.com/kjhealy)   
+[Rens van de Schoot](https://www.rensvandeschoot.com)   
+[Suzan Baert](https://suzan.rbind.io/)   
+[Mark Clark](https://github.com/m-clark?tab=repositories)  
+
+Hier tien boeken die op dit moment voor mij belangrijk zijn:
+
+Baumer, B.S., Kaplan, D.T. & Horton, N.J. (2018). *Modern Data Science with R*. Boca Raton: CRC Press. 
+
+Freeman, M. & Ross, J. (2019). *Programming Skills for Data Science. Start writing code to wrangle, analyze, and visualize data with R*. Boston: Addison Wesley.
+
+Gillespie, C. & Lovelace, R. (2017). *Efficient R Programming*. (https://csgillespie.github.io/efficientR/) 
+
+Grolemund, G. & Wickham, H. (2019). *R for Data Science*. (https://r4ds.had.co.nz/) 
+
+Healey, K. (2019). *Data Visualization: A Practical Introduction*. Princeton: Princeton University Press.  
+
+Irizarry, R.A. (2019). *Introduction to Data Science. Data Analysis and Prediction Algorithms with R*. (https://rafalab.github.io/dsbook/) 
+
+Lovelace, R., Nowosad, J. & Muenchow, J. (2019). *Geocomputation with R*. (https://geocompr.robinlovelace.net/) 
+
+McElreath, R. (2015). *Statistical Rethinking. A Bayesian Course with Examples in R and Stan*. Boca Raton: Chapman and Hall/CRC  Vooral met brms, ggplot2 and the tidyverse https://bookdown.org/connect/#/apps/1850/access 
+
+Xie, Y., Allaire, J.J. & Grolemund, G.(2019). *R Markdown: The Definitive Guide*. https://bookdown.org/yihui/rmarkdown/ 
+
+

@@ -1,0 +1,317 @@
+[
+  {
+    "path": "posts/2019-08-17-xaringan/",
+    "title": "Xaringan",
+    "description": "Een mooie presentatie geven met het pakket Xaringan",
+    "author": [
+      {
+        "name": "Yuhui Xie, overgezet Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-08-17",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-08-17T21:54:08+02:00"
+  },
+  {
+    "path": "posts/2019-06-24-bookdown/",
+    "title": "Bookdown",
+    "description": "Hoe maak je een boek. Bookdown is het pakket van R waar dat mee kan. Hier enkele tips om dat te doen",
+    "author": [
+      {
+        "name": "Jack Dougherty en Ilya Ilyankou, bewerking Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-06-24",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-07-15T11:40:52+02:00"
+  },
+  {
+    "path": "posts/2019-05-19-website-maken/",
+    "title": "Websites maken in R",
+    "description": "Met R kun je ook website maken. Maar hoe doe je dat? Emily Zabor schreef hierover een leerzaam blog dat ik hier licht heb bewerkt en aangevuld.",
+    "author": [
+      {
+        "name": "Emily C. Zabor, bewerking Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-06-09",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-06-09T10:44:45+02:00"
+  },
+  {
+    "path": "posts/2019-04-23-shiny_files/",
+    "title": "Shiny lespakket",
+    "description": "Met Shiny kun je in R apps maken. Maar hoe doe je dat? Julia Wrobel gaf hierop vorig jaar een interessante inleiding die ik hier licht heb bewerkt.",
+    "author": [
+      {
+        "name": "Julia Wrobel, bewerking Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-04-23",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-04-23T18:57:30+02:00"
+  },
+  {
+    "path": "posts/2019-03-18-interactieve-grafiek/",
+    "title": "Interactieve grafiek met plotly",
+    "description": "In deze twee maanden wilde ik toch eens kijken naar interactieve mogelijkheden die het programma R/RStudio ons biedt. `Plotly` is zo'n mogelijkheid en daarover gaat dit blog. `Shiny` is de andere mogelijkheid en daar zal ik een volgende keer aandacht aan besteden. `Plotly` heeft een eigen website waar veel informatie over het programma is te vinden [hier adres website](https://plot.ly/). Er is ook een uitgebreide handleiding over `Plotly` geschreven [hier handleiding](https://plotly-r.com/the-plotly-cookbook.html). Onlangs stond er op de blog van RBloggers een goede introductie van Laura Ellis, die mij veel vertelde over het gebruik van `Plotly`. Haar bijdrage [zie hier](https://www.r-bloggers.com/create-interactive-ggplot2-graphs-with-plotly/) heb ik hier naar het Nederlands overgezet en hier en daar iets bewerkt.",
+    "author": [
+      {
+        "name": "Laura Ellis op R-bloggers (13 maart 2019), bewerking Harrie Jonkman.",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2019-04-03",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-04-03T14:42:04+02:00"
+  },
+  {
+    "path": "posts/2019-02-20-bbc-en-data-journalisme/",
+    "title": "BBC en data-journalisme",
+    "description": "Een blog over hoe de BBC omgaat met visualisatie en data-journalisme",
+    "author": [
+      {
+        "name": "R-bloggers, bewerking Harrie Jonkman.",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2019-02-20",
+    "categories": [],
+    "preview": "posts/2019-02-20-bbc-en-data-journalisme/bbc-en-data-journalisme_files/figure-html5/unnamed-chunk-4-1.png",
+    "last_modified": "2019-03-04T10:09:15+01:00"
+  },
+  {
+    "path": "posts/2019-01-23-data-visualization-a-practical-introduction/",
+    "title": "Data visualisatie. Een practische introductie",
+    "description": "Naar aanleiding van het nieuwe boek van Kieran Healey. Data visualization/A Practical Introduction.",
+    "author": [
+      {
+        "name": "Harrie Jonkman.",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2019-01-23",
+    "categories": [],
+    "preview": "posts/2019-01-23-data-visualization-a-practical-introduction/data-visualization-a-practical-introduction_files/figure-html5/01-first_plot-1.png",
+    "last_modified": "2019-03-04T10:08:02+01:00"
+  },
+  {
+    "path": "posts/2018-12-23-statistisch-omdenken/",
+    "title": "Statistisch omdenken",
+    "description": "Over 'Statistical rethinking' van Richard McElreath (2016).",
+    "author": [
+      {
+        "name": "Harrie Jonkman met dan aan Solomon Kurz.",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-12-23",
+    "categories": [],
+    "preview": "posts/2018-12-23-statistisch-omdenken/statistisch-omdenken_files/figure-html5/unnamed-chunk-3-1.png",
+    "last_modified": "2019-03-04T10:03:38+01:00"
+  },
+  {
+    "path": "posts/2018-11-26-communiceren-met-rmarkdown/",
+    "title": "Communiceren met RMarkdown",
+    "description": "RMarkdown is de nieuwe manier om diverse wetenschappelijke producten te delen met anderen. Het kan op verschillende manieren gereproduceerd worden en het kan de opbrengsten aantrekkelijk communiceren naar de buitenwereld. Hier een introductie op de werkwijze en enkele mogelijke producten.",
+    "author": [
+      {
+        "name": "M. Schmidt en bewerkt door Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-11-26",
+    "categories": [],
+    "preview": "posts/2018-11-26-communiceren-met-rmarkdown/Figures/single-fig-center-1.png",
+    "last_modified": "2019-03-04T09:46:37+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-simple-features/",
+    "title": "Bewerking geografische data in R: Nieuwe ontwikkelingen",
+    "description": "Het nieuwe R sf-pakket, dat sp vervangt om met geografische objecten om te gaan, is  ontworpen om makkelijk met Tidyverse om te gaan. Hier laat ik zien hoe sf-objecten als data-frames worden opgeslagen en jou in staat stelt om met  ggplot2, dplyr en tidyr te werken. Ook het R-pakket tmap biedt veel nieuwe mogelijkheden.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-11-14",
+    "categories": [],
+    "preview": "posts/2018-11-14-simple-features/simple-features_files/figure-html5/ggplot-1.png",
+    "last_modified": "2019-03-04T09:40:15+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-visualisatiegapminder/",
+    "title": "Visualisatie met inzet van Gapminder",
+    "description": "Een voorbeeld van datavisualisatie: Trends op het gebied van de wereldgezondheid\nen de economie",
+    "author": [
+      {
+        "name": "Rafael A. Irizarry, bewerkt H. Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-08-14",
+    "categories": [],
+    "preview": "posts/2018-11-14-visualisatiegapminder/visualisatiegapminder_files/figure-html5/unnamed-chunk-3-1.png",
+    "last_modified": "2019-03-04T09:45:15+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-sem/",
+    "title": "SEM",
+    "description": "In de sociale wetenschappen kunnen sommige constructen, zoals intelligentie, vertrouwen, motivatie, vervreemding of conservatisme, niet direct worden geobserveerd. Het zijn in essentie constructen of concepten waarvoor geen methode bestaat om ze direct te meten. Onderzoekers gebruiken hiervoor geobserveerde maten die indicatoren zijn voor een latente variabele. Structural equation modeling is een onderzoeks-raamwerk dat rekening kan houden met de meetfouten in de geobserveerde variabelen die in het model zitten. SEM is een flexibel en krachtige methode om tegelijkertijd op een goede manier de kwaliteit van het meten in de gaten te houden als om causale relaties tussen de constructen vast te stellen. In de map vind je een korte presentatie over SEM",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-07-07",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:38:54+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-rrstudiormarkdown/",
+    "title": "RRStudioRmarkdown",
+    "description": "Hier een klein boekje om jou te laten wennen aan reproduceerbaar onderzoek. Het introduceert het programma R, de RStudio-schil en de programmeertaal RMarkdown.",
+    "author": [
+      {
+        "name": "Chester Ismay, bewerkt Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-06-05",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:38:20+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-bayes/",
+    "title": "Bayes",
+    "description": "Over de geschiedenis van de Bayesiaanse statistiek",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-05-14",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:34:04+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-reproducable-research/",
+    "title": "Dynamische documenten maken met RMarkdown en Knitr",
+    "description": "RMarkdown en Knitr zijn pakketten die je in staat stellen om reproduceerbare en dynamische documenten te maken. In deze blog wordt uitgelegd hoe je hiermee kunt werken.",
+    "author": [
+      {
+        "name": "Marian L. Schmidt, bewerkt door Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2018-03-15",
+    "categories": [],
+    "preview": "posts/2018-11-14-reproducable-research/reproducable-research_files/figure-html5/single-fig-center-1.png",
+    "last_modified": "2019-03-04T09:37:40+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-exploratie/",
+    "title": "Data exploratie",
+    "description": "Een introductie op data exploratie aan de hand van een boek van Chester Ismay en Albert Y. Kim.",
+    "author": [
+      {
+        "name": "Chester Ismay en Albert Y. Kim, bewerkt door Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2017-10-15",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:34:37+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-psm/",
+    "title": "PSM",
+    "description": "Om precies het effect van een aanpak of politieke keuze vast te stellen is een ingewikkelde kwestie. Toch is er dat soort onderzoek nodig om de keuze voor programma's te legitimeren. Tegenwoordig is er een heel spectrum van technieken om de impact van programma's vast te stellen. Dit zijn technieken die kunnen worden gebruikt binnen hele verschillende soorten impactstudies. Het is goed daar kennis van te nemen, zeker nu steeds meer mogelijk is omdat er meer data beschikbaar zijn waarop deze evaluaties gebaseerd kunnen worden. Impactstudies worden uitgevoerd om vast te stellen of programma's de effecten opleveren die ze nastreven, om te begrijpen of en waarom deze programma's werken, om vast te stellen in hoeverre veranderingen zijn toe te schrijven aan de inzet van het programma en ook om vast te stellen of de gelden op een goede manier worden besteed. Op dit terrein is er natuurlijk een enorme hoeveelheid literatuur en enkele uitgaven geven ons hiervan een goed en up-to-date overzicht^[Khandker, S.R., Koolwal, G.B. & Samad, H.A. (2010). *Handbook on Impactevaluation. Quantative Methods and Practices*. Washington D.C: The World Bank; Gertler, P.J., Martinez, S., Prenard, P., Rawlings, L.B. & Vermeersch, C.M. (2011). *Impact Evaluation in Practice*. Washington D.C.: The World Bank; Murnane, R.J. & Willet, J.B.(2011). *Methods Matter. Improving Causal Inference in Educational and Social Science Research*. New York: Oxford University]. Experimentele studies kunnen natuurlijk goede impactstudies zijn, met sterke punten en beperkingen. Maar er zijn ook aanvullende methodes die in quasi-experimentele of observationele studies kunnen worden toegepast. Zo zijn er panel datamethodes die gebruikt kunnen worden, regressie discontinu?teit methodes en instrumentele variabelen methodes. Daarnaast zijn er verschillende matchingsmethodes die in impactstudies worden gebruikt. Hier stellen we zo'n matchingsmethode voor die goed gebruikt kan worden in verschillende soorten impactstudies en laten we zien hoe deze uitgevoerd kan worden.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2017-09-14",
+    "categories": [],
+    "preview": "posts/2018-11-14-psm/psm_files/figure-html5/unnamed-chunk-3-1.png",
+    "last_modified": "2019-03-04T09:36:08+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-tufte/",
+    "title": "Tufte",
+    "description": "De Tufte-stijl is een stijl die Edward Tufte gebruikt in zijn boeken en handouts. Tufte's stijl is bekend vanwege zijn veelvuldig gebruik van opmerkingen aan de zijkant (sidenotes), strakke integratie van zijn grafieken met tekst en zijn duidelijk gezette typografie. Deze stijl is geimplementeerd in repectievelijk LaTeX en HTML/CSS^[Zie Github repositories [tufte-latex](https://github.com/tufte-latex/tufte-latex) en [tufte-css](https://github.com/edwardtufte/tufte-css)], respectively. Beide implementaties zitten nu ook in het [**tufte** pakket](https://github.com/rstudio/tufte). Als je een LaTeX/PDF output wilt, gebruik dan `tufte_handout` format voor handouts en `tufte_book` voor boeken. Voor HTML output, gebruik je `tufte_html`. Deze formatten kunnen worden gespecificeerd in de YAML metadata aan het begin van een R Markdown-document (zie het voorbeeld hieronder), of overgebracht via de `rmarkdown::render()` functie. Zie @R-rmarkdown voor meer informatie over **rmarkdown**.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2017-09-14",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:40:50+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-op-weg-naar-infografieken/",
+    "title": "Op weg naar infografieken",
+    "description": "Hier gaat het om een korte handleiding voor R_gebruikers die omwille van de leesbaarheid en esthetiek hun figuren in het populaire grafische design programma Illustrator willen 'oppoetsen'. Als het op visualisatie aankomt blijven de meeste R-gebruikers binnen dit programma werken. Dat is natuurlijk prima als het gaat om figuren die de analyse moeten ondersteunen en jij degene bent die er alleen naar moet kijken. Dan hoef je ook niets over de context te vermelden, niets verder uit te leggen of ervoor te zorgen dat het er allemaal mooi uitziet. Het doel dan is vooral snel figuren maken zodat je gevoel bij jouw data krijgt. R biedt je ook heel veel mogelijkheden, ook voor goede visualisatie. Echter, als het gaat om het maken van figuren die voor een breder publiek toegankelijk en leesbaar zijn en die zelf een verhaal moeten vertellen, kan het wel eens bruikbaarder en efficiënter zijn om dit R-figuur als PDF op te slaan en aanpassingen door te voeren in een vector georienteerd programma zoals Adobe Illustrator (https://www.adobe.com/nl/) of zijn open-source alternatief Inkscape (https://www.inkscape.org/nl/). Inkscape is vrij toegankelijk maar hier besteden wij enkel aandacht aan het bewerken in Adobe Illustrator.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2017-07-14",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:35:39+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-latex/",
+    "title": "Latex",
+    "description": "Introductie op Latex.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "https://www.harriejonkman.nl"
+      }
+    ],
+    "date": "2017-04-14",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-04T09:35:09+01:00"
+  },
+  {
+    "path": "posts/2018-11-14-visualisatie/",
+    "title": "Visualisatie",
+    "description": "Hoe kun je goed werken aan datavisualisatie met ggplot2 binnen R/RStudio",
+    "author": [
+      {
+        "name": "Zev Ross, bewerkt door Harrie Jonkman",
+        "url": "https://Harriejonkman.nl"
+      }
+    ],
+    "date": "2017-02-11",
+    "categories": [],
+    "preview": "posts/2018-11-14-visualisatie/visualisatie_files/figure-html5/unnamed-chunk-2-1.png",
+    "last_modified": "2019-03-04T09:42:57+01:00"
+  }
+]
