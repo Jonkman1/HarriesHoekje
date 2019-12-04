@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2019-12-04-bayesbasis/",
+    "title": "Bayes'basis",
+    "description": "Over statistiek en waarschijnlijkheid op de eenvoudige manier.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-12-04",
+    "categories": [],
+    "preview": "posts/2019-12-04-bayesbasis/bayesbasis_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2019-12-04T15:00:52+01:00"
+  },
+  {
     "path": "posts/2019-09-25-sf-ggplot-en-tmap/",
     "title": "Sf, ggplot en tmap",
     "description": "Over het maken van kaarten van Nederland met nieuwe pakketten en mogelijkheden.",
