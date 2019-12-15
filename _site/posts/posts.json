@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2019-12-15-beste-boeken-2019/",
+    "title": "Beste Boeken 2019",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-12-15",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-12-15T21:36:50+01:00"
+  },
+  {
     "path": "posts/2019-12-04-bayesbasis/",
     "title": "Bayes'basis",
     "description": "Over statistiek en waarschijnlijkheid op de eenvoudige manier.",
