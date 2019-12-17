@@ -15,6 +15,21 @@
     "last_modified": "2019-12-15T21:36:50+01:00"
   },
   {
+    "path": "posts/2019-12-15-r-als-een-gis/",
+    "title": "R als een Gis",
+    "description": "Over ruimtelijke data en het gebruik van R als een GIS",
+    "author": [
+      {
+        "name": "Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2019-12-15",
+    "categories": [],
+    "preview": "posts/2019-12-15-r-als-een-gis/r-als-een-gis_files/figure-html5/unnamed-chunk-19-1.png",
+    "last_modified": "2019-12-17T11:48:37+01:00"
+  },
+  {
     "path": "posts/2019-12-04-bayesbasis/",
     "title": "Bayes'basis",
     "description": "Over statistiek en waarschijnlijkheid op de eenvoudige manier.",
@@ -28,21 +43,6 @@
     "categories": [],
     "preview": "posts/2019-12-04-bayesbasis/bayesbasis_files/figure-html5/unnamed-chunk-1-1.png",
     "last_modified": "2019-12-04T15:00:52+01:00"
-  },
-  {
-    "path": "posts/2019-12-15-bayesbasis/",
-    "title": "Bayes'basis",
-    "description": "Over Bayes en logisch denken",
-    "author": [
-      {
-        "name": "Harrie Jonkman",
-        "url": "www.harriejonkman.nl"
-      }
-    ],
-    "date": "2019-10-15",
-    "categories": [],
-    "preview": "posts/2019-12-15-bayesbasis/bayesbasis_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2019-12-15T20:51:05+01:00"
   },
   {
     "path": "posts/2019-09-25-sf-ggplot-en-tmap/",
