@@ -12,7 +12,7 @@
     "date": "2019-12-15",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-12-15T21:36:50+01:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-12-15-r-als-een-gis/",
@@ -27,7 +27,7 @@
     "date": "2019-12-15",
     "categories": [],
     "preview": "posts/2019-12-15-r-als-een-gis/r-als-een-gis_files/figure-html5/unnamed-chunk-19-1.png",
-    "last_modified": "2019-12-17T11:48:37+01:00"
+    "last_modified": "2020-03-13T23:28:59+01:00"
   },
   {
     "path": "posts/2019-12-04-bayesbasis/",
@@ -42,7 +42,7 @@
     "date": "2019-12-04",
     "categories": [],
     "preview": "posts/2019-12-04-bayesbasis/bayesbasis_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2019-12-04T15:00:52+01:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-09-25-sf-ggplot-en-tmap/",
@@ -57,7 +57,7 @@
     "date": "2019-09-25",
     "categories": [],
     "preview": "posts/2019-09-25-sf-ggplot-en-tmap/sf-ggplot-en-tmap_files/figure-html5/unnamed-chunk-3-1.png",
-    "last_modified": "2019-09-25T19:04:52+02:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-08-31-geocomputation/",
@@ -72,7 +72,7 @@
     "date": "2019-08-31",
     "categories": [],
     "preview": "posts/2019-08-31-geocomputation/geocomputation_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2019-08-31T21:36:03+02:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-08-17-xaringan/",
@@ -87,7 +87,7 @@
     "date": "2019-08-17",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-08-17T21:54:08+02:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-06-24-bookdown/",
@@ -102,7 +102,7 @@
     "date": "2019-06-24",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-07-15T11:40:52+02:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-05-19-website-maken/",
@@ -117,7 +117,7 @@
     "date": "2019-06-09",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-06-09T10:44:45+02:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-04-23-shiny_files/",
@@ -131,8 +131,8 @@
     ],
     "date": "2019-04-23",
     "categories": [],
-    "preview": {},
-    "last_modified": "2019-04-23T18:57:30+02:00"
+    "preview": "posts/2019-04-23-shiny_files/distill-preview.png",
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-03-18-interactieve-grafiek/",
@@ -147,7 +147,7 @@
     "date": "2019-04-03",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-04-03T14:42:04+02:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-02-20-bbc-en-data-journalisme/",
@@ -162,7 +162,7 @@
     "date": "2019-02-20",
     "categories": [],
     "preview": "posts/2019-02-20-bbc-en-data-journalisme/bbc-en-data-journalisme_files/figure-html5/unnamed-chunk-4-1.png",
-    "last_modified": "2019-03-04T10:09:15+01:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2019-01-23-data-visualization-a-practical-introduction/",
@@ -177,7 +177,7 @@
     "date": "2019-01-23",
     "categories": [],
     "preview": "posts/2019-01-23-data-visualization-a-practical-introduction/data-visualization-a-practical-introduction_files/figure-html5/01-first_plot-1.png",
-    "last_modified": "2019-03-04T10:08:02+01:00"
+    "last_modified": "2020-03-13T23:28:58+01:00"
   },
   {
     "path": "posts/2018-12-23-statistisch-omdenken/",
@@ -192,7 +192,7 @@
     "date": "2018-12-23",
     "categories": [],
     "preview": "posts/2018-12-23-statistisch-omdenken/statistisch-omdenken_files/figure-html5/unnamed-chunk-3-1.png",
-    "last_modified": "2019-03-04T10:03:38+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-26-communiceren-met-rmarkdown/",
@@ -207,7 +207,7 @@
     "date": "2018-11-26",
     "categories": [],
     "preview": "posts/2018-11-26-communiceren-met-rmarkdown/Figures/single-fig-center-1.png",
-    "last_modified": "2019-03-04T09:46:37+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-simple-features/",
@@ -222,7 +222,7 @@
     "date": "2018-11-14",
     "categories": [],
     "preview": "posts/2018-11-14-simple-features/simple-features_files/figure-html5/ggplot-1.png",
-    "last_modified": "2019-03-04T09:40:15+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-visualisatiegapminder/",
@@ -237,7 +237,7 @@
     "date": "2018-08-14",
     "categories": [],
     "preview": "posts/2018-11-14-visualisatiegapminder/visualisatiegapminder_files/figure-html5/unnamed-chunk-3-1.png",
-    "last_modified": "2019-03-04T09:45:15+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-sem/",
@@ -252,7 +252,7 @@
     "date": "2018-07-07",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:38:54+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-rrstudiormarkdown/",
@@ -267,7 +267,7 @@
     "date": "2018-06-05",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:38:20+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-bayes/",
@@ -282,7 +282,7 @@
     "date": "2018-05-14",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:34:04+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-reproducable-research/",
@@ -297,7 +297,7 @@
     "date": "2018-03-15",
     "categories": [],
     "preview": "posts/2018-11-14-reproducable-research/reproducable-research_files/figure-html5/single-fig-center-1.png",
-    "last_modified": "2019-03-04T09:37:40+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-exploratie/",
@@ -312,7 +312,7 @@
     "date": "2017-10-15",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:34:37+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-psm/",
@@ -327,7 +327,7 @@
     "date": "2017-09-14",
     "categories": [],
     "preview": "posts/2018-11-14-psm/psm_files/figure-html5/unnamed-chunk-3-1.png",
-    "last_modified": "2019-03-04T09:36:08+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-tufte/",
@@ -342,7 +342,7 @@
     "date": "2017-09-14",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:40:50+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-op-weg-naar-infografieken/",
@@ -357,7 +357,7 @@
     "date": "2017-07-14",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:35:39+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-latex/",
@@ -372,7 +372,7 @@
     "date": "2017-04-14",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-03-04T09:35:09+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   },
   {
     "path": "posts/2018-11-14-visualisatie/",
@@ -387,6 +387,6 @@
     "date": "2017-02-11",
     "categories": [],
     "preview": "posts/2018-11-14-visualisatie/visualisatie_files/figure-html5/unnamed-chunk-2-1.png",
-    "last_modified": "2019-03-04T09:42:57+01:00"
+    "last_modified": "2020-03-13T23:28:57+01:00"
   }
 ]
