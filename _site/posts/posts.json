@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2020-05-31-dslabs/",
+    "title": "dslabs",
+    "description": "Een aantal mooie grafieken uit het goede data-analyseboek van Rafa Izigarri (Harvard University)",
+    "author": [
+      {
+        "name": "Rafa Izigarri en Amy Hill, bewerking Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2020-04-22",
+    "categories": [],
+    "preview": "posts/2020-05-31-dslabs/dslabs_files/figure-html5/unnamed-chunk-4-1.png",
+    "last_modified": "2020-07-05T21:52:26+02:00"
+  },
+  {
     "path": "posts/2019-12-15-beste-boeken-2019/",
     "title": "Beste Boeken 2019",
     "description": "A short description of the post.",
