@@ -1,0 +1,2619 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>Harrie's Hoekje: Grafieken</title>
+
+<meta property="description" itemprop="description" content="Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen"/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-05-31"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-05-31"/>
+<meta name="article:author" content="Urban Institute, bewerking Harrie Jonkman"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Harrie&#39;s Hoekje: Grafieken"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Harrie&#39;s Hoekje"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="Harrie&#39;s Hoekje: Grafieken"/>
+<meta property="twitter:description" content="Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Grafieken"]},{"type":"character","attributes":{},"value":["Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Urban Institute, bewerking Harrie Jonkman"]},{"type":"character","attributes":{},"value":["www.harriejonkman.nl"]}]}]},{"type":"character","attributes":{},"value":["05-31-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["grafieken_files/bowser-1.9.3/bowser.min.js","grafieken_files/distill-2.2.21/template.v2.js","grafieken_files/figure-html5/3-color-barplot-1.png","grafieken_files/figure-html5/3-kleuren-staafgrafiek-1.png","grafieken_files/figure-html5/alfa-puntengrafiek-1 2.png","grafieken_files/figure-html5/alfa-puntengrafiek-1.png","grafieken_files/figure-html5/alpha-scatter-plot-1.png","grafieken_files/figure-html5/annotate-point-1.png","grafieken_files/figure-html5/annotate-rect-1.png","grafieken_files/figure-html5/area-plot-fill-1.png","grafieken_files/figure-html5/area-plot-stack-1.png","grafieken_files/figure-html5/bar-geom_text-1.png","grafieken_files/figure-html5/barplot-rotated-1.png","grafieken_files/figure-html5/barplots-1.png","grafieken_files/figure-html5/beanplot-1.png","grafieken_files/figure-html5/before-scatter-plot-1.png","grafieken_files/figure-html5/box-plot-1.png","grafieken_files/figure-html5/centroids-1.png","grafieken_files/figure-html5/cleveland-dot-plot-1.png","grafieken_files/figure-html5/cleveland-puntgrafiek-1.png","grafieken_files/figure-html5/dodged-bar-plot-1.png","grafieken_files/figure-html5/een-kleur-punten-grafiek-1.png","grafieken_files/figure-html5/faceting-1.png","grafieken_files/figure-html5/filled-scatter-plot-1.png","grafieken_files/figure-html5/geom_point-size-1.png","grafieken_files/figure-html5/geom_punt-omvang-1.png","grafieken_files/figure-html5/geom_smooth-1.png","grafieken_files/figure-html5/gestapelde-staafgrafiek-1.png","grafieken_files/figure-html5/gestapelde-staafgrafiek-plot-fill-1.png","grafieken_files/figure-html5/gghighlight-faceting-1.png","grafieken_files/figure-html5/gghighlight-rank-1.png","grafieken_files/figure-html5/gghighlight-threshold-1.png","grafieken_files/figure-html5/heat-map-1.png","grafieken_files/figure-html5/hellingsgrafiek-1.png","grafieken_files/figure-html5/histogram-1.png","grafieken_files/figure-html5/ironed-waffle-1.png","grafieken_files/figure-html5/jitter-plot-1.png","grafieken_files/figure-html5/jittergrafiek-1.png","grafieken_files/figure-html5/kernel-density-plot-1.png","grafieken_files/figure-html5/kernel-density-plot-filled-1.png","grafieken_files/figure-html5/layering-geoms-design-1.png","grafieken_files/figure-html5/layering-geoms-design-gray-1.png","grafieken_files/figure-html5/lijn-grafieken-1.png","grafieken_files/figure-html5/line-plots-1.png","grafieken_files/figure-html5/lollipop-plot-1.png","grafieken_files/figure-html5/lollygrafiek-1.png","grafieken_files/figure-html5/meer-lijnen-grafiek2-1.png","grafieken_files/figure-html5/meerdere-lijnen-grafiek-1.png","grafieken_files/figure-html5/multiple-line-charts1-1.png","grafieken_files/figure-html5/multiple-line-charts2-1.png","grafieken_files/figure-html5/one-color-scatter-plot-1.png","grafieken_files/figure-html5/opgedeelde-staafgrafiek-1.png","grafieken_files/figure-html5/pad-prafiek-1.png","grafieken_files/figure-html5/path-plot-1.png","grafieken_files/figure-html5/puntengrafiek-hex-1.png","grafieken_files/figure-html5/puntengrafiek-met-vulling-1.png","grafieken_files/figure-html5/ridgeline-plots-1.png","grafieken_files/figure-html5/scatter-plot-hex-1.png","grafieken_files/figure-html5/scatterplot-geom_text_repel-1.png","grafieken_files/figure-html5/scatterplot-geom_text-1.png","grafieken_files/figure-html5/single-waffle-1.png","grafieken_files/figure-html5/slope-plot-1.png","grafieken_files/figure-html5/small-multiples-1 2.png","grafieken_files/figure-html5/small-multiples-1.png","grafieken_files/figure-html5/staafgrafiek-1.png","grafieken_files/figure-html5/staafgrafiek-geroteerd-1.png","grafieken_files/figure-html5/stacked-bar-plot-1.png","grafieken_files/figure-html5/stacked-bar-plot-fill-1.png","grafieken_files/figure-html5/step-plot-1.png","grafieken_files/figure-html5/stripchart-1.png","grafieken_files/figure-html5/stripchart-with-highlighting-1.png","grafieken_files/figure-html5/subset-geom_smooth-1.png","grafieken_files/figure-html5/subset-geom-smooth-lm-1.png","grafieken_files/figure-html5/subsetted-stripchart-1.png","grafieken_files/figure-html5/trapgrafiek-1.png","grafieken_files/figure-html5/violin-plot-1.png","grafieken_files/figure-html5/voor-puntengrafiek-1.png","grafieken_files/jquery-1.11.3/jquery.min.js","grafieken_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Grafieken","description":"Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen","authors":[{"author":"Urban Institute, bewerking Harrie Jonkman","authorURL":"www.harriejonkman.nl","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-05-31T00:00:00.000+02:00","citationText":"Jonkman, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Harrie's Hoekje</a>
+</div>
+<div class="nav-right">
+<a href="../../about.html">Achtergrond</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Grafieken</h1>
+<p>Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen</p>
+</div>
+
+<div class="d-byline">
+  Urban Institute, bewerking Harrie Jonkman www.harriejonkman.nl 
+  
+<br/>05-31-2020
+</div>
+
+<div class="d-article">
+<p>R is een krachtige, open-source programmeertaal en -omgeving. R blinkt uit in databeheer en bewerking, traditionele statistische analyse, machine learning en reproduceerbaar onderzoek. Maar is waarschijnlijk nog het meest bekend om zijn grafieken. In deze blog staan voorbeelden en instructies voor populaire en minder bekende plottechnieken in R. Het bevat ook instructies voor het gebruik van <code>urbnthemes</code>, het R-pakket van het <a href="https://www.urban.org/">Urban Institute</a> voor het maken van bijna-publicatie-klare plots met <code>ggplot2</code>. Als u vragen heeft, zo staat op hun site, aarzel dan niet om contact op te nemen met <a href="awilliams@urban.org">Aaron Williams</a> of <a href="kueyama@urban.org">Kyle Ueyama</a>.</p>
+<h3 id="achtergrond">Achtergrond</h3>
+<p>Het R-pakket (<code>library(urbnthemes)</code>) maakt <code>ggplot2</code> output dat verbonden is met <a href="http://urbaninstitute.github.io/graphics-styleguide/">Urban Institute’s Data Visualisatie stijl gids</a>. Tzijn pakket produceert ** geen publicatieklare grafieken**. Visuele stijlen moeten nog steeds worden bewerkt met behulp van de normale bewerkingsworkflow van het project. Door grafieken te exporteren als pdf kunnen ze gemakkelijker worden bewerkt. Zie de sectie Plots opslaan voor meer informatie.</p>
+<p>Het vaste thema dat hier gebruikt wordt is getest met <code>ggplot2 versie 3.0.0</code>. Het zal niet goed functioneren met oudere versies van <code>ggplot2</code>.</p>
+<h3 id="gebruik-libraryurbnthemes">Gebruik <code>library(urbnthemes)</code></h3>
+<p>Je moet in ieder geval de volgende code gebruiken om <code>urbnthemes</code> te installeren of te updaten:</p>
+<pre><code>
+# install.packages(&quot;devtools&quot;)
+# devtools::install_github(&quot;UrbanInstitute/urbnthemes&quot;)</code></pre>
+<p>Voer de volgende code bovenaan elk script uit. Als je dit hebt gedaan, kun je aan de slag:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(tidyverse)
+library(urbnthemes)
+library(ggrepel)
+library(extrafont)
+
+set_urbn_defaults(style = &quot;print&quot;)</code></pre>
+</div>
+<p>IAls het nog niet is geïnstalleerd, installeer dan het gratis <a href="https://www.google.com/fonts/specimen/Lato">Lato-lettertype van Google-lettertypen</a>. Als je op een Mac werkt sla je Lato op in je font-book. Als je op Windows werkt, moet je eerst <a href="http://ghostscript.com/download/">Ghostscript installeren</a>. Vertel dan in R waar uw ghostscript-bestand zich bevindt. Bewerk het bestandspad als het uwe zich op een andere plaats bevindt.</p>
+<pre><code>
+Sys.setenv(R_GSCMD=&quot;C:/Program Files/gs/gs9.05/bin/gswin32c.exe&quot;)</code></pre>
+<p>Voer dit script één keer uit om Lato te importeren en te registreren:</p>
+<pre><code>
+# install.packages(c(&quot;ggplot2&quot;, &quot;ggrepel&quot;, &quot;extrafont&quot;))
+# urbnthemes::lato_install()</code></pre>
+<p>Het laden en importeren van dit lettertype kan enkele minuten duren.</p>
+<h3 id="grammar-of-graphics-en-de-conventies">Grammar of Graphics en de conventies</h3>
+<p>Hadley Wickham’s ggplot2 is gebaseerd op Leland Wilkinsons <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"><em>The Grammar of Graphics</em></a> en Wickhams <a href="http://vita.had.co.nz/papers/layered-grammar.html"><em>A Layered Grammar of Graphics</em></a>. De gelaagde Grammer of Graphics is een gestructureerde manier van denken over de componenten van een plot, die zich vervolgens lenen voor de eenvoudige structuur van ggplot2.</p>
+<ul>
+<li><strong>Data</strong> zijn wat in een plot wordt gevisualiseerd en <strong>mappings</strong> zijn aanwijzingen voor hoe gegevens in een plot in kaart worden gebracht op een manier die door de mens kan worden waargenomen.<br />
+</li>
+<li><strong>Gegevens</strong> zijn weergaven van de werkelijke gegevens zoals punten, lijnen en balken.</li>
+<li><strong>Statistieken</strong> zijn statistische transformaties die samenvattingen van de gegevens weergeven, zoals histogrammen.</li>
+<li><strong>Scales</strong> kaartwaarden in de dataruimte naar waarden in de esthetische ruimte. Schalen tekenen legendes en assen.</li>
+<li><strong>Coördinatensystemen</strong> beschrijven hoe geomen in het vlak van de grafiek in kaart worden gebracht.<br />
+</li>
+<li><strong>Facetten</strong> splitsen de gegevens op in betekenisvolle deelverzamelingen zoals kleine veelvouden. *Thema’s** controleren de fijnere punten van een plot zoals lettertypes, lettergroottes en achtergrondkleuren.</li>
+</ul>
+<p>Meer informatie vind je hier: <a href="https://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403">ggplot2: Elegant Graphics for Data Analysis</a></p>
+<h3 id="tips-en-trucs">Tips en trucs</h3>
+<ul>
+<li><p><code>ggplot2</code> verwacht dat de gegevens in dataframes of tibbles zitten. Het heeft de voorkeur dat de dataframes “netjes” zijn met elke variabele als een kolom, elke obseravtion als een rij, en elke observatie-eenheid als een aparte tabel. De <code>dplyr</code> en <code>tidyr</code> bevatten beknopte en effectieve hulpmiddelen voor het “opruimen” van gegevens.</p></li>
+<li><p>R staat toe dat functie-argumenten expliciet bij naam en impliciet bij positie worden aangeroepen. De codeervoorbeelden in deze handleiding bevatten alleen benoemde argumenten voor de duidelijkheid.</p></li>
+<li><p>Grafieken zullen soms verschillend worden weergeven op verschillende besturingssystemen. Dit zal geen probleem zijn als de afbeeldingen eenmaal zijn opgeslagen.</p></li>
+<li><p>Doorlopende x-assen hebben tikken. Discrete x-assen hebben geen teken. Gebruik <code>remove_ticks()</code> om teken te verwijderen.</p></li>
+</ul>
+<h2 id="staaf-grafieken">Staaf grafieken</h2>
+<hr />
+<h3 id="een-kleur">Een kleur</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  count(cyl) %&gt;%
+  ggplot(mapping = aes(x = factor(cyl), y = n)) +
+  geom_col() +
+  geom_text(mapping = aes(label = n), vjust = -1) +    
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1))) +
+  labs(x = &quot;Cilinders&quot;,
+       y = NULL) +
+  remove_ticks() +
+  remove_axis() </code></pre>
+<p><img src="grafieken_files/figure-html5/staafgrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="een-kleur-geroteerd">Een kleur (Geroteerd)</h3>
+<p>Dit introduceert <code>coord_flip()</code> en <code>remove_axis(axis = &quot;x&quot;, flip = TRUE)</code>. <code>remove_axis()</code> komt van <code>library(urbnthemes)</code> en creëert een aangepast thema voor geroteerde staafgrafieken.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  count(cyl) %&gt;%
+  ggplot(mapping = aes(x = factor(cyl), y = n)) +
+  geom_col() +
+  geom_text(mapping = aes(label = n), hjust = -1) +  
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1))) +
+  labs(x = &quot;Cilinders&quot;,
+       y = NULL) +  
+  coord_flip() +
+  remove_axis(axis = &quot;x&quot;, flip = TRUE)</code></pre>
+<p><img src="grafieken_files/figure-html5/staafgrafiek-geroteerd-1.png" width="624" /></p>
+</div>
+<h3 id="drie-kleuren">Drie kleuren</h3>
+<p>Dit is identiek aan de vorige grafiek, behalve dat kleuren en een legenda zijn toegevoegd met <code>fill = cyl</code>. Door <code>x</code> om te zetten in een factor met <code>factor(cyl)</code> worden 5 en 7 op de <code>x-as</code> overgeslagen. Het toevoegen van <code>fill = cyl</code> zonder <code>factor()</code> zou een doorlopend kleurenschema en een legenda hebben gecreëerd.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  mutate(cyl = factor(cyl)) %&gt;%
+  count(cyl) %&gt;%
+  ggplot(mapping = aes(x = cyl, y = n, fill = cyl)) +
+  geom_col() +
+  geom_text(mapping = aes(label = n), vjust = -1) +    
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1))) +
+  labs(x = &quot;Cylinders&quot;,
+       y = NULL) +
+  remove_ticks() +
+  remove_axis()</code></pre>
+<p><img src="grafieken_files/figure-html5/3-kleuren-staafgrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="gestapelde-staafgrafiek">Gestapelde staafgrafiek</h3>
+<p>Een extra esthetiek kan eenvoudig worden toegevoegd aan de staafgrafiek door <code>fill = categorical variable</code> toe te voegen aan de mapping. Hier toont elk onderdeel een subset van een aantal auto’s met verschillende aantallen cilinders.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  mutate(am = factor(am, labels = c(&quot;Automatic&quot;, &quot;Manual&quot;)),
+         cyl = factor(cyl)) %&gt;%  
+  group_by(am) %&gt;%
+  count(cyl) %&gt;%
+  group_by(cyl) %&gt;%
+  arrange(desc(am)) %&gt;%
+  mutate(label_height = cumsum(n)) %&gt;%
+  ggplot() +
+  geom_col(mapping = aes(x = cyl, y = n, fill = am)) +
+  geom_text(aes(x = cyl, y = label_height - 0.5, label = n, color = am)) +
+  scale_color_manual(values = c(&quot;white&quot;, &quot;black&quot;)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1))) +
+  labs(x = &quot;Cylinders&quot;,
+       y = NULL) +  
+  remove_ticks() +
+  remove_axis() +
+  guides(color = FALSE)</code></pre>
+<p><img src="grafieken_files/figure-html5/gestapelde-staafgrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="gestapelde-staafgrafiek-met-position-fill">Gestapelde staafgrafiek met Position = Fill</h3>
+<p>De vorige voorbeelden gebruiken <code>geom_col()</code>, die een y-waarde voor de staafhoogte neemt. Dit voorbeeld gebruikt <code>geom_bar()</code> die de waarden opsomt en een waarde voor de staafhoogte genereert. In dit voorbeeld verandert <code>position = &quot;fill&quot;</code> in <code>geom_bar()</code> de y-as van de telling naar de verhouding van elke staaf.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  mutate(am = factor(am, labels = c(&quot;Automatic&quot;, &quot;Manual&quot;)),
+         cyl = factor(cyl)) %&gt;%  
+  ggplot() +
+  geom_bar(mapping = aes(x = cyl, fill = am), position = &quot;fill&quot;) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1)), labels = scales::percent) +
+  labs(x = &quot;Cylinders&quot;,
+       y = NULL) +  
+  remove_ticks() +
+  guides(color = FALSE)</code></pre>
+<p><img src="grafieken_files/figure-html5/gestapelde-staafgrafiek-plot-fill-1.png" width="624" /></p>
+</div>
+<h3 id="opgedeelde-staafgrafiek">Opgedeelde staafgrafiek</h3>
+<p>Delen van de staafgrafiek in ggplot2 worden standaard opgestapeld. <code>position = &quot;dodge&quot;</code> in <code>geom_col()</code> breidt het staafdiagram uit zodat de subsets naast elkaar verschijnen.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  mutate(am = factor(am, labels = c(&quot;Automatic&quot;, &quot;Manual&quot;)),
+         cyl = factor(cyl)) %&gt;%
+  group_by(am) %&gt;%
+  count(cyl) %&gt;%
+  ggplot(mapping = aes(cyl, y = n, fill = factor(am))) +
+  geom_col(position = &quot;dodge&quot;) +
+  geom_text(aes(label = n), position = position_dodge(width = 0.7), vjust = -1) +    
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1))) +
+  labs(x = &quot;Cylinders&quot;,
+       y = NULL) +  
+  remove_ticks() +
+  remove_axis()</code></pre>
+<p><img src="grafieken_files/figure-html5/opgedeelde-staafgrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="lolly-grafiekcleveland-puntgrafiek" class="tabset">Lolly grafiek/Cleveland puntgrafiek</h3>
+<p>Lolly en Cleveland puntgrafiek zijn minimalistische alternatieven voor staafgrafieken. De sleutel tot beide grafieken is om de gegevens te ordenen op basis van de continue variabele met behulp van <code>arrange()</code> en dan de discrete variabele om te zetten in een factor met de geordende niveaus van de continue variabele met behulp van <code>mutate()</code>. Deze stap “slaat” de volgorde van de gegevens op.</p>
+<h4 id="lollygrafiek">Lollygrafiek</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+    rownames_to_column(&quot;model&quot;) %&gt;%
+    arrange(mpg) %&gt;%
+    mutate(model = factor(model, levels = .$model)) %&gt;%
+    ggplot(aes(mpg, model)) +
+        geom_segment(aes(x = 0, xend = mpg, y = model, yend = model)) + 
+        geom_point() +
+        scale_x_continuous(expand = expand_scale(mult = c(0, 0)), limits = c(0, 40)) +
+        labs(x = NULL, 
+                 y = &quot;Miles Per Gallon&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/lollygrafiek-1.png" width="624" /></p>
+</div>
+<h4 id="cleveland-puntgrafiek">Cleveland puntgrafiek</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+    rownames_to_column(&quot;model&quot;) %&gt;%
+    arrange(mpg) %&gt;%
+    mutate(model = factor(model, levels = .$model)) %&gt;%
+    ggplot(aes(mpg, model)) +
+        geom_point() +
+        scale_x_continuous(expand = expand_scale(mult = c(0, 0)), limits = c(0, 40)) +
+        labs(x = NULL, 
+                 y = &quot;Miles Per Gallon&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/cleveland-puntgrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="dumbellgrafieken">Dumbellgrafieken</h3>
+<h2 id="puntengrafieken">Puntengrafieken</h2>
+<hr />
+<h3 id="een-kleur-puntengrafiek">Een kleur puntengrafiek</h3>
+<p>Puntengrafieken zijn nuttig voor het tonen van relaties tussen twee of meer variabelen. Gebruik <code>scatter_grid()</code> van <code>library(urbnthemes)</code> om eenvoudig verticale rasterlijnen toe te voegen aan de puntengrafieken.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  ggplot(mapping = aes(x = wt, y = mpg)) +
+  geom_point() +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 6),
+                     breaks = 0:6) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 40),
+                     breaks = 0:8 * 5) +
+  labs(x = &quot;Gewicht (duizenden ponden)&quot;,
+       y = &quot;MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/een-kleur-punten-grafiek-1.png" width="624" /></p>
+</div>
+<h3 id="puntengrafiek-met-hoge-dichtheid-met-transparantie">Puntengrafiek met hoge dichtheid met transparantie</h3>
+<p>Grote aantallen waarnemingen maken soms strooiplekken soms moeilijk om te interpreteren omdat punten elkaar overlappen. Het toevoegen van <code>alpha =</code> met een getal tussen 0 en 1 voegt transparantie toe aan punten en helderheid aan grafieken.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  ggplot(mapping = aes(x = carat, y = price)) +
+  geom_point(alpha = 0.05) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 6),
+                     breaks = 0:6) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 20000),
+                     breaks = 0:4 * 5000,
+                     labels = scales::dollar) +
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Price&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/alfa-puntengrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="hexus-puntengrafiek">Hexus puntengrafiek</h3>
+<p>Soms is transparantie niet genoeg om duidelijkheid te brengen in een verstrooide grafiek met veel waarnemingen. Als n toeneemt in de honderdduizenden en zelfs miljoenen, kan <code>geom_hex</code> een van de beste manieren zijn om relaties tussen twee variabelen weer te geven.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  ggplot(mapping = aes(x = carat, y = price)) +
+  geom_hex(mapping = aes(fill = ..count..)) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 6),
+                     breaks = 0:6) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 20000),
+                     breaks = 0:4 * 5000,
+                     labels = scales::dollar) +
+    scale_fill_gradientn(labels = scales::comma) +  
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Price&quot;) +
+  scatter_grid() +
+  theme(legend.position = &quot;right&quot;,
+        legend.direction = &quot;vertical&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/puntengrafiek-hex-1.png" width="624" /></p>
+</div>
+<h3 id="puntengrafiek-met-random-vervuiling" class="tabset">Puntengrafiek met random vervuiling</h3>
+<p>Soms hebben puntengrafieken veel overlappende punten, maar een redelijk aantal waarnemingen. <code>Geom_jitter</code> voegt een kleine hoeveelheid willekeurige ruis toe zodat punten minder snel overlappen. De <code>breedte</code> en <code>hoogte</code> bepalen de hoeveelheid ruis die wordt toegevoegd. Merk in het volgende voor- en naschrijven op hoeveel punten er nog zichtbaar zijn na het toevoegen van jitter.</p>
+<h4 id="voor">Voor</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mpg %&gt;%
+  ggplot(mapping = aes(x = displ, y = cty)) +
+  geom_point() +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 8),
+                     breaks = 0:8) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 40),
+                     breaks = 0:4 * 10) +
+  labs(x = &quot;Uitval&quot;,
+       y = &quot;MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/voor-puntengrafiek-1.png" width="624" /></p>
+</div>
+<h4 id="na">Na</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+set.seed(2017)
+mpg %&gt;%
+  ggplot(mapping = aes(x = displ, y = cty)) +
+  geom_jitter() +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 8),
+                     breaks = 0:8) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 40),
+                     breaks = 0:4 * 10) +
+  labs(x = &quot;Uitval&quot;,
+       y = &quot;MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/jittergrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="puntengrafiek-met-gevarieerde-puntenomvang">Puntengrafiek met gevarieerde puntenomvang</h3>
+<p>Gewichten en populaties kunnen in puntengrafieken met de grootte van de punten in kaart worden gebracht. Hier wordt het aantal huishoudens in elke staat in kaart gebracht op de grootte van elk punt met behulp van <code>aes(size = hhpop)</code>. Opmerking: <code>ggplot2::geom_point()</code> wordt gebruikt in plaats van <code>geom_point()</code>.</p>
+<p>Wel eerst dit pakket laden (wel installeren als je dat nog niet hebt gedaan).</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(urbnmapr)</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+urbnmapr::statedata %&gt;%
+  ggplot(mapping = aes(x = medhhincome, y = horate)) +
+  ggplot2::geom_point(mapping = aes(size = hhpop), alpha = 0.3) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(30000, 80000),
+                     breaks = 3:8 * 10000,
+                     labels = scales::dollar) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 0.8),
+                     breaks = 0:4 * 0.2) +
+  scale_radius(range = c(3, 15),
+               breaks = c(2500000, 7500000, 12500000), 
+               labels = scales::comma) +
+  labs(x = &quot;Huishoud inkomen&quot;,
+       y = &quot;Ratio huizenbezit&quot;) +
+  scatter_grid() +
+    theme(plot.margin = margin(r = 20))</code></pre>
+<p><img src="grafieken_files/figure-html5/geom_punt-omvang-1.png" width="624" /></p>
+</div>
+<h3 id="puntengrafieken-met-vulling">Puntengrafieken met vulling</h3>
+<p>Een derde esthetiek kan worden toegevoegd aan puntengrafieken. Hier betekent kleur het aantal cilinders in elke auto. Voordat <code>ggplot()</code> wordt aangeroepen, worden de cilinders aangemaakt met behulp van <code>library(dplyr)</code> en de functie <code>%&gt;%</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mtcars %&gt;%
+  mutate(cyl = paste(cyl, &quot;cylinders&quot;)) %&gt;%
+  ggplot(aes(x = wt, y = mpg, color = cyl)) +
+  geom_point() +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 6),
+                     breaks = 0:6) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 40),
+                     breaks = 0:8 * 5) +
+  labs(x = &quot;Gewicht (duizenden ponden)&quot;,
+       y = &quot;MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/puntengrafiek-met-vulling-1.png" width="624" /></p>
+</div>
+<h2 id="lijngrafieken">Lijngrafieken</h2>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+economics %&gt;%
+  ggplot(mapping = aes(x = date, y = unemploy)) +
+  geom_line() +
+  scale_x_date(expand = expand_scale(mult = c(0.002, 0)), 
+               breaks = &quot;10 years&quot;,
+               limits = c(as.Date(&quot;1961-01-01&quot;), as.Date(&quot;2020-01-01&quot;)),
+               date_labels = &quot;%Y&quot;) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     breaks = 0:4 * 4000,
+                     limits = c(0, 16000),
+                     labels = scales::comma) +
+  labs(x = &quot;Jaar&quot;, 
+       y = &quot;Aantal werklozen (1,000den)&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/lijn-grafieken-1.png" width="624" /></p>
+</div>
+<h3 id="lijngrafieken-met-meerdere-lijnen">Lijngrafieken met meerdere lijnen</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(gapminder)
+
+gapminder %&gt;%
+  filter(country %in% c(&quot;Australia&quot;, &quot;Netherlands&quot;, &quot;New Zealand&quot;)) %&gt;%
+  mutate(country = factor(country, levels = c(&quot;Netherlands&quot;, &quot;Australia&quot;, &quot;New Zealand&quot;))) %&gt;%
+  ggplot(aes(year, gdpPercap, color = country)) +
+  geom_line() +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     breaks = c(1952 + 0:12 * 5), 
+                     limits = c(1952, 2007)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     breaks = 0:8 * 5000,
+                     labels = scales::dollar, 
+                     limits = c(0, 40000)) +
+  labs(x = &quot;Jaap&quot;,
+       y = &quot;BNP per hoofd van de bevolking (US dollars)&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/meerdere-lijnen-grafiek-1.png" width="624" /></p>
+</div>
+<p>Het plotten van meer dan één variabele kan nuttig zijn om de relatie van variabelen in de tijd te zien, maar het vergt een kleine hoeveelheid databewerking.</p>
+<p>Dit komt omdat <code>ggplot2</code> gegevens in een “lang” formaat wil hebben in plaats van een “breed” formaat voor lijnplots met meerdere lijnen. <code>gather()</code> en <code>spread()</code> uit het <code>tidyr</code> pakket maakt het wisselen tussen “lang” en “breed” pijnloos. In wezen gaan variabele titels naar “key” en variabele waarden naar “value”. Dan verandert ggplot2, de verschillende niveaus van de sleutelvariabele (bevolking, werkloosheid) in kleuren.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+as_tibble(EuStockMarkets) %&gt;%
+    mutate(date = time(EuStockMarkets)) %&gt;%
+    gather(key = &quot;key&quot;, value = &quot;value&quot;, -date) %&gt;%
+    ggplot(mapping = aes(x = date, y = value, color = key)) +
+    geom_line() +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(1991, 1999), 
+                     breaks = c(1991, 1993, 1995, 1997, 1999)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     breaks = 0:4 * 2500,
+                     labels = scales::dollar, 
+                     limits = c(0, 10000)) +  
+    labs(x = &quot;Tijd&quot;,
+             y = &quot;Waarde&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/meer-lijnen-grafiek2-1.png" width="624" /></p>
+</div>
+<h3 id="trapgrafiek">Trapgrafiek</h3>
+<p><code>geom_line()</code> verbindt coördinaten met de kortst mogelijke rechte lijn. Soms zijn trapgrafieken nodig omdat de y-waarden niet veranderen tussen de coördinaten. Zo wordt bijvoorbeeld de bovengrens van de Federal Funds Rate met regelmatige tussenpozen ingesteld en blijft deze constant totdat deze wordt gewijzigd.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# downloaded from FRED on 2018-12-06
+
+# https://fred.stlouisfed.org/series/DFEDTARU
+
+fed_fund_rate &lt;- read_csv(
+  &quot;date, fed_funds_rate
+   2014-01-01,0.0025
+   2015-12-16,0.0050
+   2016-12-14,0.0075
+   2017-03-16,0.0100
+   2017-06-15,0.0125
+   2017-12-14,0.0150
+   2018-03-22,0.0175
+   2018-06-14,0.0200
+   2018-09-27,0.0225
+   2018-12-06,0.0225&quot;)
+
+fed_fund_rate %&gt;%
+  ggplot(mapping = aes(x = date, y = fed_funds_rate)) + 
+  geom_step() +
+  scale_x_date(expand = expand_scale(mult = c(0.002, 0)), 
+               breaks = &quot;1 year&quot;,
+               limits = c(as.Date(&quot;2014-01-01&quot;), as.Date(&quot;2019-01-01&quot;)),
+               date_labels = &quot;%Y&quot;) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     breaks = c(0, 0.01, 0.02, 0.03),
+                     limits = c(0, 0.03),
+                     labels = scales::percent) +  
+    labs(x = &quot;Tijd&quot;,
+             y = &quot;Bovengrens van de Federal Funds Rate&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/trapgrafiek-1.png" width="624" /></p>
+</div>
+<h3 id="padgrafiek">Padgrafiek</h3>
+<p>The Beveridge curve is a macroeconomic plot that displays a relationship between the unemployment rate and the vacancy rate. Movements along the curve indicate changes in the business cyle and horizontal shifts of the curve suggest structural changes in the labor market.</p>
+<p>Lines in Beveridge curves do not monotonically move from left to right. Therefore, it is necessary to use <code>geom_path()</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# weggehaald bij FRED op 11 April, 2018. 
+
+library(ggrepel)
+
+beveridge &lt;- read_csv(
+    &quot;quarter, vacanacy_rate, unempoyment_rate
+    2006-01-01,0.0310,0.0473
+    2006-04-01,0.0316,0.0463
+    2006-07-01,0.0313,0.0463
+    2006-10-01,0.0310,0.0443
+    2007-01-01,0.0323,0.0450
+    2007-04-01,0.0326,0.0450
+    2007-07-01,0.0316,0.0466
+    2007-10-01,0.0293,0.0480
+    2008-01-01,0.0286,0.0500
+    2008-04-01,0.0280,0.0533
+    2008-07-01,0.0253,0.0600
+    2008-10-01,0.0220,0.0686
+    2009-01-01,0.0196,0.0826
+    2009-04-01,0.0180,0.0930
+    2009-07-01,0.0176,0.0963
+    2009-10-01,0.0180,0.0993
+    2010-01-01,0.0196,0.0983
+    2010-04-01,0.0220,0.0963
+    2010-07-01,0.0216,0.0946
+    2010-10-01,0.0220,0.0950
+    2011-01-01,0.0226,0.0903
+    2011-04-01,0.0236,0.0906
+    2011-07-01,0.0250,0.0900
+    2011-10-01,0.0243,0.0863
+    2012-01-01,0.0270,0.0826
+    2012-04-01,0.0270,0.0820
+    2012-07-01,0.0266,0.0803
+    2012-10-01,0.0260,0.0780
+    2013-01-01,0.0276,0.0773
+    2013-04-01,0.0280,0.0753
+    2013-07-01,0.0280,0.0723
+    2013-10-01,0.0276,0.0693
+    2014-01-01,0.0290,0.0666
+    2014-04-01,0.0323,0.0623
+    2014-07-01,0.0326,0.0610
+    2014-10-01,0.0330,0.0570
+    2015-01-01,0.0350,0.0556
+    2015-04-01,0.0366,0.0540
+    2015-07-01,0.0373,0.0510
+    2015-10-01,0.0360,0.0500
+    2016-01-01,0.0386,0.0493
+    2016-04-01,0.0383,0.0486
+    2016-07-01,0.0383,0.0493
+    2016-10-01,0.0363,0.0473
+    2017-01-01,0.0366,0.0466
+    2017-04-01,0.0390,0.0433
+    2017-07-01,0.0406,0.0430
+    2017-10-01,0.0386,0.0410&quot;)
+
+labels &lt;- beveridge %&gt;%
+  filter(lubridate::month(quarter) == 1)
+
+beveridge %&gt;%
+    ggplot() +
+    geom_path(mapping = aes(x = unempoyment_rate, y = vacanacy_rate), alpha = 0.5) +
+  geom_point(data = labels, mapping = aes(x = unempoyment_rate, y = vacanacy_rate)) +
+  geom_text_repel(data = labels, mapping = aes(x = unempoyment_rate, y = vacanacy_rate, label = lubridate::year(quarter))) +  
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0.04, 0.1),
+                     labels = scales::percent) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     breaks = c(0, 0.01, 0.02, 0.03, 0.04, 0.05),
+                     limits = c(0, 0.05),
+                     labels = scales::percent) +  
+    labs(x = &quot;Seizoen gecontroleerd werkloosheidspercentage&quot;,
+             y = &quot;Seizoen gecontroleerd beschikbare banenpercentage&quot;) +  
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/pad-prafiek-1.png" width="624" /></p>
+</div>
+<h3 id="hellingsgrafiek">Hellingsgrafiek</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# https://www.bls.gov/lau/
+library(ggrepel)
+
+unemployment &lt;- tibble(
+    time = c(&quot;October 2009&quot;, &quot;October 2009&quot;, &quot;October 2009&quot;, &quot;August 2017&quot;, &quot;August 2017&quot;, &quot;August 2017&quot;),
+    rate = c(7.4, 7.1, 10.0, 3.9, 3.8, 6.4),
+    state = c(&quot;Maryland&quot;, &quot;Virginia&quot;, &quot;Washington, D.C.&quot;, &quot;Maryland&quot;, &quot;Virginia&quot;, &quot;Washington, D.C.&quot;)
+)
+
+label &lt;- tibble(label = c(&quot;October 2009&quot;, &quot;August 2017&quot;))
+october &lt;- filter(unemployment, time == &quot;October 2009&quot;)
+august &lt;- filter(unemployment, time == &quot;August 2017&quot;)
+
+unemployment %&gt;%
+    mutate(time = factor(time, levels = c(&quot;October 2009&quot;, &quot;August 2017&quot;)),
+           state = factor(state, levels = c(&quot;Washington, D.C.&quot;, &quot;Maryland&quot;, &quot;Virginia&quot;))) %&gt;%
+    ggplot() + 
+    geom_line(aes(time, rate, group = state, color = state), show.legend = FALSE) +
+    geom_point(aes(x = time, y = rate, color = state)) +
+    labs(subtitle = &quot;Werkloosheidspercentage&quot;) +
+    theme(axis.ticks.x = element_blank(),
+                axis.title.x = element_blank(),
+                axis.ticks.y = element_blank(),
+        axis.title.y = element_blank(), 
+        axis.text.y = element_blank(),
+                panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.x = element_blank(),
+                axis.line = element_blank()) +
+    geom_text_repel(data = october, mapping = aes(x = time, y = rate, label = as.character(rate)), nudge_x = -0.06) + 
+    geom_text_repel(data = august, mapping = aes(x = time, y = rate, label = as.character(rate)), nudge_x = 0.06)</code></pre>
+<p><img src="grafieken_files/figure-html5/hellingsgrafiek-1.png" width="624" /></p>
+</div>
+<h2 id="univariate">Univariate</h2>
+<hr />
+<p>There are a number of ways to explore the distributions of univariate data in R. Some methods, like strip charts, show all data points. Other methods, like the box and whisker plot, show selected data points that communicate key values like the median and 25th percentile. Finally, some methods don’t show any of the underlying data but calculate density estimates. Each method has advantages and disadvantages, so it is worthwhile to understand the different forms. For more information, read <a href="http://vita.had.co.nz/papers/boxplots.pdf">40 years of boxplots</a> by Hadley Wickham and Lisa Stryjewski.</p>
+<h3 id="strip-chart">Strip Chart</h3>
+<p>Strip charts, the simplest univariate plot, show the distribution of values along one axis. Strip charts work best with variables that have plenty of variation. If not, the points tend to cluster on top of each other. Even if the variable has plenty of variation, it is often important to add transparency to the points with <code>alpha =</code> so overlapping values are visible.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+msleep %&gt;%
+  ggplot(aes(x = sleep_total, y = factor(1))) +
+  geom_point(alpha = 0.2, size = 5) +
+  labs(y = NULL) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 25), 
+                     breaks = 0:5 * 5) +
+  scale_y_discrete(labels = NULL) +
+  labs(title = &quot;Total Sleep Time of Different Mammals&quot;,
+       x = &quot;Total sleep time (hours)&quot;,
+       y = NULL) +
+  theme(axis.ticks.y = element_blank())</code></pre>
+<p><img src="grafieken_files/figure-html5/stripchart-1.png" width="624" /></p>
+</div>
+<h3 id="strip-chart-with-highlighting">Strip Chart with Highlighting</h3>
+<p>Because strip charts show all values, they are useful for showing where selected points lie in the distribution of a variable. The clearest way to do this is by adding <code>geom_point()</code> twice with <code>filter()</code> in the data argument. This way, the highlighted values show up on top of unhighlighted values.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+ggplot() +
+  geom_point(data = filter(msleep, name != &quot;Red fox&quot;), 
+                    aes(x = sleep_total, 
+                        y = factor(1)),
+             alpha = 0.2, 
+             size = 5,
+                     color = &quot;grey50&quot;) +
+  geom_point(data = filter(msleep, name == &quot;Red fox&quot;),
+             aes(x = sleep_total, 
+                 y = factor(1), 
+                 color = name),
+             alpha = 0.8,
+             size = 5) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 25), 
+                     breaks = 0:5 * 5) +  
+  scale_y_discrete(labels = NULL) +
+  labs(title = &quot;Total Sleep Time of Different Mammals&quot;,
+       x = &quot;Total sleep time (hours)&quot;,
+       y = NULL,
+       legend) +
+  guides(color = guide_legend(title = NULL)) +
+  theme(axis.ticks.y = element_blank())</code></pre>
+<p><img src="grafieken_files/figure-html5/stripchart-with-highlighting-1.png" width="624" /></p>
+</div>
+<h3 id="subsetted-strip-chart">Subsetted Strip Chart</h3>
+<p>Add a y variable to see the distributions of the continuous variable in subsets of a categorical variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(forcats)
+
+msleep %&gt;%
+  filter(!is.na(vore)) %&gt;%
+  mutate(vore = fct_recode(vore, 
+                            &quot;Insectivore&quot; = &quot;insecti&quot;,
+                            &quot;Omnivore&quot; = &quot;omni&quot;, 
+                            &quot;Herbivore&quot; = &quot;herbi&quot;, 
+                            &quot;Carnivore&quot; = &quot;carni&quot;
+                            )) %&gt;%
+  ggplot(aes(x = sleep_total, y = vore)) +
+  geom_point(alpha = 0.2, size = 5) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 25), 
+                     breaks = 0:5 * 5) +  
+  labs(title = &quot;Total Sleep Time of Different Mammals by Diet&quot;,
+       x = &quot;Total sleep time (hours)&quot;,
+       y = NULL) +
+  theme(axis.ticks.y = element_blank())</code></pre>
+<p><img src="grafieken_files/figure-html5/subsetted-stripchart-1.png" width="624" /></p>
+</div>
+<h3 id="histograms">Histograms</h3>
+<p>Histograms divide the distribution of a variable into n equal-sized bins and then count and display the number of observations in each bin. Histograms are sensitive to bin width. As <code>?geom_histogram</code> notes, “You should always override [the default binwidth] value, exploring multiple widths to find the best to illustrate the stories in your data.”</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+ggplot(data = diamonds, mapping = aes(x = depth)) + 
+  geom_histogram(bins = 100) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, 100)) +  
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.2)), labels = scales::comma) +
+  labs(x = &quot;Depth&quot;,
+       y = &quot;Count&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/histogram-1.png" width="624" /></p>
+</div>
+<h3 id="boxplots">Boxplots</h3>
+<p>Boxplots were invented in the 1970s by John Tukey<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Instead of showing the underlying data or binned counts of the underlying data, they focus on important values like the 25th percentile, median, and 75th percentile.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+InsectSprays %&gt;%
+  ggplot(mapping =  aes(x = spray, y = count)) +
+  geom_boxplot() +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.2))) +
+  labs(x = &quot;Type of insect spray&quot;,
+       y = &quot;Number of dead insects&quot;) +
+  remove_ticks()</code></pre>
+<p><img src="grafieken_files/figure-html5/box-plot-1.png" width="624" /></p>
+</div>
+<h3 id="smoothed-kernel-density-plots">Smoothed Kernel Density Plots</h3>
+<p>Continuous variables with smooth distributions are sometimes better represented with smoothed kernel density estimates than histograms or boxplots. <code>geom_density()</code> computes and plots a kernel density estimate. Notice the lumps around integers and halves in the following distribution because of rounding.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  ggplot(mapping = aes(carat)) +
+  geom_density(color = NA) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, NA)) +
+    scale_y_continuous(expand = expand_scale(mult = c(0, 0.2))) +
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Density&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/kernel-density-plot-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  mutate(cost = ifelse(price &gt; 5500, &quot;More than $5,500 +&quot;, &quot;$0 to $5,500&quot;)) %&gt;%
+  ggplot(mapping = aes(carat, fill = cost)) +
+  geom_density(alpha = 0.25, color = NA) +
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                     limits = c(0, NA)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.1))) +
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Density&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/kernel-density-plot-filled-1.png" width="624" /></p>
+</div>
+<h3 id="ridgeline-plots">Ridgeline Plots</h3>
+<p>Ridgeline plots are partially overlapping smoothed kernel density plots faceted by a categorical variable that pack a lot of information into one elegant plot.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(ggridges)
+
+ggplot(diamonds, mapping = aes(x = price, y = cut)) +
+    geom_density_ridges(fill = &quot;#1696d2&quot;) +
+  labs(x = &quot;Price&quot;,
+       y = &quot;Cut&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/ridgeline-plots-1.png" width="624" /></p>
+</div>
+<h3 id="violin-plots">Violin Plots</h3>
+<p>Violin plots are symmetrical displays of smooth kernel density plots.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+InsectSprays %&gt;%
+  ggplot(mapping = aes(x = spray, y = count, fill = spray)) +
+  geom_violin(color = NA) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.2))) +
+  labs(x = &quot;Type of insect spray&quot;,
+       y = &quot;Number of dead insects&quot;) +
+  remove_ticks()</code></pre>
+<p><img src="grafieken_files/figure-html5/violin-plot-1.png" width="624" /></p>
+</div>
+<h3 id="bean-plot">Bean Plot</h3>
+<p>Individual outliers and important summary values are not visible in violin plots or smoothed kernel density plots. Bean plots, <a href="https://www.jstatsoft.org/article/view/v028c01">created by Peter Kampstra in 2008</a>, are violin plots with data shown as small lines in a one-dimensional sstrip plot and larger lines for the mean.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+msleep %&gt;%
+  filter(!is.na(vore)) %&gt;%
+  mutate(vore = fct_recode(vore, 
+                            &quot;Insectivore&quot; = &quot;insecti&quot;,
+                            &quot;Omnivore&quot; = &quot;omni&quot;, 
+                            &quot;Herbivore&quot; = &quot;herbi&quot;, 
+                            &quot;Carnivore&quot; = &quot;carni&quot;
+                            )) %&gt;%
+  ggplot(aes(x = vore, y = sleep_total, fill = vore)) +
+  stat_summary(fun.y = &quot;mean&quot;,
+               colour = &quot;black&quot;, 
+               size = 30,
+               shape = 95,
+               geom = &quot;point&quot;) +
+  geom_violin(color = NA) +
+  geom_jitter(width = 0,
+              height = 0.05,
+              alpha = 0.4,
+              shape = &quot;-&quot;,
+              size = 10,
+                        color = &quot;grey50&quot;) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.2))) +  
+    labs(x = NULL,
+         y = &quot;Total sleep time (hours)&quot;) +
+  theme(legend.position = &quot;none&quot;) +
+  remove_ticks()</code></pre>
+<p><img src="grafieken_files/figure-html5/beanplot-1.png" width="624" /></p>
+</div>
+<h2 id="area-plot">Area Plot</h2>
+<hr />
+<h3 id="stacked-area">Stacked Area</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+txhousing %&gt;%
+  filter(city %in% c(&quot;Austin&quot;,&quot;Houston&quot;,&quot;Dallas&quot;,&quot;San Antonio&quot;,&quot;Fort Worth&quot;)) %&gt;%
+  group_by(city, year) %&gt;%
+  summarize(sales = sum(sales)) %&gt;%
+  ggplot(aes(x = year, y = sales, fill = city)) +
+  geom_area(position = &quot;stack&quot;) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0)),
+                     limits = c(2000, 2015),
+                     breaks = 2000 + 0:15) +  
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.2)), 
+                     labels = scales::comma) +
+  labs(x = &quot;Year&quot;,
+       y = &quot;Home sales&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/area-plot-stack-1.png" width="624" /></p>
+</div>
+<h3 id="filled-area">Filled Area</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+txhousing %&gt;%
+  filter(city %in% c(&quot;Austin&quot;,&quot;Houston&quot;,&quot;Dallas&quot;,&quot;San Antonio&quot;,&quot;Fort Worth&quot;)) %&gt;%
+  group_by(city, year) %&gt;%
+  summarize(sales = sum(sales)) %&gt;%
+  ggplot(aes(x = year, y = sales, fill = city)) +
+  geom_area(position = &quot;fill&quot;) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0)),
+                     limits = c(2000, 2015),
+                     breaks = 2000 + 0:15) +  
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.02)),
+                     breaks = c(0, 0.25, 0.5, 0.75, 1),
+                     labels = scales::percent) +
+  labs(x = &quot;Year&quot;,
+       y = &quot;Home sales&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/area-plot-fill-1.png" width="624" /></p>
+</div>
+<h2 id="waffle-chart-square-pie-chart">Waffle Chart / Square Pie Chart</h2>
+<hr />
+<p>The waffle package {<a href="https://cran.r-project.org/web/packages/waffle/waffle.pdf">CRAN</a> and <a href="https://github.com/hrbrmstr/waffle">Github</a>} creates suare pie charts. It can also be combined with <a href="http://fontawesome.io/">glyphs</a> for more elegant shapes than squares. This example uses data pulled from <a href="http://www.urban.org/features/vision-equitable-dc">A Vision for an Equitable DC</a>.</p>
+<p>Waffle charts will require a little extra tinkering since they are called from <code>library(waffle)</code> instead of <code>library(ggplot2)</code>. Most importantly, waffle charts require <code>theme_urban(text = element_text(family = &quot;Lato&quot;))</code> for the Lato font.</p>
+<h3 id="single-waffle-chart">Single Waffle Chart</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(waffle)
+
+parts &lt;- c(`Virginia\nClinics` = (1000 - 208 - 105), `Maryland\nClinics` = 208, `D.C.\nClinics` = 105)
+waffle(parts, rows = 25, size = 1, colors = c(&quot;#1696d2&quot;, &quot;#fdbf11&quot;, &quot;#000000&quot;), legend_pos = &quot;bottom&quot;) +
+  labs(title = &quot;Free Clinics in the D.C.-Maryland-Virginia Area&quot;,
+       subtitle = &quot;1 Square == 1 Clinic&quot;) +
+  theme(text = element_text(family = &quot;Lato&quot;))</code></pre>
+<p><img src="grafieken_files/figure-html5/single-waffle-1.png" width="624" /></p>
+</div>
+<h3 id="waffle-charts-with-glyphs">Waffle Charts with Glyphs</h3>
+<p>Waffle charts can be enhanced by replacing squares qith glyphs. Two important arguments to know are <code>glyph_size =</code> and <code>use_glyph =</code>. Both are called in the <code>waffle()</code> function. Note: <code>size = 1</code> is sensible and <code>glyph_size = 12</code> is sensible.</p>
+<p>Using glyphs requires downloading fontawesome. That can be done <a href="https://github.com/hrbrmstr/waffle/tree/master/inst/fonts">here</a>. Then run <code>library(extrafont)</code>, <code>port(&lt;font-location&gt;)</code>, and <code>loadfonts()</code> once. After that, building waffle charts with glpyhs should be as easy as one function call.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# r waffle-with-glyphs
+#library(extrafont)
+#font_import(&quot;H:/IT/urban_R_theme/docs&quot;)
+#loadfonts()
+
+#parts &lt;- c(`Virginia\nClinics` = (50 - 10 - 5), `Maryland\nClinics` = 10, `D.C.\nClinics` = 5)
+#waffle(parts, rows = 5, glyph_size = 12, colors = c(&quot;#1696d2&quot;, &quot;#fdbf11&quot;, &quot;#000000&quot;), legend_pos = &quot;bottom&quot;, use_glyph = &quot;medkit&quot;) +
+#  labs(title = &quot;Free Clinics in the D.C.-Maryland-Virginia Area&quot;,
+#       subtitle = &quot;1 Square == 20 Clinics&quot;) +
+#  theme(text = element_text(family = &quot;Lato&quot;))</code></pre>
+</div>
+<h3 id="multiple-waffle-charts">Multiple Waffle Charts</h3>
+<p><code>library(waffle)</code> allows multiple waffle charts to be ironed together using <code>iron()</code>. Ironing multiple charts together requires some trial-and-error to get the sizes and resolution to look good, but the results can be worth the work. Don’t forget <code>theme(text = element_text(family = &quot;Lato&quot;))</code>!</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(waffle)
+
+white &lt;- c(`With Degree` = 169300, `Without Degree` = 800)
+black &lt;- c(`With Degree` = 174900, `Without Degree` = 34700)
+hispanic &lt;- c(`With Degree` = 27700, `Without Degree` = 12400)
+
+iron(
+  waffle(white / 83, rows = 40, size = 0.25, colors = c(&quot;#1696d2&quot;, &quot;#fdbf11&quot;), title = &quot;White&quot;, keep = FALSE, pad = 10) + 
+  theme(text = element_text(family = &quot;Lato&quot;)),
+  waffle(black / 83, rows = 40, size = 0.25, colors = c(&quot;#1696d2&quot;, &quot;#fdbf11&quot;), title = &quot;Black&quot;, keep = FALSE) + 
+  theme(text = element_text(family = &quot;Lato&quot;)),
+  waffle(hispanic / 83, rows = 40, size = 0.25, colors = c(&quot;#1696d2&quot;, &quot;#fdbf11&quot;), title = &quot;Hispanic&quot;, keep = FALSE, pad = 59, xlab = &quot;1 Square == 83 People&quot;) + 
+  theme(text = element_text(family = &quot;Lato&quot;))
+) </code></pre>
+<p><img src="grafieken_files/figure-html5/ironed-waffle-1.png" width="624" /></p>
+</div>
+<h2 id="heat-map">Heat map</h2>
+<hr />
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(fivethirtyeight)
+
+bad_drivers %&gt;%
+  filter(state %in% c(&quot;Maine&quot;, &quot;New Hampshire&quot;, &quot;Vermont&quot;, &quot;Massachusetts&quot;, &quot;Connecticut&quot;, &quot;New York&quot;)) %&gt;%
+  mutate(`Number of\nDrivers` = scale(num_drivers),
+         `Percent\nSpeeding` = scale(perc_speeding),
+         `Percent\nAlcohol` = scale(perc_alcohol),
+         `Percent Not\nDistracted` = scale(perc_not_distracted),
+         `Percent No\nPrevious` = scale(perc_no_previous),
+         state = factor(state, levels = rev(state))
+         ) %&gt;%
+  select(-insurance_premiums, -losses, -(num_drivers:losses)) %&gt;%
+  gather(`Number of\nDrivers`:`Percent No\nPrevious`, key = &quot;variable&quot;, value = &quot;SD&#39;s from Mean&quot;) %&gt;%
+  ggplot(aes(variable, state)) +
+    geom_tile(aes(fill = `SD&#39;s from Mean`)) +
+    labs(x = NULL,
+         y = NULL) + 
+    scale_fill_gradientn() +
+    theme(legend.position = &quot;right&quot;,
+          legend.direction = &quot;vertical&quot;,
+          axis.line.x = element_blank(),
+          panel.grid.major.y = element_blank()) +
+  remove_ticks()</code></pre>
+<p><img src="grafieken_files/figure-html5/heat-map-1.png" width="624" /></p>
+<pre class="r"><code>
+#https://learnr.wordpress.com/2010/01/26/ggplot2-quick-heatmap-plotting/</code></pre>
+</div>
+<h2 id="faceting-and-small-multiples">Faceting and Small Multiples</h2>
+<hr />
+<h3 id="facet_wrap">facet_wrap()</h3>
+<p>R’s faceting system is a powerful way to make “small multiples”.</p>
+<p>Some edits to the theme may be necessary depending upon how many rows and columns are in the plot.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  ggplot(mapping = aes(x = carat, y = price)) +
+  geom_point(alpha = 0.05) +
+  facet_wrap(~cut, ncol = 5) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0)),
+                     limits = c(0, 6)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0)),
+                     limits = c(0, 20000), 
+                     labels = scales::dollar) +
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Price&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/small-multiples-1.png" width="624" /></p>
+</div>
+<h3 id="facet_grid">facet_grid()</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  filter(color %in% c(&quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;)) %&gt;%
+  ggplot(mapping = aes(x = carat, y = price)) +
+  geom_point(alpha = 0.05) +
+  facet_grid(color ~ cut) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0)),
+                     limits = c(0, 4)) +  
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0)),
+                     limits = c(0, 20000), 
+                     labels = scales::dollar) +
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Price&quot;) +
+  theme(panel.spacing = unit(20L, &quot;pt&quot;)) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/faceting-1.png" width="624" /></p>
+</div>
+<h2 id="smoothers">Smoothers</h2>
+<hr />
+<p><code>geom_smooth()</code> fits and plots models to data with two or more dimensions.</p>
+<p>Understanding and manipulating defaults is more important for <code>geom_smooth()</code> than other geoms because it contains a number of assumptions. <code>geom_smooth()</code> automatically uses loess for datasets with fewer than 1,000 observations and a generalized additive model with <code>formula = y ~ s(x, bs = &quot;cs&quot;)</code> for datasets with greater than 1,000 observations. Both default to a 95% confidence interval with the confidence interval displayed.</p>
+<p>Models are chosen with <code>method =</code> and can be set to lm(), glm(), gam(), loess(), rlm(), and more. Formulas can be specified with <code>formula =</code> and <code>y ~ x</code> syntax. Plotting the standard error is toggled with <code>se = TRUE</code> and <code>se = FALSE</code>, and level is specificed with <code>level =</code>. As always, more information can be seen in RStudio with <code>?geom_smooth()</code>.</p>
+<p><code>geom_point()</code> adds a scatterplot to <code>geom_smooth()</code>. The order of the function calls is important. The function called second will be layed on top of the function called first.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  ggplot(mapping = aes(x = carat, y = price)) +
+    geom_point(alpha = 0.05) +
+    geom_smooth(color =  &quot;#ec008b&quot;) +
+    scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                       limits = c(0, 5),
+                       breaks = 0:5) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                     limits = c(0, 20000), 
+                     labels = scales::dollar) +  
+  labs(x = &quot;Carat&quot;,
+       y = &quot;Price&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/geom_smooth-1.png" width="624" /></p>
+</div>
+<p><code>geom_smooth</code> can be subset by categorical and factor variables. This requires subgroups to have a decent number of observations and and a fair amount of variability across the x-axis. Confidence intervals often widen at the ends so special care is needed for the chart to be meaningful and readable.</p>
+<p>This example uses Loess with MPG = displacement.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = factor(cyl))) +
+    geom_point(alpha = 0.2) +
+    geom_smooth() +
+    scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                       limits = c(0, 7),
+                       breaks = 0:7) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                     limits = c(0, 60)) +  
+    labs(x = &quot;Engine displacement&quot;,
+             y = &quot;Highway MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/subset-geom_smooth-1.png" width="624" /></p>
+</div>
+<p>This example uses linear models with MPG = displacement.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = factor(cyl))) +
+    geom_point(alpha = 0.2) +
+    geom_smooth(method = &quot;lm&quot;) +
+    scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
+                       limits = c(0, 7),
+                       breaks = 0:7) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                     limits = c(0, 60)) +  
+    labs(x = &quot;Engine displacement&quot;,
+             y = &quot;Highway MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/subset-geom-smooth-lm-1.png" width="624" /></p>
+</div>
+<h2 id="highlighting">Highlighting</h2>
+<hr />
+<p><a href="https://yutannihilation.github.io/gghighlight/"><code>library(gghighlight)</code></a> enables the intuitive highlighting of ggplot2 plots. <code>gghighlight</code> modifies existing ggplot2 objects, so no other code should change. All of the highlighting is handled by the function <code>gghighlight()</code>, which can handle all types of geoms.</p>
+<p><em>Warning:</em> R will throw an error if too many colors are highlighted because of the design of <code>urbnthemes</code>. Simply decrease the number of highlighted geoms to solve this issue.</p>
+<p>There are two main ways to highlight.</p>
+<h3 id="threshold">Threshold</h3>
+<p>The first way to highlight is with a threshold. Add a logical test to <code>gghighlight()</code> to describe which lines should be highlighted. Here, lines with maximum change in per-capita Gross Domestic Product greater than $35,000 are highlighted by <code>gghighlight(max(pcgpd_change) &gt; 35000, use_direct_label = FALSE)</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(gghighlight)
+library(gapminder)
+
+data &lt;- gapminder %&gt;%
+  filter(continent %in% c(&quot;Europe&quot;)) %&gt;%
+  group_by(country) %&gt;%
+  mutate(pcgpd_change = ifelse(year == 1952, 0, gdpPercap - lag(gdpPercap))) %&gt;%
+  mutate(pcgpd_change = cumsum(pcgpd_change))
+  
+data %&gt;%
+  ggplot(aes(year, pcgpd_change, group = country, color = country)) +
+  geom_line() +
+  gghighlight(max(pcgpd_change) &gt; 35000, use_direct_label = FALSE) +  
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)),
+                     breaks = c(seq(1950, 2010, 10)),
+                     limits = c(1950, 2010)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                     breaks = 0:8 * 5000,
+                     labels = scales::dollar,
+                     limits = c(0, 40000)) +
+  labs(x = &quot;Year&quot;,
+       y = &quot;Change in per-capita GDP (US dollars)&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/gghighlight-threshold-1.png" width="624" /></p>
+</div>
+<h3 id="rank">Rank</h3>
+<p>The second way to highlight is by rank. Here, the countries with the first highest values for change in per-capita Gross Domestic Product are highlighted with <code>gghighlight(max(pcgpd_change), max_highlight = 5, use_direct_label = FALSE)</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+data %&gt;%
+  ggplot(aes(year, pcgpd_change, group = country, color = country)) +
+  geom_line() +
+  gghighlight(max(pcgpd_change), max_highlight = 5, use_direct_label = FALSE) +  
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)),
+                     breaks = c(seq(1950, 2010, 10)),
+                     limits = c(1950, 2010)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                     breaks = 0:8 * 5000,
+                     labels = scales::dollar,
+                     limits = c(0, 40000)) +
+  labs(x = &quot;Year&quot;,
+       y = &quot;Change in per-capita GDP (US dollars)&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/gghighlight-rank-1.png" width="624" /></p>
+</div>
+<h3 id="faceting">Faceting</h3>
+<p><code>gghighlight()</code> works well with ggplot2’s faceting system.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+data %&gt;%
+  ggplot(aes(year, pcgpd_change, group = country)) +
+  geom_line() +
+  gghighlight(max(pcgpd_change), max_highlight = 4, use_direct_label = FALSE) +  
+  scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)),
+                     breaks = c(seq(1950, 2010, 10)),
+                     limits = c(1950, 2010)) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                     breaks = 0:8 * 5000,
+                     labels = scales::dollar,
+                     limits = c(0, 40000)) +
+  labs(x = &quot;Year&quot;,
+       y = &quot;Change in per-capita GDP (US dollars)&quot;) +
+  facet_wrap(~ country) +
+  theme(panel.spacing = unit(20L, &quot;pt&quot;))</code></pre>
+<p><img src="grafieken_files/figure-html5/gghighlight-faceting-1.png" width="624" /></p>
+</div>
+<h2 id="text-and-annotation">Text and Annotation</h2>
+<hr />
+<p>Several functions can be used to annotate, label, and highlight different parts of plots. <code>geom_text()</code> and <code>geom_text_repel()</code> both display variables from data frames. <code>annotate()</code>, which has several different uses, displays variables and values included in the function call.</p>
+<h3 id="geom_text">geom_text()</h3>
+<p><code>geom_text()</code> turns text variables in data sets into geometric objects. This is useful for labeling data in plots. Both functions need <code>x</code> values and <code>y</code> values to determine placement on the coordinate plane, and a text vector of labels.</p>
+<p>This can be used to label <code>geom_bar()</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+diamonds %&gt;%
+  group_by(cut) %&gt;%
+  summarize(price = mean(price)) %&gt;%
+  ggplot(aes(cut, price)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  geom_text(aes(label = scales::dollar(price)), vjust = -1) +
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.2)),
+                                     labels = scales::dollar) +
+  labs(title = &quot;Average Diamond Price by Diamond Cut&quot;,
+       x = &quot;Cut&quot;,
+       y = &quot;Price&quot;) +
+  remove_ticks()</code></pre>
+<p><img src="grafieken_files/figure-html5/bar-geom_text-1.png" width="624" /></p>
+</div>
+<p>It can also be used to label points in a scatter plot.</p>
+<p>It’s rarely useful to label every point in a scatter plot. Use <code>filter()</code> to create a second data set that is subsetted and pass it into the labelling function.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+labels &lt;- mtcars %&gt;%
+    rownames_to_column(&quot;model&quot;) %&gt;%
+    filter(model %in% c(&quot;Toyota Corolla&quot;, &quot;Merc 240D&quot;, &quot;Datsun 710&quot;))
+
+mtcars %&gt;%
+    ggplot() +
+    geom_point(mapping = aes(x = wt, y = mpg)) +
+    geom_text(data = labels, mapping = aes(x = wt, y = mpg, label = model), nudge_x = 0.38) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(0, 6)) + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(0, 40)) +  
+  labs(x = &quot;Weight (Tons)&quot;,
+       y = &quot;Miles per gallon (MPG)&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/scatterplot-geom_text-1.png" width="624" /></p>
+</div>
+<p>Text too often overlaps with other text or geoms when using <code>geom_text()</code>. <code>library(ggrepel)</code> is a <code>library(ggplot2)</code> add-on that automatically positions text so it doesn’t overlap with geoms or other text. To add this functionality, install and load <code>library(ggrepel)</code> and then use <code>geom_text_repel()</code> with the same syntax as <code>geom_text()</code>.</p>
+<h3 id="geom_text_repel">geom_text_repel()</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(ggrepel)
+
+labels &lt;- mtcars %&gt;%
+    rownames_to_column(&quot;model&quot;) %&gt;%
+    top_n(5, mpg)
+
+mtcars %&gt;%
+    ggplot(mapping = aes(x = wt, y = mpg)) +
+    geom_point() +
+    geom_text_repel(data = labels, 
+                    mapping = aes(label = model), 
+                    nudge_x = 0.38) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(0, 6)) + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(0, 40)) +  
+  labs(x = &quot;Weight (Tons)&quot;,
+       y = &quot;Miles per gallon (MPG)&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/scatterplot-geom_text_repel-1.png" width="624" /></p>
+</div>
+<h3 id="annotate">annotate()</h3>
+<p><code>annotate()</code> doesn’t use data frames. Instead, it takes values for <code>x =</code> and <code>y =</code>. It can add text, rectangles, segments, and pointrange.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+msleep %&gt;%
+  filter(bodywt &lt;= 1000) %&gt;%
+  ggplot(aes(bodywt, sleep_total)) +
+  geom_point() +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(-10, 1000),
+                                     labels = scales::comma) + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(0, 25)) +  
+  annotate(&quot;text&quot;, x = 500, y = 12, label = &quot;These data suggest that heavy \n animals sleep less than light animals&quot;) +
+  labs(x = &quot;Body weight (pounds)&quot;,
+       y = &quot;Sleep time (hours)&quot;) +
+  scatter_grid()  </code></pre>
+<p><img src="grafieken_files/figure-html5/annotate-point-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(AmesHousing)
+
+ames &lt;- make_ames()
+
+ames %&gt;%
+  mutate(square_footage = Total_Bsmt_SF - Bsmt_Unf_SF + First_Flr_SF + Second_Flr_SF) %&gt;%
+  mutate(Sale_Price = Sale_Price / 1000) %&gt;%  
+  ggplot(aes(square_footage, Sale_Price)) +
+  geom_point(alpha = 0.2) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(-10, 12000),
+                                     labels = scales::comma) + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.002)),
+                                     limits = c(0, 800),
+                                     labels = scales::dollar) +  
+  annotate(&quot;rect&quot;, xmin = 6800, xmax = 11500, ymin = 145, ymax = 210, alpha = 0.1) +
+  annotate(&quot;text&quot;, x = 8750, y = 230, label = &quot;Unfinished homes&quot;) +
+  labs(x = &quot;Square footage&quot;, 
+       y = &quot;Sale price (thousands)&quot;) +
+  scatter_grid()   </code></pre>
+<p><img src="grafieken_files/figure-html5/annotate-rect-1.png" width="624" /></p>
+</div>
+<h2 id="layered-geoms">Layered Geoms</h2>
+<hr />
+<p>Geoms can be layered in <code>ggplot2</code>. This is useful for design and analysis.</p>
+<p>It is often useful to add points to line plots with a small number of values across the x-axis. This example from <a href="http://r4ds.had.co.nz/tidy-data.html">R for Data Science</a> shows how changing the line to grey can be appealing.</p>
+<h3 id="design" class="tabset">Design</h3>
+<h4 id="before">Before</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+table1 %&gt;%
+    ggplot(aes(x = year, y = cases)) +
+        geom_line(aes(color = country)) +
+        geom_point(aes(color = country)) +
+        scale_y_continuous(expand = expand_scale(mult = c(0, 0.2)), 
+                           labels = scales::comma) +
+        scale_x_continuous(breaks = c(1999, 2000)) +
+        labs(title = &quot;Changes in Tuberculosis Cases in Three Countries&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/layering-geoms-design-1.png" width="624" /></p>
+</div>
+<h4 id="after">After</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+table1 %&gt;%
+    ggplot(aes(year, cases)) +
+        geom_line(aes(group = country), color = &quot;grey50&quot;) +
+        geom_point(aes(color = country)) +
+        scale_y_continuous(expand = expand_scale(mult = c(0, 0.2)), 
+                           labels = scales::comma) +
+        scale_x_continuous(breaks = c(1999, 2000)) +
+        labs(title = &quot;Changes in Tuberculosis Cases in Three Countries&quot;)</code></pre>
+<p><img src="grafieken_files/figure-html5/layering-geoms-design-gray-1.png" width="624" /></p>
+</div>
+<p>Layering geoms is also useful for adding trend lines and centroids to scatter plots.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Simple line
+# Regression model
+# Centroids</code></pre>
+</div>
+<h3 id="centroids">Centroids</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+mpg_summary &lt;- mpg %&gt;%
+    group_by(cyl) %&gt;%
+    summarize(displ = mean(displ), cty = mean(cty))
+
+mpg %&gt;%
+    ggplot() +
+    geom_point(aes(x = displ, y = cty, color = factor(cyl)), alpha = 0.5) +
+    geom_point(data = mpg_summary, aes(x = displ, y = cty), size = 5, color = &quot;#ec008b&quot;) +
+    geom_text(data = mpg_summary, aes(x = displ, y = cty, label = cyl)) +
+  scale_x_continuous(expand = expand_scale(mult = c(0, 0.002)), 
+                     limits = c(0, 8)) +  
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0)), 
+                     limits = c(0, 40)) +
+    labs(x = &quot;Displacement&quot;,
+         y = &quot;City MPG&quot;) +
+  scatter_grid()</code></pre>
+<p><img src="grafieken_files/figure-html5/centroids-1.png" width="624" /></p>
+</div>
+<h2 id="saving-plots">Saving Plots</h2>
+<hr />
+<p><code>ggsave()</code> exports ggplot2 plots. The function can be used in two ways. If <code>plot =</code> isn’t specified in the function call, then <code>ggsave()</code> automatically saves the plot that was last displayed in the Viewer window. Second, if <code>plot =</code> is specified, then <code>ggsave()</code> saves the specified plot. <code>ggsave()</code> guesses the type of graphics device to use in export (.png, .pdf, .svg, etc.) from the file extension in the filename.</p>
+<pre><code>
+mtcars %&gt;%
+  ggplot(aes(x = wt, y = mpg)) +
+  geom_point()
+
+ggsave(filename = &quot;cars.png&quot;)
+
+plot2 &lt;- mtcars %&gt;%
+  ggplot(aes(x = wt, y = mpg)) +
+  geom_point()
+
+ggsave(filename = &quot;cars.png&quot;, plot = plot2)</code></pre>
+<p>Exported plots rarely look identical to the plots that show up in the Viewer window in RStudio because the overall size and aspect ratio of the Viewer is often different than the defaults for <code>ggsave()</code>. Specific sizes, aspect ratios, and resolutions can be controlled with arguments in <code>ggsave()</code>. RStudio has a useful <a href="https://www.rstudio.com/resources/cheatsheets/">cheatsheet</a> called “How Big is Your Graph?” that should help with choosing the best size, aspect ratio, and resolution.</p>
+<p>Fonts are not embedded in PDFs by default. To embed fonts in PDFs, include <code>device = cairo_pdf</code> in <code>ggsave()</code>.</p>
+<pre><code>
+plot &lt;- mtcars %&gt;%
+  ggplot(aes(x = wt, y = mpg)) +
+  geom_point()
+
+ggsave(filename = &quot;cars.pdf&quot;, plot = plot2, width = 6.5, height = 4, device = cairo_pdf)</code></pre>
+<h2 id="bibliography-and-session-information">Bibliography and Session Information</h2>
+<hr />
+<p><em>Note:</em> Examples present in <a href="https://awunderground.github.io/ggplot2-themes/">this document</a> by Aaron Williams were created during personal time.</p>
+<p>Bob Rudis and Dave Gandy (2017). waffle: Create Waffle Chart Visualizations in R. R package version 0.7.0. <a href="https://CRAN.R-project.org/package=waffle" class="uri">https://CRAN.R-project.org/package=waffle</a></p>
+<p>Chester Ismay and Jennifer Chunn (2017). fivethirtyeight: Data and Code Behind the Stories and Interactives at ‘FiveThirtyEight’. R package version 0.3.0. <a href="https://CRAN.R-project.org/package=fivethirtyeight" class="uri">https://CRAN.R-project.org/package=fivethirtyeight</a></p>
+<p>Hadley Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2009.</p>
+<p>Hadley Wickham (2017). tidyverse: Easily Install and Load the ‘Tidyverse’. R package version 1.2.1. <a href="https://CRAN.R-project.org/package=tidyverse" class="uri">https://CRAN.R-project.org/package=tidyverse</a></p>
+<p>Hadley Wickham (2017). forcats: Tools for Working with Categorical Variables (Factors). R package version 0.2.0. <a href="https://CRAN.R-project.org/package=forcats" class="uri">https://CRAN.R-project.org/package=forcats</a></p>
+<p>Jennifer Bryan (2017). gapminder: Data from Gapminder. R package version 0.3.0. <a href="https://CRAN.R-project.org/package=gapminder" class="uri">https://CRAN.R-project.org/package=gapminder</a></p>
+<p>Kamil Slowikowski (2017). ggrepel: Repulsive Text and Label Geoms for ‘ggplot2’. R package version 0.7.0. <a href="https://CRAN.R-project.org/package=ggrepel" class="uri">https://CRAN.R-project.org/package=ggrepel</a></p>
+<p>Max Kuhn (2017). AmesHousing: The Ames Iowa Housing Data. R package version 0.0.3. <a href="https://CRAN.R-project.org/package=AmesHousing" class="uri">https://CRAN.R-project.org/package=AmesHousing</a></p>
+<p>Peter Kampstra (2008). Beanplot: A Boxplot Alternative for Visual Comparison of Distributions, Journal of Statistical Software, 2008. <a href="https://www.jstatsoft.org/article/view/v028c01" class="uri">https://www.jstatsoft.org/article/view/v028c01</a></p>
+<p>R Core Team (2017). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</p>
+<p>Winston Chang, (2014). extrafont: Tools for using fonts. R package version 0.17. <a href="https://CRAN.R-project.org/package=extrafont" class="uri">https://CRAN.R-project.org/package=extrafont</a></p>
+<p>Yihui Xie (2018). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.19.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+sessionInfo()</code></pre>
+<pre><code>
+R version 4.0.0 (2020-04-24)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS High Sierra 10.13.6
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods  
+[7] base     
+
+other attached packages:
+ [1] AmesHousing_0.0.3     gghighlight_0.3.0     fivethirtyeight_0.5.0
+ [4] waffle_0.7.0          ggridges_0.5.2        gapminder_0.3.0      
+ [7] urbnmapr_0.0.0.9002   extrafont_0.17        ggrepel_0.8.2        
+[10] urbnthemes_0.0.1      forcats_0.5.0         stringr_1.4.0        
+[13] dplyr_1.0.0           purrr_0.3.4           readr_1.3.1          
+[16] tidyr_1.1.0           tibble_3.0.1          ggplot2_3.3.2        
+[19] tidyverse_1.3.0.9000  knitr_1.28           
+
+loaded via a namespace (and not attached):
+ [1] httr_1.4.1         jsonlite_1.6.1     splines_4.0.0     
+ [4] modelr_0.1.8       assertthat_0.2.1   cellranger_1.1.0  
+ [7] yaml_2.2.1         Rttf2pt1_1.3.8     pillar_1.4.4      
+[10] backports_1.1.8    lattice_0.20-41    glue_1.4.1        
+[13] extrafontdb_1.0    digest_0.6.25      RColorBrewer_1.1-2
+[16] rvest_0.3.5        colorspace_1.4-1   htmltools_0.4.0   
+[19] Matrix_1.2-18      plyr_1.8.6         pkgconfig_2.0.3   
+[22] broom_0.5.6        haven_2.3.1        scales_1.1.1      
+[25] distill_0.7        mgcv_1.8-31        generics_0.0.2    
+[28] farver_2.0.3       ellipsis_0.3.1     withr_2.2.0       
+[31] hexbin_1.28.1      cli_2.0.2          magrittr_1.5      
+[34] crayon_1.3.4       readxl_1.3.1       evaluate_0.14     
+[37] fs_1.4.1           fansi_0.4.1        nlme_3.1-147      
+[40] xml2_1.3.2         tools_4.0.0        hms_0.5.3         
+[43] lifecycle_0.2.0    munsell_0.5.0      reprex_0.3.0      
+[46] compiler_4.0.0     rlang_0.4.6        grid_4.0.0        
+[49] rstudioapi_0.11    labeling_0.3       rmarkdown_2.1     
+[52] gtable_0.3.0       DBI_1.1.0          R6_2.4.1          
+[55] gridExtra_2.3      lubridate_1.7.8    stringi_1.4.6     
+[58] Rcpp_1.0.5         vctrs_0.3.1        dbplyr_1.4.3      
+[61] tidyselect_1.1.0   xfun_0.14         </code></pre>
+</div>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Wickham, H., &amp; Stryjewski, L. (2011). 40 years of boxplots.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

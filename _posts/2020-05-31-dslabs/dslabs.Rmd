@@ -1,9 +1,9 @@
 ---
 title: "dslabs"
 description: |
-  Een aantal mooie grafieken uit het goede data-analyseboek van Rafa Izigarri (Harvard University)
+  Een aantal mooie grafieken uit het goede data-analyseboek van Rafa Irizarri (Harvard University)
 author:
-  - name: Rafa Izigarri en Amy Hill, bewerking Harrie Jonkman
+  - name: Rafa Irizarri en Amy Hill, bewerking Harrie Jonkman
     url: www.harriejonkman.nl
 date: 04-22-2020
 output:
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## `dslabs`-pakket om van de werkelijkheid te leren
 
-Rafael Izigarri schreef een prachtig boek over moderne data analyse *Introduction to Data Science. Data Analysis and Prediction Algorithms with R* dat je gratis in boekdown formaat kunt inzien [hier](https://rafalab.github.io/dsbook/). Daar heb ik het al eens over gehad en daar zal ik vast op een later tijdstip nog wel weer eens op terugkomen. Dat boek komt voort uit diverse colleges die hij over dit onderwerp op de Harvard University heeft gegeven. Izigarri wil je van echte data laten leren en leert je zo hele verschillende technieken. Voor het gebruik van die data heeft hij een speciaal pakket gemaakt dat `dslabs` heet. Daarover heeft [hijzelf eerder](https://simplystatistics.org/2018/01/22/the-dslabs-package-provides-datasets-for-teaching-data-science/) en [Amy Hill](https://simplystatistics.org/2019/07/19/more-datasets-for-teaching-data-science-the-expanded-dslabs-package/) later een post geschreven op [Simply Statistics](https://simplystatistics.org/). Ik heb deze posts bewerkt om te laten zien hoe levensechte datasets eruit zien en hoe je deze data aantrekkelijk zichtbaar kunt maken. Misschien vooral ook wel om op zijn goede boek te wijzen.
+Rafael Irizarri schreef een prachtig boek over moderne data analyse *Introduction to Data Science. Data Analysis and Prediction Algorithms with R* dat je gratis in boekdown formaat kunt inzien [hier](https://rafalab.github.io/dsbook/). Daar heb ik het al eens over gehad en daar zal ik vast op een later tijdstip nog wel weer eens op terugkomen. Dat boek komt voort uit diverse colleges die hij over dit onderwerp op de Harvard University heeft gegeven. Irizarri wil je van echte data laten leren en leert je zo hele verschillende technieken. Voor het gebruik van die data heeft hij een speciaal pakket gemaakt dat `dslabs` heet. Daarover heeft [hijzelf eerder](https://simplystatistics.org/2018/01/22/the-dslabs-package-provides-datasets-for-teaching-data-science/) en [Amy Hill](https://simplystatistics.org/2019/07/19/more-datasets-for-teaching-data-science-the-expanded-dslabs-package/) later een post geschreven op [Simply Statistics](https://simplystatistics.org/). Ik heb deze posts bewerkt om te laten zien hoe levensechte datasets eruit zien en hoe je deze data aantrekkelijk zichtbaar kunt maken. Misschien vooral ook wel om op zijn goede boek te wijzen.
 
 Een veelbesproken onderwerp in het statistiekonderwijs is dat informatica-computatie een prominentere rol zou moeten spelen in het curriculum. Izigarri (en in alle bescheidenheid ik ook) is het daar volledig mee eens, maar hij denkt dat de belangrijkste verbetering zal komen van het op de voorgrond brengen van toepassingen en het zo goed mogelijk nabootsen van de uitdagingen waarmee de toegepaste statistici in het echte leven worden geconfronteerd. Izigarri probeert daarom het gebruik van veelgebruikte voorbeelden, zoals de `-mtcars`dataset die in R zo vaak worden gebruikt, te vermijden wanneer hij les geeft in datawetenschap. Volgens hem is het niet zo eenvoudig om voorbeelden te vinden die zowel realistisch en interessant zijn als geschikt voor beginners. Na een paar jaar lesgeven heeft hij een aantal datasets verzameld die volgens hem wel aan deze criteria voldoen. Om het gebruik ervan in introductielessen te vergemakkelijken, heeft hij ze in het `dslabs`-pakket opgenomen. Dat pakket heb ikzelf al geinstalleerd (en daarom staat er een # voor). Als jij het wilt gebruiken, moet je het #-teken weghalen.
 

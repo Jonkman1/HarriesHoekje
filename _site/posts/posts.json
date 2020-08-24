@@ -1,18 +1,48 @@
 [
   {
-    "path": "posts/2020-05-31-dslabs/",
-    "title": "dslabs",
-    "description": "Een aantal mooie grafieken uit het goede data-analyseboek van Rafa Izigarri (Harvard University)",
+    "path": "posts/2020-08-21-survival-analyse-met-r/",
+    "title": "Survival analyse met R",
+    "description": "Dit is een deel van een tutorial die Emily Zabore schreef over survival analyse met R.",
     "author": [
       {
-        "name": "Rafa Izigarri en Amy Hill, bewerking Harrie Jonkman",
+        "name": "Emily Zabore, bewerking Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2020-08-21",
+    "categories": [],
+    "preview": "posts/2020-08-21-survival-analyse-met-r/img/trial_anatomy.png",
+    "last_modified": "2020-08-21T11:07:13+02:00"
+  },
+  {
+    "path": "posts/2020-05-31-grafieken/",
+    "title": "Grafieken",
+    "description": "Hier een serie grafieken die je kunt maken. Dit is gebaseerd op blog van het Urban Institute in de Verenigde Staten. Zij maken hun grafieken altijd op eenzelfde manier. Hoe ze dat doen kan je hierlezen",
+    "author": [
+      {
+        "name": "Urban Institute, bewerking Harrie Jonkman",
+        "url": "www.harriejonkman.nl"
+      }
+    ],
+    "date": "2020-05-31",
+    "categories": [],
+    "preview": "posts/2020-05-31-grafieken/grafieken_files/figure-html5/staafgrafiek-1.png",
+    "last_modified": "2020-07-14T11:28:29+02:00"
+  },
+  {
+    "path": "posts/2020-05-31-dslabs/",
+    "title": "dslabs",
+    "description": "Een aantal mooie grafieken uit het goede data-analyseboek van Rafa Irizarri (Harvard University)",
+    "author": [
+      {
+        "name": "Rafa Irizarri en Amy Hill, bewerking Harrie Jonkman",
         "url": "www.harriejonkman.nl"
       }
     ],
     "date": "2020-04-22",
     "categories": [],
     "preview": "posts/2020-05-31-dslabs/dslabs_files/figure-html5/unnamed-chunk-4-1.png",
-    "last_modified": "2020-07-05T21:52:26+02:00"
+    "last_modified": "2020-08-21T10:38:38+02:00"
   },
   {
     "path": "posts/2019-12-15-beste-boeken-2019/",
