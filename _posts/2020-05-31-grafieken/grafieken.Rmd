@@ -512,12 +512,15 @@ fed_fund_rate %>%
 
 ### Padgrafiek
 
-The Beveridge curve is a macroeconomic plot that displays a relationship between the unemployment rate and the vacancy rate. Movements along the curve indicate changes in the business cyle and horizontal shifts of the curve suggest structural changes in the labor market.
 
-Lines in Beveridge curves do not monotonically move from left to right. Therefore, it is necessary to use `geom_path()`. 
+De Beveridge-curve is een macro-economisch plot dat een verband toont tussen de werkloosheidsgraad en de vacaturegraad. Bewegingen op de curve duiden op veranderingen in de bedrijfscultuur en horizontale verschuivingen van de curve duiden op structurele veranderingen op de arbeidsmarkt.
+
+Lijnen in de Beveridge-curve bewegen niet monotoon van links naar rechts. Daarom is het noodzakelijk om `geom_pad()` te gebruiken. 
+
+
 
 ```{r, pad-prafiek}
-# weggehaald bij FRED op 11 April, 2018. 
+
 
 library(ggrepel)
 
@@ -628,15 +631,15 @@ unemployment %>%
 	geom_text_repel(data = august, mapping = aes(x = time, y = rate, label = as.character(rate)), nudge_x = 0.06)
 ```
 
-## Univariate
+## Univariaat
 
-------
 
-There are a number of ways to explore the distributions of univariate data in R. Some methods, like strip charts, show all data points. Other methods, like the box and whisker plot, show selected data points that communicate key values like the median and 25th percentile. Finally, some methods don't show any of the underlying data but calculate density estimates. Each method has advantages and disadvantages, so it is worthwhile to understand the different forms. For more information, read [40 years of boxplots](http://vita.had.co.nz/papers/boxplots.pdf) by Hadley Wickham and Lisa Stryjewski.
+Er zijn een aantal manieren om de verdeling van univariate data in R te onderzoeken. Sommige methoden, zoals strookdiagrammen, laten alle datapunten zien. Andere methoden, zoals de box- en whiskerplot, tonen geselecteerde datapunten die belangrijke waarden communiceren zoals de mediaan en het 25e percentiel. Tenslotte tonen sommige methoden geen van de onderliggende data, maar berekenen ze dichtheidsschattingen. Elke methode heeft voor- en nadelen, dus het is de moeite waard om de verschillende vormen te begrijpen. Lees voor meer informatie [40 jaar boxplottem](http://vita.had.co.nz/papers/boxplots.pdf) van Hadley Wickham en Lisa Stryjewski.
 
-### Strip Chart
+### Stripdiagram
 
-Strip charts, the simplest univariate plot, show the distribution of values along one axis. Strip charts work best with variables that have plenty of variation. If not, the points tend to cluster on top of each other. Even if the variable has plenty of variation, it is often important to add transparency to the points with `alpha = ` so overlapping values are visible. 
+Stripdiagrammen, de eenvoudigste univariate plot, tonen de verdeling van de waarden langs één as. Stripdiagrammen werken het beste met variabelen die veel variatie hebben. Zo niet, dan hebben de punten de neiging om op elkaar te clusteren. Zelfs als de variabele veel variatie heeft, is het vaak belangrijk om transparantie toe te voegen aan de punten met `alpha = ` zodat overlappende waarden zichtbaar zijn. 
+
 
 ```{r stripchart, fig.height=2}
 msleep %>%
@@ -647,15 +650,15 @@ msleep %>%
                      limits = c(0, 25), 
                      breaks = 0:5 * 5) +
   scale_y_discrete(labels = NULL) +
-  labs(title = "Total Sleep Time of Different Mammals",
-       x = "Total sleep time (hours)",
+  labs(title = "Totale slaaptijd van verschillende zoogdieren",
+       x = "Totale slaaptijd (uren)",
        y = NULL) +
   theme(axis.ticks.y = element_blank())
 ```
 
-### Strip Chart with Highlighting
+### Stripdiagram met Highlighting
 
-Because strip charts show all values, they are useful for showing where selected points lie in the distribution of a variable. The clearest way to do this is by adding `geom_point()` twice with `filter()` in the data argument. This way, the highlighted values show up on top of unhighlighted values. 
+Omdat strookdiagrammen alle waarden weergeven, zijn ze nuttig om aan te geven waar de geselecteerde punten in de verdeling van een variabele liggen. De duidelijkste manier om dit te doen is door `geom_point()` tweemaal toe te voegen met `filter()` in het gegevensargument. Op deze manier worden de geaccentueerde waarden boven op de niet geaccentueerde waarden getoond. 
 
 ```{r stripchart-with-highlighting, fig.height=2}
 ggplot() +
@@ -675,17 +678,17 @@ ggplot() +
                      limits = c(0, 25), 
                      breaks = 0:5 * 5) +  
   scale_y_discrete(labels = NULL) +
-  labs(title = "Total Sleep Time of Different Mammals",
-       x = "Total sleep time (hours)",
+  labs(title = "Totale slaaptijd van verschillende zoogdieren",
+       x = "Totale slaaptijd (uren)",
        y = NULL,
        legend) +
   guides(color = guide_legend(title = NULL)) +
   theme(axis.ticks.y = element_blank())
 ```
 
-### Subsetted Strip Chart 
+###  Ondergeschikte Strip Chart 
 
-Add a y variable to see the distributions of the continuous variable in subsets of a categorical variable. 
+Voeg een y-variabele toe om de verdelingen van de continue variabele in deelverzamelingen van een categorische variabele te zien. 
 
 ```{r subsetted-stripchart, fig.height=3}
 library(forcats)
@@ -703,15 +706,15 @@ msleep %>%
   scale_x_continuous(expand = expand_scale(mult = c(0.002, 0)), 
                      limits = c(0, 25), 
                      breaks = 0:5 * 5) +  
-  labs(title = "Total Sleep Time of Different Mammals by Diet",
-       x = "Total sleep time (hours)",
+  labs(title = "Totale slaaptijd van verschillende zoogdieren volgens dieet",
+       x = "Totale slaaptijd (uren)",
        y = NULL) +
   theme(axis.ticks.y = element_blank())
 ```
 
-### Histograms
+### Histogrammen
 
-Histograms divide the distribution of a variable into n equal-sized bins and then count and display the number of observations in each bin. Histograms are sensitive to bin width. As `?geom_histogram` notes, "You should always override [the default binwidth] value, exploring multiple widths to find the best to illustrate the stories in your data."
+Histogrammen verdelen de verdeling van een variabele in n staven van gelijke grootte en tellen en tonen vervolgens het aantal waarnemingen in elke staaf. Histogrammen zijn gevoelig voor de breedte van de staven. Zoals `?geom_histogram` merkt op, "U moet altijd de waarde van [de standaard staafbreedte] overschrijven, door meerdere breedtes te onderzoeken om het beste te vinden om de verhalen in uw gegevens te illustreren".
 
 ```{r histogram}
 ggplot(data = diamonds, mapping = aes(x = depth)) + 
@@ -725,7 +728,7 @@ ggplot(data = diamonds, mapping = aes(x = depth)) +
 
 ### Boxplots
 
-Boxplots were invented in the 1970s by John Tukey[^1]. Instead of showing the underlying data or binned counts of the underlying data, they focus on important values like the 25th percentile, median, and 75th percentile. 
+Boxplots zijn in de jaren zeventig uitgevonden door John Tukey. In plaats van de onderliggende gegevens te tonen of het aantal blikken van de onderliggende gegevens, richten ze zich op belangrijke waarden zoals het 25e percentiel, de mediaan en het 75e percentiel.
 
 ```{r box-plot}
 InsectSprays %>%
@@ -737,9 +740,10 @@ InsectSprays %>%
   remove_ticks()
 ```
 
-### Smoothed Kernel Density Plots
+### Gladde kernel verdelingsgrafieken
 
-Continuous variables with smooth distributions are sometimes better represented with smoothed kernel density estimates than histograms or boxplots. `geom_density()` computes and plots a kernel density estimate. Notice the lumps around integers and halves in the following distribution because of rounding. 
+Doorlopende variabelen met vloeiende verdelingen worden soms beter weergegeven met afgevlakte kerneldichtheidsschattingen dan histogrammen of boxplots. `geom_density()` berekent en plot een kerneldichtheidsschatting. Let op de klontjes rond gehele en halve getallen in de volgende verdeling vanwege afrondingen. 
+
 
 ```{r kernel-density-plot}
 diamonds %>%
@@ -764,9 +768,9 @@ diamonds %>%
        y = "Density")
 ```
 
-### Ridgeline Plots
+### 'Ridgeline' grafieken
 
-Ridgeline plots are partially overlapping smoothed kernel density plots faceted by a categorical variable that pack a lot of information into one elegant plot. 
+Ridgeline plots zijn gedeeltelijk overlappende afgevlakte kerneldichtheid plots gefacetteerd door een categorische variabele die veel informatie verpakken in één elegante plot. Onderstaande maakt duidelijk wat we hiermee bedoelen. 
 
 ```{r ridgeline-plots}
 library(ggridges)
@@ -777,9 +781,9 @@ ggplot(diamonds, mapping = aes(x = price, y = cut)) +
        y = "Cut")
 ```
 
-### Violin Plots
+### Viool grafieken
 
-Violin plots are symmetrical displays of smooth kernel density plots. 
+Vioolplots zijn symmetrische weergaven van gladde kerneldichtheidplots. 
 
 ```{r violin-plot}
 InsectSprays %>%
@@ -791,9 +795,8 @@ InsectSprays %>%
   remove_ticks()
 ```
 
-### Bean Plot
-
-Individual outliers and important summary values are not visible in violin plots or smoothed kernel density plots. Bean plots, [created by Peter Kampstra in 2008](https://www.jstatsoft.org/article/view/v028c01), are violin plots with data shown as small lines in a one-dimensional sstrip plot and larger lines for the mean. 
+### Bonenplot
+Individuele uitschieters en belangrijke samenvattende waarden zijn niet zichtbaar in vioolplots of afgevlakte kerneldichtheidsplots. Bonenplots, [gemaakt door Peter Kampstra in 2008](https://www.jstatsoft.org/article/view/v028c01), zijn vioolplots met gegevens weergegeven als kleine lijnen in een eendimensionale stripplot en grotere lijnen voor het gemiddelde. 
 
 ```{r beanplot}
 msleep %>%
@@ -824,11 +827,11 @@ msleep %>%
   remove_ticks()
 ```
 
-## Area Plot
+## Gebiedsplot
 
 ------
 
-### Stacked Area
+### Gestapeld gebied
 ```{r area-plot-stack}
 txhousing %>%
   filter(city %in% c("Austin","Houston","Dallas","San Antonio","Fort Worth")) %>%
@@ -845,7 +848,7 @@ txhousing %>%
        y = "Home sales")
 ```
 
-### Filled Area
+### Gevuld gebied
 ```{r area-plot-fill}
 txhousing %>%
   filter(city %in% c("Austin","Houston","Dallas","San Antonio","Fort Worth")) %>%
@@ -863,15 +866,15 @@ txhousing %>%
        y = "Home sales")
 ```
 
-## Waffle Chart / Square Pie Chart
+## Wafelkaart / Vierkante taartkaart
 
 ------
 
-The waffle package {[CRAN](https://cran.r-project.org/web/packages/waffle/waffle.pdf) and [Github](https://github.com/hrbrmstr/waffle)} creates suare pie charts. It can also be combined with [glyphs](http://fontawesome.io/) for more elegant shapes than squares. This example uses data pulled from [A Vision for an Equitable DC](http://www.urban.org/features/vision-equitable-dc).
+Het wafelpakket {[CRAN](https://cran.r-project.org/web/packages/waffle/waffle.pdf) en [Github](https://github.com/hrbrmstr/waffle)} maakt vierkante taartkaarten. Het kan ook gecombineerd worden met [glyphs](http://fontawesome.io/) voor meer elegantere vormen dan vierkanten. Data hiervoor komen hier vandaan: [A Vision for an Equitable DC](http://www.urban.org/features/vision-equitable-dc).
 
-Waffle charts will require a little extra tinkering since they are called from `library(waffle)` instead of `library(ggplot2)`. Most importantly, waffle charts require `theme_urban(text = element_text(family = "Lato"))` for the Lato font. 
+Wafelkaarten vereisen een beetje extra knutselen omdat ze worden genoemd vanuit `library(waffle)` in plaats van `library(ggplot2)`. Het belangrijkste is dat voor wafeldiagrammen  `theme_urban(text = element_text(family = "Lato"))` nodig is voor het lettertype Lato. 
 
-### Single Waffle Chart
+### Enkele wafelkaart
 
 ```{r single-waffle}
 library(waffle)
@@ -883,33 +886,11 @@ waffle(parts, rows = 25, size = 1, colors = c("#1696d2", "#fdbf11", "#000000"), 
   theme(text = element_text(family = "Lato"))
 ```
 
-### Waffle Charts with Glyphs
-
-Waffle charts can be enhanced by replacing squares qith glyphs. Two important arguments to know are `glyph_size =` and `use_glyph =`. Both are called in the `waffle()` function. Note: `size = 1` is sensible and `glyph_size = 12` is sensible. 
-
-Using glyphs requires downloading fontawesome. That can be done [here](https://github.com/hrbrmstr/waffle/tree/master/inst/fonts). Then run `library(extrafont)`, 
-`port(<font-location>)`, and `loadfonts()` once. After that, building waffle charts with glpyhs should be as easy as one function call. 
-
-```{r}
-# r waffle-with-glyphs
-#library(extrafont)
-#font_import("H:/IT/urban_R_theme/docs")
-#loadfonts()
-
-#parts <- c(`Virginia\nClinics` = (50 - 10 - 5), `Maryland\nClinics` = 10, `D.C.\nClinics` = 5)
-#waffle(parts, rows = 5, glyph_size = 12, colors = c("#1696d2", "#fdbf11", "#000000"), legend_pos = "bottom", use_glyph = "medkit") +
-#  labs(title = "Free Clinics in the D.C.-Maryland-Virginia Area",
-#       subtitle = "1 Square == 20 Clinics") +
-#  theme(text = element_text(family = "Lato"))
 
 
-```
+### Meervoudige wafelkaarten
 
-
-
-### Multiple Waffle Charts
-
-`library(waffle)` allows multiple waffle charts to be ironed together using `iron()`. Ironing multiple charts together requires some trial-and-error to get the sizes and resolution to look good, but the results can be worth the work. Don't forget `theme(text = element_text(family = "Lato"))`!
+`library(waffle)` allows multiple waffle charts to be ironed together using `iron()`. maakt het mogelijk om meerdere wafelkaarten in elkaar te strijken met behulp van `iron()`. Het samen strijken van meerdere wafeldiagrammen vereist wat trial-and-error om de maten en resolutie goed te krijgen, maar de resultaten kunnen de moeite waard zijn. Vergeet niet `theme(text = element_text(family = "Lato"))`!
 
 ```{r ironed-waffle}
 library(waffle)
@@ -928,7 +909,7 @@ iron(
 ) 
 ```
 
-## Heat map
+## Warmtekaart
 
 ------
 
@@ -959,15 +940,15 @@ bad_drivers %>%
 #https://learnr.wordpress.com/2010/01/26/ggplot2-quick-heatmap-plotting/
 ```
 
-## Faceting and Small Multiples
+## Faceteren en kleine kaartjes
 
 ------
 
 ### facet_wrap()
 
-R's faceting system is a powerful way to make "small multiples".
+R's faceteersysteem is een krachtige manier om kleinere kaarten te maken.
 
-Some edits to the theme may be necessary depending upon how many rows and columns are in the plot. 
+Sommige bewerkingen aan het thema kunnen nodig zijn, afhankelijk van het aantal rijen en kolommen in de plot. 
 
 ```{r small-multiples, fig.height=2}
 diamonds %>%
@@ -979,8 +960,8 @@ diamonds %>%
   scale_y_continuous(expand = expand_scale(mult = c(0, 0)),
                      limits = c(0, 20000), 
                      labels = scales::dollar) +
-  labs(x = "Carat",
-       y = "Price") +
+  labs(x = "Karaat",
+       y = "Prijs") +
   scatter_grid()
 ```
 
@@ -1003,17 +984,17 @@ diamonds %>%
   scatter_grid()
 ```
 
-## Smoothers
+## 'Smoothers'
 
 ------
 
-`geom_smooth()` fits and plots models to data with two or more dimensions. 
+`geom_smooth()` past en modelleert op gegevens met twee of meer dimensies. 
 
-Understanding and manipulating defaults is more important for `geom_smooth()` than other geoms because it contains a number of assumptions. `geom_smooth()` automatically uses loess for datasets with fewer than 1,000 observations and a generalized additive model with `formula = y ~ s(x, bs = "cs")` for datasets with greater than 1,000 observations. Both default to a 95% confidence interval with the confidence interval displayed. 
+Het begrijpen en manipuleren van defaults is belangrijker voor `geom_smooth()` dan andere 'geoms' omdat het een aantal aannames bevat. `geom_smooth()` gebruikt automatisch loess voor datasets met minder dan 1.000 waarnemingen en een algemeen model met `formula = y ~ s(x, bs = "cs")` voor datasets met meer dan 1.000 waarnemingen. Beide zijn standaard ingesteld op een betrouwbaarheidsinterval van 95%. 
 
-Models are chosen with `method = ` and can be set to lm(), glm(), gam(), loess(), rlm(), and more. Formulas can be specified with `formula = ` and `y ~ x` syntax. Plotting the standard error is toggled with `se = TRUE` and `se = FALSE`, and level is specificed with `level = `. As always, more information can be seen in RStudio with `?geom_smooth()`.
+Modellen worden gekozen met `method = ` en kunnen worden ingesteld op lm(), glm(), gam(), loess(), rlm(), en meer. Formules kunnen worden opgegeven met `formule = ` en `y ~ x` syntaxis. Het plotten van de standaardfout wordt omgeschakeld met `se = TRUE` en `se = FALSE`, en het niveau wordt gespecificeerd met `level = `. Zoals altijd is er meer informatie te zien in RStudio met `?geom_smooth()`.
 
-`geom_point()` adds a scatterplot to `geom_smooth()`. The order of the function calls is important. The function called second will be layed on top of the function called first. 
+`geom_point()` voegt een scatterplot toe aan `geom_smooth()`. De volgorde van de functie-aanroepen is belangrijk. De functie die als tweede wordt aangeroepen wordt bovenop de functie die als eerste wordt aangeroepen gelegd. 
 
 ```{r geom_smooth}
 diamonds %>%
@@ -1031,9 +1012,9 @@ diamonds %>%
   scatter_grid()
 ```
 
-`geom_smooth` can be subset by categorical and factor variables. This requires subgroups to have a decent number of observations and and a fair amount of variability across the x-axis. Confidence intervals often widen at the ends so special care is needed for the chart to be meaningful and readable. 
+`geom_smooth` kan worden onderverdeeld in categorische en factorvariabelen. Dit vereist subgroepen met een behoorlijk aantal waarnemingen en een behoorlijke mate van variabiliteit over de x-as. De betrouwbaarheidsintervallen worden vaak groter aan de uiteinden, zodat speciale zorg nodig is om de grafiek zinvol en leesbaar te maken. 
 
-This example uses Loess with MPG = displacement.
+Dit voorbeeld gebruikt Loess met MPG = verplaatsing.
 
 ```{r subset-geom_smooth}
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = factor(cyl))) +
@@ -1049,7 +1030,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = factor(cyl))) +
   scatter_grid()
 ```
 
-This example uses linear models with MPG = displacement. 
+Dit voorbeeld gebruikt liniaire regressie met MPG = displacement. 
 
 ```{r subset-geom-smooth-lm}
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = factor(cyl))) +
@@ -1066,19 +1047,19 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = factor(cyl))) +
 ```
 
 
-## Highlighting
+## Benadrukken
 
 ------
 
-[`library(gghighlight)`](https://yutannihilation.github.io/gghighlight/) enables the intuitive highlighting of ggplot2 plots. `gghighlight` modifies existing ggplot2 objects, so no other code should change. All of the highlighting is handled by the function `gghighlight()`, which can handle all types of geoms. 
+[`library(gghighlight)`](https://yutannihilation.github.io/gghighlight/) maakt intuitief benadrukken van ggplot2 plots mogelijk. `gghighlight` wijzigt bestaande ggplot2-objecten, dus geen enkele andere code mag veranderen. Alle markering wordt afgehandeld door de functie `gghighlight()`, die alle soorten geomen kan verwerken. 
 
-*Warning:* R will throw an error if too many colors are highlighted because of the design of `urbnthemes`. Simply decrease the number of highlighted geoms to solve this issue. 
+*Waarschuwing: * R zal een fout maken als er te veel kleuren worden gemarkeerd vanwege het ontwerp van `urbnthemes`. Verlaag gewoon het aantal gemarkeerde geomen om dit probleem op te lossen. 
 
-There are two main ways to highlight. 
+Er zijn twee belangrijke manieren om de aandacht te vestigen. 
 
-### Threshold
+### Drempelwaarde
 
-The first way to highlight is with a threshold. Add a logical test to `gghighlight()` to describe which lines should be highlighted. Here, lines with maximum change in per-capita Gross Domestic Product greater than $35,000 are highlighted by `gghighlight(max(pcgpd_change) > 35000, use_direct_label = FALSE)`. 
+De eerste manier om te markeren is met een drempel. Voeg een logische test toe aan `gghighlight()` om te beschrijven welke lijnen gemarkeerd moeten worden. Hier worden regels met een maximale verandering in het bruto binnenlands product per hoofd van de bevolking van meer dan $35.000 gemarkeerd met `gghighlight(max(pcgpd_change) > 35000, use_direct_label = FALSE)`. 
 
 ```{r gghighlight-threshold}
 library(gghighlight)
@@ -1105,9 +1086,9 @@ data %>%
        y = "Change in per-capita GDP (US dollars)")
 ```
 
-### Rank
+### Rang
 
-The second way to highlight is by rank. Here, the countries with the first highest values for change in per-capita Gross Domestic Product are highlighted with `gghighlight(max(pcgpd_change), max_highlight = 5, use_direct_label = FALSE)`.
+De tweede manier om te markeren is door middel van een rangorde. Hier worden de landen met de eerste hoogste waarden voor verandering in het bruto binnenlands product per hoofd van de bevolking benadrukt met `gghighlight(max(pcgpd_change), max_highlight = 5, use_direct_label = FALSE)`.
 
 ```{r gghighlight-rank}
 data %>%
@@ -1125,9 +1106,9 @@ data %>%
        y = "Change in per-capita GDP (US dollars)")
 ```
 
-### Faceting
+### Faceteren
 
-`gghighlight()` works well with ggplot2's faceting system. 
+`gghighlight()` werkt goed met ggplot2's facetsysteem.
 
 ```{r gghighlight-faceting}
 data %>%
@@ -1147,17 +1128,18 @@ data %>%
   theme(panel.spacing = unit(20L, "pt"))
 ```
 
-## Text and Annotation
+## Tekst en annotatie
 
 ------
 
-Several functions can be used to annotate, label, and highlight different parts of plots. `geom_text()` and `geom_text_repel()` both display variables from data frames. `annotate()`, which has several different uses, displays variables and values included in the function call. 
+Verschillende functies kunnen worden gebruikt om verschillende delen van percelen te annoteren, te labelen en te markeren. `geom_text()` en `geom_text_repel()` geven beide variabelen uit dataframes weer. `annotate()`, die verschillende toepassingen heeft, geeft variabelen en waarden weer die zijn opgenomen in de functie-aanroep. 
+
 
 ### geom_text()
 
-`geom_text()` turns text variables in data sets into geometric objects. This is useful for labeling data in plots. Both functions need `x` values and `y` values to determine placement on the coordinate plane, and a text vector of labels. 
+`geom_text()`  zet tekstvariabelen in datasets om in geometrische objecten. Dit is nuttig voor het labelen van gegevens in plots. Beide functies hebben `x` waarden en `y` waarden nodig om de plaatsing op het coördinatenvlak te bepalen en een tekstvector van labels. 
 
-This can be used to label `geom_bar()`. 
+Dit kan gebruikt worden voor het labelen van `geom_bar()`. 
 
 ```{r bar-geom_text}
 diamonds %>%
@@ -1174,9 +1156,10 @@ diamonds %>%
   remove_ticks()
 ```
 
-It can also be used to label points in a scatter plot. 
+Het kan ook gebruikt worden om punten in een scatterplot te labelen. 
 
-It's rarely useful to label every point in a scatter plot. Use `filter()` to create a second data set that is subsetted and pass it into the labelling function. 
+Het is zelden nuttig om elk punt in een scatter plot te labelen. Gebruik `filter()` om een tweede dataset te maken die wordt onderverdeeld en deze door te geven aan de labelfunctie. 
+
 
 ```{r scatterplot-geom_text}
 labels <- mtcars %>%
@@ -1196,7 +1179,8 @@ mtcars %>%
   scatter_grid()
 ```
 
-Text too often overlaps with other text or geoms when using `geom_text()`. `library(ggrepel)` is a `library(ggplot2)` add-on that automatically positions text so it doesn't overlap with geoms or other text. To add this functionality, install and load `library(ggrepel)` and then use `geom_text_repel()` with the same syntax as `geom_text()`. 
+Tekst overlapt te vaak met andere tekst of geomen bij gebruik van `geom_text()`. `library(ggrepel)` is een `library(ggplot2)` add-on die automatisch tekst positioneert zodat deze niet overlapt met geomen of andere tekst. Om deze functionaliteit toe te voegen, installeer en laad je `library(ggrepel)` en gebruikt je vervolgens `geom_text_repel()` met dezelfde syntaxis als `geom_text()`. 
+
 
 ### geom_text_repel()
 
@@ -1224,7 +1208,8 @@ mtcars %>%
 
 ### annotate()
 
-`annotate()` doesn't use data frames. Instead, it takes values for `x =` and `y =`. It can add text, rectangles, segments, and pointrange. 
+`annotate()` gebruikt geen dataframes. In plaats daarvan zijn er waarden nodig voor `x =` en `y =`. Het kan tekst, rechthoeken, segmenten en puntenreeksen toevoegen. 
+
 
 ```{r annotate-point}
 msleep %>%
@@ -1265,17 +1250,17 @@ ames %>%
   scatter_grid()   
 ```
 
-## Layered Geoms
+## Gelaagde geoms
 
 ------
 
-Geoms can be layered in `ggplot2`. This is useful for design and analysis. 
+Geomen kunnen worden gelaagd in `ggplot2`. Dit is nuttig voor het ontwerp en de analyse. 
 
-It is often useful to add points to line plots with a small number of values across the x-axis. This example from [R for Data Science](http://r4ds.had.co.nz/tidy-data.html) shows how changing the line to grey can be appealing. 
+Het is vaak nuttig om punten toe te voegen aan lijngrafieken met een klein aantal waarden over de x-as. Dit voorbeeld uit [R voor Data Science](http://r4ds.had.co.nz/tidy-data.html) laat zien hoe het veranderen van de lijn naar grijs aantrekkelijk kan zijn. 
 
 ### Design{.tabset}
 
-#### Before
+#### Voor
 ```{r layering-geoms-design}
 table1 %>%
 	ggplot(aes(x = year, y = cases)) +
@@ -1287,7 +1272,7 @@ table1 %>%
 		labs(title = "Changes in Tuberculosis Cases in Three Countries")
 ```
 
-#### After
+#### Na
 ```{r layering-geoms-design-gray}
 table1 %>%
 	ggplot(aes(year, cases)) +
@@ -1299,15 +1284,15 @@ table1 %>%
 		labs(title = "Changes in Tuberculosis Cases in Three Countries")
 ```
 
-Layering geoms is also useful for adding trend lines and centroids to scatter plots. 
+Gelaagde geomen zijn ook nuttig voor het toevoegen van trendlijnen en centroïden aan scatterplots. 
 
 ```{r layers}
-# Simple line
-# Regression model
-# Centroids
+# Simpele lijn
+# Regressie model
+# Centroiden
 ```
 
-### Centroids
+### Centroiden
 
 ```{r centroids}
 mpg_summary <- mpg %>%
@@ -1328,11 +1313,11 @@ mpg %>%
   scatter_grid()
 ```
 
-## Saving Plots
+## Grafieken opslaan
 
 ------
 
-`ggsave()` exports ggplot2 plots. The function can be used in two ways. If `plot =` isn't specified in the function call, then `ggsave()` automatically saves the plot that was last displayed in the Viewer window. Second, if `plot =` is specified, then `ggsave()` saves the specified plot. `ggsave()` guesses the type of graphics device to use in export (.png, .pdf, .svg, etc.) from the file extension in the filename. 
+`ggsave()` exporteert ggplot2 percelen. De functie kan op twee manieren worden gebruikt. Als `plot =` niet is gespecificeerd in de functie-aanroep, dan slaat `ggsave()` automatisch de plot op die het laatst werd weergegeven in het Viewer-venster. Ten tweede, als `plot =` is gespecificeerd, dan slaat `ggsave()` het gespecificeerde plot op. `ggsave()` raadt het type grafische soort dat gebruikt moet worden bij het exporteren (.png, .pdf, .svg, etc.) van de bestandsextensie in de bestandsnaam. 
 
 ```
 mtcars %>%
@@ -1348,9 +1333,9 @@ plot2 <- mtcars %>%
 ggsave(filename = "cars.png", plot = plot2)
 ```
 
-Exported plots rarely look identical to the plots that show up in the Viewer window in RStudio because the overall size and aspect ratio of the Viewer is often different than the defaults for `ggsave()`. Specific sizes, aspect ratios, and resolutions can be controlled with arguments in `ggsave()`. RStudio has a useful [cheatsheet](https://www.rstudio.com/resources/cheatsheets/) called "How Big is Your Graph?" that should help with choosing the best size, aspect ratio, and resolution. 
+Geëxporteerde plots zien er zelden identiek uit als de plots die in het Viewervenster in RStudio verschijnen omdat de totale grootte en de beeldverhouding van de Viewer vaak anders is dan de standaardinstellingen voor `ggsave()`. Specifieke afmetingen, beeldverhoudingen en resoluties kunnen worden gecontroleerd met argumenten in `ggsave()`. RStudio heeft een nuttig [cheatsheet](https://www.rstudio.com/resources/cheatsheets/) genaamd "How Big is Your Graph?" dat zou moeten helpen bij het kiezen van de beste grootte, beeldverhouding en resolutie. 
 
-Fonts are not embedded in PDFs by default. To embed fonts in PDFs, include `device = cairo_pdf` in `ggsave()`. 
+Lettertypen zijn niet standaard in PDF's opgenomen. Om lettertypes in te sluiten in PDF's, neem `device = cairo_pdf` op in `ggsave()`. 
 
 
 ```
