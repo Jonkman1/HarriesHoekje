@@ -54,41 +54,41 @@ div.sourceCode
 @media screen {
 code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #545454; font-weight: bold; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #a1024a; } /* BaseN */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007faa; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #008000; } /* Char */
-code span.cn { color: #d91e18; } /* Constant */
-code span.co { color: #545454; } /* Comment */
-code span.cv { color: #545454; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #aa5d00; } /* DataType */
-code span.dv { color: #a1024a; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #a1024a; } /* Float */
-code span.fu { color: #4254a7; } /* Function */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #545454; font-weight: bold; } /* Information */
-code span.kw { color: #007faa; font-weight: bold; } /* Keyword */
-code span.op { color: #696969; } /* Operator */
-code span.ot { color: #007faa; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #008000; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #008000; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #008000; } /* VerbatimString */
-code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warning */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Het Goede, het Slechte en het Lelijke: Data effektief visualiseren en communiceren</title>
+  <title>Het Goede, het Slechte en het Lelijke: Data effectief visualiseren en communiceren</title>
   
-  <meta property="description" itemprop="description" content="Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn weri aanpassen. Shirin&#39;s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite het in het Nederlands te bewerken.[Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf."/>
+  <meta property="description" itemprop="description" content="Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn werk aanpassen. Shirin&#39;s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite waard het in het Nederlands te bewerken.    [Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf."/>
   
   
   <!--  https://schema.org/Article -->
@@ -97,21 +97,21 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta name="article:author" content="Shirin Elsinghorst, vertaling Harrie Jonkman"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Het Goede, het Slechte en het Lelijke: Data effektief visualiseren en communiceren"/>
+  <meta property="og:title" content="Het Goede, het Slechte en het Lelijke: Data effectief visualiseren en communiceren"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn weri aanpassen. Shirin&#39;s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite het in het Nederlands te bewerken.[Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf."/>
+  <meta property="og:description" content="Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn werk aanpassen. Shirin&#39;s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite waard het in het Nederlands te bewerken.    [Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf."/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Het Goede, het Slechte en het Lelijke: Data effektief visualiseren en communiceren"/>
-  <meta property="twitter:description" content="Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn weri aanpassen. Shirin&#39;s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite het in het Nederlands te bewerken.[Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf."/>
+  <meta property="twitter:title" content="Het Goede, het Slechte en het Lelijke: Data effectief visualiseren en communiceren"/>
+  <meta property="twitter:description" content="Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn werk aanpassen. Shirin&#39;s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite waard het in het Nederlands te bewerken.    [Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf."/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Het Goede, het Slechte en het Lelijke: Data effektief visualiseren en communiceren"]},{"type":"character","attributes":{},"value":["Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn weri aanpassen. Shirin's blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite het in het Nederlands te bewerken.[Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&loop=false&delayms=3000&slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Shirin Elsinghorst, vertaling Harrie Jonkman"]},{"type":"character","attributes":{},"value":["https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/"]}]}]},{"type":"character","attributes":{},"value":["11-01-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Het Goede, het Slechte en het Lelijke: Data effectief visualiseren en communiceren"]},{"type":"character","attributes":{},"value":["Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn werk aanpassen. Shirin's blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite waard het in het Nederlands te bewerken.    [Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&loop=false&delayms=3000&slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Shirin Elsinghorst, vertaling Harrie Jonkman"]},{"type":"character","attributes":{},"value":["https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/"]}]}]},{"type":"character","attributes":{},"value":["11-01-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -264,7 +264,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   d-article pre,
   d-article div.sourceCode,
   d-article div.sourceCode pre {
-    overflow: hidden;
+    overflow: auto;
   }
   
   d-article div.sourceCode {
@@ -1420,7 +1420,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Het Goede, het Slechte en het Lelijke: Data effektief visualiseren en communiceren","description":"Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn weri aanpassen. Shirin's blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite het in het Nederlands te bewerken.[Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&loop=false&delayms=3000&slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf.","authors":[{"author":"Shirin Elsinghorst, vertaling Harrie Jonkman","authorURL":"https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-11-01T00:00:00.000+01:00","citationText":"Jonkman, 2020"}
+{"title":"Het Goede, het Slechte en het Lelijke: Data effectief visualiseren en communiceren","description":"Shirin Elsinghorst schreef deze blog onlangs op [Codecentric](https://blog.codecentric.de/2020/10/goodbadugly/). Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn werk aanpassen. Shirin's blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite waard het in het Nederlands te bewerken.    [Hier](https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&loop=false&delayms=3000&slide=id.g58b36409ef_0_0) vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf.","authors":[{"author":"Shirin Elsinghorst, vertaling Harrie Jonkman","authorURL":"https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-11-01T00:00:00.000+00:00","citationText":"Jonkman, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1430,10 +1430,10 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Het Goede, het Slechte en het Lelijke: Data effektief visualiseren en communiceren</h1>
+<h1>Het Goede, het Slechte en het Lelijke: Data effectief visualiseren en communiceren</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Shirin Elsinghorst schreef deze blog onlangs op <a href="https://blog.codecentric.de/2020/10/goodbadugly/">Codecentric</a>. Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn weri aanpassen. Shirin’s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite het in het Nederlands te bewerken.<a href="https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0">Hier</a> vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf.</p></p>
+<p><p>Shirin Elsinghorst schreef deze blog onlangs op <a href="https://blog.codecentric.de/2020/10/goodbadugly/">Codecentric</a>. Omdat ze op mijn werk de vormgeving van de uitgaven hebben aangepast, wilde ik het maken van figuren aan de nieuwe kleursetting van mijn werk aanpassen. Shirin’s blog was een mooie oefenplaats voor mij. Tegelijk is het een mooie introductie op datavisualisatie en daarom de moeite waard het in het Nederlands te bewerken. <a href="https://docs.google.com/presentation/d/e/2PACX-1vR4pD2EmW9Gzxr1Q3qwgjEYkU64o2-ThlX1mXqfNQ2EKteVUVt6Qg2ImEKKi9XLv-Iutb3lD8esLyU7/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g58b36409ef_0_0">Hier</a> vind je de presentatie die zij zelf hierover op 20 oktober 2020 in Duitsland gaf.</p></p>
 </div>
 
 <div class="d-byline">
@@ -1463,7 +1463,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 # … with 3 more variables: body_mass_g &lt;int&gt;, sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
 <pre><code>[1] 0.3926991 1.1780972 1.9634954 2.7488936 3.5342917 4.3196899
 [7] 5.1050881 5.8904862</code></pre>
 </div>
@@ -1476,102 +1476,93 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<ol start="0" type="1">
-<li>Datavisualisatie, cruciaal voor begrip en communicatie</li>
-</ol>
+<h3 id="datavisualisatie-cruciaal-voor-begrip-en-communicatie">0. Datavisualisatie, cruciaal voor begrip en communicatie</h3>
 <p>Datavisualisatie is een cruciaal onderdeel van elke analyse. Of het nu “voor jezelf” is om verbanden en resultaten beter te begrijpen of om resultaten te presenteren en te “verkopen” aan anderen. Omdat goede grafieken de gegevens intuïtief toegankelijk maken, vertellen ze een verhaal en laten ze duidelijk patronen, trends of uitschieters zien. Daarom is Explorative Data Analyse (EDA) meestal de eerste stap van elke gegevensanalyse en -modellering. Alleen als we onze gegevens begrijpen, kunnen we de juiste voorbewerkingsstappen en analysemethoden, statistieken of ’deep learning’technieken toepassen. En aangezien mensen veel beter zijn in het visueel begrijpen van getallen in een grafiek dan in tabellen, moeten we de kracht van datavisualisatie gebruiken! Vooral bij het maken van visualisaties voor rapporten of publicaties is het cruciaal dat deze zowel feitelijk correct als visueel aantrekkelijk zijn.</p>
 <blockquote>
 <p>Datavisualisatie is deels kunst en deels wetenschap. De uitdaging is om de kunst goed te krijgen zonder dat de wetenschap het bij het verkeerde eind heeft en vice versa. (Wilke 2019)</p>
 </blockquote>
 <p>Het doel van een goede illustratie is dat het in één oogopslag begrijpelijk is en een duidelijke uitspraak doet. Slechte grafieken variëren van eenvoudigweg lelijk tot (opzettelijk?) misleidend of zelfs verkeerd. In dit artikel leg ik uit wat goede grafieken zijn (en wat niet) en hoe we ze kunnen maken met behulp van de Grammatica van Grafieken. En ik introduceer enkele van de meest gebruikte soorten grafieken, samen met negatieve voorbeelden “uit de vrije natuur”.</p>
 <h2 id="wat-maakt-een-goede-grafiek">Wat maakt een goede grafiek?</h2>
-<ol type="1">
-<li>Data Het belangrijkste aspect en de basis van elke grafiek zijn de gebruikte gegevens! Ze moeten correct zijn en we moeten altijd controleren op mogelijke (meet)fouten. Zoals bijvoorbeeld in deze afbeelding:</li>
-</ol>
+<h3 id="data">1. Data</h3>
+<p>Het belangrijkste aspect en de basis van elke grafiek zijn de gebruikte gegevens! Ze moeten correct zijn en we moeten altijd controleren op mogelijke (meet)fouten. Zoals bijvoorbeeld in deze afbeelding:</p>
 <p><img src="Figs/Screenshot1.png" /></p>
 <p>Het is duidelijk dat er een fout in de voorspelling zit, want temperaturen van -100°C, zelfs op een hele speciale dag, zijn echt heel onwaarschijnlijk! En niet alleen toont deze grafiek duidelijk verkeerde gegevens; deze uitschietwaarde comprimeert de rest van de gegevens in de grafiek zodanig dat de curven niet meer duidelijk zichtbaar zijn en de waarden van verschillende dagen moeilijk te vergelijken zijn.</p>
 <p>Tot goede praktijk van datavisualisatie behoort tevens het specificeren van de gegevensbron.</p>
-<ol start="2" type="1">
-<li>Overzichtelijkheid &amp; kleuren Een goede grafiek is juist zo complex omdat ze haar boodschap in één oogopslag moet overbrengen; ze moet duidelijk zijn en geen <em>“chart junk”</em> bevatten. Edward Tufte beschouwde alle visuele elementen in een grafiek die ofwel niet nodig zijn om de grafiek te begrijpen, ofwel zelfs afleiden van de centrale informatie als grafiektroep (Tufte 1983). Drie voorbeelden daarvan zijn in deze figuur te zien:</li>
-</ol>
+<h3 id="overzichtelijkheid-kleuren">2. Overzichtelijkheid &amp; kleuren</h3>
+<p>Een goede grafiek is juist zo complex omdat ze haar boodschap in één oogopslag moet overbrengen; ze moet duidelijk zijn en geen <em>“chart junk”</em> bevatten. Edward Tufte beschouwde alle visuele elementen in een grafiek die ofwel niet nodig zijn om de grafiek te begrijpen, ofwel zelfs afleiden van de centrale informatie als grafiektroep (Tufte 1983). Drie voorbeelden daarvan zijn in deze figuur te zien:</p>
 <p><img src="Figs/Screenshot2.png" /></p>
 <p>Iedereen die regelmatig kranten leest zal merken dat “chart junk” extreem vaak voorkomt en vooral populair is bij populaire media om een chart te kruiden. In veel gevallen kan een onschuldige chartjunk worden afgedaan als “artistieke vrijheid”, maar hoe ernstiger jouw grafiek wilt maken, hoe meer je die moet vermijden.</p>
 <p>Duidelijkheid omvat ook de keuze van geschikte kleuren en duidelijke contrasten. Te veel, felle of grillige kleuren maken een plot visueel weerzinwekkend en zorgen ervoor dat het er overbeladen en verwarrend uitziet. Daarnaast moet je er bij de keuze van de kleuren ook op letten dat het voor kleurenblinden mogelijk is om de grafiek te lezen. Dit moet worden gedaan met behulp van een geschikt kleurenpalet, evenals redundante functies zoals verschillende vormen, patronen of lijntypes die het mogelijk maken om de grafiek te lezen, zelfs zonder kleurinformatie.</p>
 <h2 id="kleuren">Kleuren</h2>
-<ol start="3" type="1">
-<li>etikettering &amp; assen Een goede grafiek is in één oogopslag te begrijpen, wat betekent dat ze voor zichzelf spreken. Essentieel hiervoor is de juiste etikettering met titel, aslabels (met eenheden!), legenda’s en bijschriften! Ook het aantal assentikken moet op de juiste manier worden gekozen. En vooral: de afstanden tussen de assen moeten voor de numerieke waarden regelmatig zijn, d.w.z. dat de afstand tussen de teken in geen geval mag variëren, zoals te zien is op de y-as in deze vreselijke illustratie:</li>
-</ol>
+<h3 id="etikettering-assen">3. etikettering &amp; assen</h3>
+<p>Een goede grafiek is in één oogopslag te begrijpen, wat betekent dat ze voor zichzelf spreken. Essentieel hiervoor is de juiste etikettering met titel, aslabels (met eenheden!), legenda’s en bijschriften! Ook het aantal assentikken moet op de juiste manier worden gekozen. En vooral: de afstanden tussen de assen moeten voor de numerieke waarden regelmatig zijn, d.w.z. dat de afstand tussen de teken in geen geval mag variëren, zoals te zien is op de y-as in deze vreselijke illustratie:</p>
 <p><img src="Figs/Screenshot3.png" /></p>
-<p>De grammatica van de grafiek We kennen nu de belangrijkste aspecten van goede grafieken. Maar wat is de beste manier om goede grafieken te maken? Er zijn vele manieren om grafieken te genereren: met de hand tekenen, met Excel of met verschillende programmeertalen zoals R, Python, Java, enz. De beste manier, hoewel met een hogere instapdrempel, is het gebruik van programmeertalen. Dit is de eenvoudigste manier om ervoor te zorgen dat de gegevens schoon zijn en op een traceerbare manier kunnen worden verwerkt. Excel kan ook gebruikt worden om grafieken te maken, maar het programma heeft een paar valkuilen: Excel-format kan makkelijk leiden tot fouten in de gegevens. En het maakt het erg moeilijk om grafieken te reproduceren, omdat het niet documenteert welke stappen handmatig werden uitgevoerd en in welke volgorde.</p>
+<h2 id="de-grammatica-van-de-grafiek">De grammatica van de grafiek</h2>
+<p>We kennen nu de belangrijkste aspecten van goede grafieken. Maar wat is de beste manier om goede grafieken te maken? Er zijn vele manieren om grafieken te genereren: met de hand tekenen, met Excel of met verschillende programmeertalen zoals R, Python, Java, enz. De beste manier, hoewel met een hogere instapdrempel, is het gebruik van programmeertalen. Dit is de eenvoudigste manier om ervoor te zorgen dat de gegevens schoon zijn en op een traceerbare manier kunnen worden verwerkt. Excel kan ook gebruikt worden om grafieken te maken, maar het programma heeft een paar valkuilen: Excel-format kan makkelijk leiden tot fouten in de gegevens. En het maakt het erg moeilijk om grafieken te reproduceren, omdat het niet documenteert welke stappen handmatig werden uitgevoerd en in welke volgorde.</p>
 <p>R en Python zijn bijzonder geschikt omdat ze de meest gebruikte programmeertalen zijn voor het genereren van grafieken en omdat ze pakketten aanbieden die het analyseren van gegevens en het maken van grafieken zeer efficiënt maken. Hier presenteer ik de (naar mijn mening) beste manier om op een gestructureerde manier grafieken te genereren: met de pakketten <code>ggplot2</code> voor R of <code>plotnine</code> voor Python (gebaseerd op <code>ggplot2</code>).</p>
 <p>Met <code>ggplot2</code> heeft Hadley Wickham een implementatie gemaakt van de 1999 Grammatica van Graphics voor de door Leland Wilkinson beschreven R-programmeertaal, die ik hieronder introduceer met codevoorbeelden (Wilkinson et al. 1999; Wickham 2010). Deze Grammatica van Graphics beschrijft een raamwerk voor het gestructureerd maken van grafieken die bestaan uit lagen die op elkaar voortbouwen (Wickham en Grolemund 2017). Hieronder laat ik een paar voorbeelden zien. Een overzicht van alle mogelijke opties is te vinden in het <code>ggplot2</code>-cheatsheet.</p>
-<ol type="1">
-<li><p>Data Ook voor de Grammatica van Graphics zijn data het belangrijkste en meest fundamentele element. Hier gebruik ik een voorbeelddataset met verschillende groottes van drie pinguïnsoorten (Gorman, 2014). De centrale functie van het <code>ggplot2</code>-pakket wordt <code>ggplot()</code> genoemd en neemt een dataset als invoer. Deze functie creëert eerst een leeg coördinatensysteem waarop we met de volgende lagen kunnen bouwen en zo onze grafiek stap voor stap kunnen creëren, aanpassen en uitbreiden.</p></li>
-<li><p>Esthetiek Het tweede argument dat we definiëren in de <code>ggplot()</code> functie is de esthetiek <code>(aes())</code>. Esthetiek beschrijft grafische elementen zoals X- en Y-waarden, grootte, kleuren, vormen, enz. Voor een eenvoudige scatterplot moeten we ten minste de X- en Y-posities specificeren. Hiervoor moeten we eerst beslissen welke gegevens (variabelen) we in kaart willen brengen. Bijvoorbeeld hier de snavellengte van de pinguïn op de X-as tegen de vinlengte op de Y-as:</p></li>
-</ol>
+<p><strong>1. Data</strong></p>
+<p>Ook voor de Grammatica van Graphics zijn data het belangrijkste en meest fundamentele element. Hier gebruik ik een voorbeelddataset met verschillende groottes van drie pinguïnsoorten (Gorman, 2014). De centrale functie van het <code>ggplot2</code>-pakket wordt <code>ggplot()</code> genoemd en neemt een dataset als invoer. Deze functie creëert eerst een leeg coördinatensysteem waarop we met de volgende lagen kunnen bouwen en zo onze grafiek stap voor stap kunnen creëren, aanpassen en uitbreiden.</p>
+<p><strong>2. Esthetiek</strong></p>
+<p>Het tweede argument dat we definiëren in de <code>ggplot()</code> functie is de esthetiek <code>(aes())</code>. Esthetiek beschrijft grafische elementen zoals X- en Y-waarden, grootte, kleuren, vormen, enz. Voor een eenvoudige scatterplot moeten we ten minste de X- en Y-posities specificeren. Hiervoor moeten we eerst beslissen welke gegevens (variabelen) we in kaart willen brengen. Bijvoorbeeld hier de snavellengte van de pinguïn op de X-as tegen de vinlengte op de Y-as:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-7-1.png" width="624" /></p>
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
 </div>
 <p>Zelfs met een bepaalde esthetiek krijgen we nog steeds geen echte grafiek te zien, maar we hebben de volgende laag nodig, de zogenaamde geometrie. Omdat esthetiek en geometrie zeer nauw met elkaar verbonden zijn en deels van elkaar afhankelijk zijn, laat ik hieronder extra esthetiek zien.</p>
-<ol start="3" type="1">
-<li>Geometriek Geometrische objecten of geometrieën beschrijven hoe de gegevens die we in de esthetiek hebben gedefinieerd, moeten worden weergegeven. Dit kan bijvoorbeeld een puntgrafiek <code>(geom_point())</code> of een lijngrafiek <code>(geom_line())</code> zijn, die nu ook als grafiek in deze laag wordt weergegeven:</li>
-</ol>
+<p><strong>3. Geometriek</strong></p>
+<p>Geometrische objecten of geometrieën beschrijven hoe de gegevens die we in de esthetiek hebben gedefinieerd, moeten worden weergegeven. Dit kan bijvoorbeeld een puntgrafiek <code>(geom_point())</code> of een lijngrafiek <code>(geom_line())</code> zijn, die nu ook als grafiek in deze laag wordt weergegeven:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-8-1.png" width="624" /><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-8-2.png" width="624" /></p>
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-7-1.png" width="624" /><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-7-2.png" width="624" /></p>
 </div>
 <p>Een lijngrafiek is echter niet nuttig voor de gegevens hier; meer hierover in de sectie Grafiektypen - Lijngrafieken. Andere geometrieën zijn staafdiagrammen <code>(geom_bar())</code> of boxplots <code>(geom_boxplot())</code>. Geometrie en esthetiek zijn onderling afhankelijk in die zin dat het gegevenstype van de esthetische variabelen alleen bepaalde geometrieën toelaat of zinvol is. Zo zijn strooi- en lijndiagrammen geschikt voor doorlopende X- en Y-assen (rationele getallen, tijden of datum). Voor staafdiagrammen moeten de X-as gegevens categorisch zijn. Voordat ik in de loop van latere lagen meer in detail zal ingaan op geometrieën en esthetiek, zal ik eerst facetten introduceren.</p>
-<ol start="4" type="1">
-<li>Facetten Facetten betekent het splitsen van een grafiek in verschillende subplots. In onze voorbeelddataset worden de meetwaarden van drie verschillende pinguïnsoorten verzameld. Het bovenstaande strooiplot laat echter niet toe om een onderscheid te maken tussen de drie soorten, wat natuurlijk een belangrijke bijkomende informatie is in de gegevens. Daarom moeten we dit in onze grafiek weergeven. Een manier om dit te doen is door gebruik te maken van facetten:</li>
-</ol>
+<p><strong>4. Facetten</strong></p>
+<p>Facetten betekent het splitsen van een grafiek in verschillende subplots. In onze voorbeelddataset worden de meetwaarden van drie verschillende pinguïnsoorten verzameld. Het bovenstaande strooiplot laat echter niet toe om een onderscheid te maken tussen de drie soorten, wat natuurlijk een belangrijke bijkomende informatie is in de gegevens. Daarom moeten we dit in onze grafiek weergeven. Een manier om dit te doen is door gebruik te maken van facetten:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-8-1.png" width="624" /></p>
+</div>
+<p>Nu zien we de punten voor elke soort pinguïn in een aparte subplot. Facetten kunnen worden gecreëerd voor één of meer categorische variabelen, maar meer dan twee facetten zullen in het algemeen verwarrend zijn. Standaard gebruikt <code>ggplot2</code> dezelfde X- en Y-asafmetingen om de subplots vergelijkbaar te maken. Met facetten is het in dit geval echter niet zo eenvoudig om de drie typen te vergelijken. Als alternatief kunnen we de drie pinguïnsoorten zichtbaar maken met behulp van verschillende kleuren. Deze mogelijkheid valt onder schaalvergroting.</p>
+<p><strong>5. Schaalvergroting</strong></p>
+<p>Met schaalvergroting kunnen we naast de twee X- en Y-dimensies nog extra dimensies tonen, vergelijkbaar met wat we al gedaan hebben voor de pinguïnsoorten met facetten. Zo kunnen we bijvoorbeeld een kleurenschaal kiezen. In <code>ggplot2</code> worden schalen gegeven door extra variabelen in de esthetiek:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-9-1.png" width="624" /></p>
 </div>
-<p>Nu zien we de punten voor elke soort pinguïn in een aparte subplot. Facetten kunnen worden gecreëerd voor één of meer categorische variabelen, maar meer dan twee facetten zullen in het algemeen verwarrend zijn. Standaard gebruikt <code>ggplot2</code> dezelfde X- en Y-asafmetingen om de subplots vergelijkbaar te maken. Met facetten is het in dit geval echter niet zo eenvoudig om de drie typen te vergelijken. Als alternatief kunnen we de drie pinguïnsoorten zichtbaar maken met behulp van verschillende kleuren. Deze mogelijkheid valt onder schaalvergroting.</p>
-<ol start="5" type="1">
-<li>Schaalvergroting Met schaalvergroting kunnen we naast de twee X- en Y-dimensies nog extra dimensies tonen, vergelijkbaar met wat we al gedaan hebben voor de pinguïnsoorten met facetten. Zo kunnen we bijvoorbeeld een kleurenschaal kiezen. In <code>ggplot2</code> worden schalen gegeven door extra variabelen in de esthetiek:</li>
-</ol>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-10-1.png" width="624" /></p>
-</div>
 <p>De bijbehorende legende wordt automatisch aangemaakt. Andere schalen zijn maatschalen, punt- of lijntypes. Niet alle schalen zijn geschikt voor elk datatype. Terwijl kleuren ook continue getallen kunnen vertegenwoordigen, zijn punt- en lijntypes slechts voor een beperkt aantal categorieën beschikbaar.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-11-1.png" width="624" /></p>
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-10-1.png" width="624" /></p>
 </div>
 <p>In principe kan elk aantal dimensies van de gegevens in een grafiek worden weergegeven, ook al kunnen meer dan vier dimensies de grafiek meestal te chaotisch en verwarrend maken.</p>
 <p>Een ander type schaling is de asschaalverdeling. Zo kunnen we bijvoorbeeld de assen omdraaien zodat de waarden niet van links/naar beneden = laag naar rechts/boven = hoog worden weergegeven, maar de hoge waarden wel links/naar beneden worden weergegeven:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-12-1.png" width="624" /></p>
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-11-1.png" width="624" /></p>
 </div>
-<ol start="6" type="1">
-<li>Statistische Transformaties Stats, afkorting voor statistische transformaties, worden gebruikt om statistische waarden of berekeningen toe te voegen aan een plot of om deze te definiëren. Dit kunnen bijvoorbeeld gemiddelde waarden zijn, mediaan, betrouwbaarheidsintervallen, standaardafwijkingen, enz.</li>
-</ol>
+<p><strong>6. Statistische Transformaties</strong></p>
+<p>Stats, afkorting voor statistische transformaties, worden gebruikt om statistische waarden of berekeningen toe te voegen aan een plot of om deze te definiëren. Dit kunnen bijvoorbeeld gemiddelde waarden zijn, mediaan, betrouwbaarheidsintervallen, standaardafwijkingen, enz.</p>
 <p>In deze figuur is een staafdiagram weergegeven met een numerieke waarde:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-13-1.png" width="624" /></p>
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-12-1.png" width="624" /></p>
 </div>
 <p>Omdat de standaardstatistiek voor staafdiagrammen in <code>ggplot2</code> „Aantal (count)“ ist, kunnen deze verhoudingen mit de stat „identity“ worden veranderd.</p>
 <p>Een van de meest gebruikte statistieken zijn ‘Smoothed Conditional Means’, om bijvoorbeeld de samenhang van de X- en Y-Variabelen met gladde lijnen en bijbehorende foutmarges aan te tonen:</p>
 <div class="layout-chunk" data-layout="l-body">
+<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-13-1.png" width="624" /></p>
+</div>
+<p><strong>7. Coördinatensystemen</strong></p>
+<p>De laatste laag in de Grammatica van Graphics zijn coördinatensystemen. Coördinatensystemen bepalen hoe de assen van onze grafiek moeten worden gerangschikt. Meestal is de X-as horizontaal en de Y-as verticaal (cartesiaans coördinatenstelsel); maar er zijn ook gevallen waarin we radiale of gebogen assen hebben, bijvoorbeeld in een taartdiagram of kaartweergave. Een taartdiagram is dus niets meer dan een staafdiagram waarin we het coördinatensysteem hebben veranderd:</p>
+<div class="layout-chunk" data-layout="l-body">
 <p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-14-1.png" width="624" /></p>
 </div>
-<ol start="7" type="1">
-<li>Coördinatensystemen De laatste laag in de Grammatica van Graphics zijn coördinatensystemen. Coördinatensystemen bepalen hoe de assen van onze grafiek moeten worden gerangschikt. Meestal is de X-as horizontaal en de Y-as verticaal (cartesiaans coördinatenstelsel); maar er zijn ook gevallen waarin we radiale of gebogen assen hebben, bijvoorbeeld in een taartdiagram of kaartweergave. Een taartdiagram is dus niets meer dan een staafdiagram waarin we het coördinatensysteem hebben veranderd:</li>
-</ol>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="nogmaals-grafieken_files/figure-html5/unnamed-chunk-15-1.png" width="624" /></p>
-</div>
-<p>Diagramtypen Met deze Grammatica van Graphics kunnen nu alle gangbare diagramtypen eenvoudig en flexibel worden gegenereerd en uitgebreid. De meest gebruikte diagramtypen zijn:</p>
-<p>Puntdiagrammen</p>
+<p><strong>Diagramtypen</strong> Met deze Grammatica van Graphics kunnen nu alle gangbare diagramtypen eenvoudig en flexibel worden gegenereerd en uitgebreid. De meest gebruikte diagramtypen zijn:</p>
+<p><strong>Puntdiagrammen</strong></p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <p>Puntdiagrammen worden vaak gebruikt wanneer we numerieke X-waarden tegen numerieke Y-waarden willen weergeven en dus hun correlatie willen laten zien. Plots kunnen verschillende kleuren, vormen en maten hebben. Meestal zijn puntdiagrammen gemakkelijk te begrijpen, maar ze kunnen ook verwarrend worden als er te veel overlappende punten zijn.</p>
-<p>Lijndiagrammen</p>
+<p><strong>Lijndiagrammen</strong></p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <p>Lijndiagrammen zijn meestal vergelijkbaar met puntdiagramma, met dat verschil dat de (denkbeeldige) punten met elkaar verbonden zijn door lijnen. Deze verbonden lijnen vertegenwoordigen de denkbeeldige tussenliggende waarden tussen twee meetpunten; punten moeten dus alleen verbonden worden als deze veronderstelling wordt gemaakt! Om deze reden is een lijngrafiek niet bruikbaar voor het bovenstaande voorbeeld, omdat we onafhankelijke metingen van individuele personen laten zien. Lijndiagrammen zijn vooral nuttig voor tijdreeksen.</p>
-<p>Staafdiagrammen</p>
+<p><strong>Staafdiagrammen</strong></p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
@@ -1579,11 +1570,12 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="Figs/Screenshot4.png" /></p>
 <p><img src="Figs/Screenshot5.png" /></p>
 <p>Een verzameling van andere veelgebruikte diagramtypen met illustraties en negatieve voorbeelden is te vinden in de dia’s bij deze lezing.</p>
-<p>Referenties Gorman, Tony D. AND Fraser, Kristen B. AND Williams. 2014. “Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).” PLOS ONE 9 (3): 1–14. <a href="https://doi.org/10.1371/journal.pone.0090081" class="uri">https://doi.org/10.1371/journal.pone.0090081</a>.</p>
-<p>Tufte, Edward R. 1983. The Visual Display of Quantitative Information. Graphics Press.</p>
-<p>Wickham, Hadley. 2010. “A Layered Grammar of Graphics.” Journal of Computational and Graphical Statistics 19 (1): 3–28. <a href="https://doi.org/10.1198/jcgs.2009.07098" class="uri">https://doi.org/10.1198/jcgs.2009.07098</a>. Wickham, Hadley, and Garrett Grolemund. 2017. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 1st ed. O’Reilly Media, Inc. <a href="https://r4ds.had.co.nz/" class="uri">https://r4ds.had.co.nz/</a>.</p>
-<p>Wilke, C. O. 2019. Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures. O’Reilly Media. <a href="https://books.google.de/books?id=L3ajtgEACAAJ" class="uri">https://books.google.de/books?id=L3ajtgEACAAJ</a>.</p>
-<p>Wilkinson, L., D. Wills, J. Chambers, R. Dubbs, W. Eddy, A. Norton, and W. Haerdie. 1999. The Grammar of Graphics. Statistics and Computing. Springer New York. <a href="https://books.google.de/books?id=5boZAQAAIAAJ" class="uri">https://books.google.de/books?id=5boZAQAAIAAJ</a>.</p>
+<p><strong>Referenties</strong></p>
+<p>Gorman, Tony D. AND Fraser, Kristen B. AND Williams. 2014. “Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).” <em>PLOS ONE 9 (3)</em>: 1–14. <a href="https://doi.org/10.1371/journal.pone.0090081" class="uri">https://doi.org/10.1371/journal.pone.0090081</a>.</p>
+<p>Tufte, Edward R. 1983. <em>The Visual Display of Quantitative Information</em>. Graphics Press.</p>
+<p>Wickham, Hadley. 2010. “A Layered Grammar of Graphics.” <em>Journal of Computational and Graphical Statistics 19 (1):</em> 3–28. <a href="https://doi.org/10.1198/jcgs.2009.07098" class="uri">https://doi.org/10.1198/jcgs.2009.07098</a>. Wickham, Hadley, and Garrett Grolemund. 2017. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 1st ed. O’Reilly Media, Inc. <a href="https://r4ds.had.co.nz/" class="uri">https://r4ds.had.co.nz/</a>.</p>
+<p>Wilke, C. O. 2019. <em>Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures</em>. O’Reilly Media. <a href="https://books.google.de/books?id=L3ajtgEACAAJ" class="uri">https://books.google.de/books?id=L3ajtgEACAAJ</a>.</p>
+<p>Wilkinson, L., D. Wills, J. Chambers, R. Dubbs, W. Eddy, A. Norton, and W. Haerdie. 1999. <em>The Grammar of Graphics. Statistics and Computing</em>. Springer New York. <a href="https://books.google.de/books?id=5boZAQAAIAAJ" class="uri">https://books.google.de/books?id=5boZAQAAIAAJ</a>.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
