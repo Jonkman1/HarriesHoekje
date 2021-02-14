@@ -1,7 +1,7 @@
 ---
 title: "Harrie's Hoekje"
 description: |
-  Met deze blog wil ik enkele ontwikkelingen op het terrein van moderne data-analyse bijhouden. Op dit terrein gebeurt op dit moment zoveel dat het onmogelijk is om het allemaal in je eentje bij te houden. Het zo nu en dan erover schrijven is voor mij een manier om een beetje bij te blijven en ontwikkelingen zichtbaar te maken.   
+  Met deze blog wil ik enkele ontwikkelingen op het terrein van moderne data-analyse bijhouden. Op dit terrein gebeurt op dit moment heel veel. Het zo nu en dan erover schrijven is voor mij een manier om een beetje bij te blijven en ontwikkelingen zichtbaar te maken.   
 ---
 
 ```{r setup, include=FALSE}
@@ -41,7 +41,7 @@ Irizarry, R.A. (2019). *Introduction to Data Science. Data Analysis and Predicti
 
 Lovelace, R., Nowosad, J. & Muenchow, J. (2019). *Geocomputation with R*. (https://geocompr.robinlovelace.net/) 
 
-McElreath, R. (2015). *Statistical Rethinking. A Bayesian Course with Examples in R and Stan*. Boca Raton: Chapman and Hall/CRC  Vooral met brms, ggplot2 and the tidyverse https://bookdown.org/connect/#/apps/1850/access 
+McElreath, R. (2019). *Statistical Rethinking. A Bayesian Course with Examples in R and Stan*. (Second edition). Boca Raton: Chapman and Hall/CRC  Vooral met brms, ggplot2 and the tidyverse https://bookdown.org/connect/#/apps/1850/access 
 
 Xie, Y., Allaire, J.J. & Grolemund, G.(2019). *R Markdown: The Definitive Guide*. https://bookdown.org/yihui/rmarkdown/ 
 
