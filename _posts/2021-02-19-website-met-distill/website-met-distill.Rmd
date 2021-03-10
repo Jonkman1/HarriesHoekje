@@ -15,9 +15,16 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Distill
+
+Mijn eigen Harrie's Hoekje blog, over een aantal ontwikkelingen in de dataanalyse, maak ik ook met het gebruik van het pakket Distill. Met Distill kun je wetenschappelijke websites maken, een blog en artikelen schrijven. Over hoe je dat doet schreef Lisa Lendway een kort en krachtige blog. Dat kan ik niet beter. Dank je, Lisa, hiervoor. Haar blog staat [hier](https://lisalendway.netlify.app/posts/2020-12-09-buildingdistill/?utm_source=dlvr.it&utm_medium=facebook)
+
+
 ## Waarom een website?
 
-Nou, eindelijk heb ik het gedaan! Ik heb een website gemaakt. En om dat te vieren, ga ik met jullie delen hoe ik het gedaan heb. En waarom heb ik dat gedaan? Twee belangrijke redenen zijn er: 
+Nou, eindelijk heb ik het gedaan!, zo begint zij haar blog dat ik (Harrie) hier verder volg. 
+
+Ik (Lisa) heb een website gemaakt. En om dat te vieren, ga ik met jullie delen hoe ik het gedaan heb. En waarom heb ik dat gedaan? Twee belangrijke redenen zijn er: 
 1. om materiaal te delen dat nuttig kan zijn voor anderen, 
 2. om wat dingen voor mezelf te documenteren, allemaal op één plek. 
 
