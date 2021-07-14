@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-# Tidymodels: een nette en consistente manier om met machine learning in R te werken
+# Tidymodels: nette en consistente manier om met machine learning in R te werken
 
 `Tidyverse` is misschien wel een van de grootste successen van R de laatste jaren. Het is een basispakket (een suite van pakketten) waarmee je heel veel statistiscche bewerkingen goed en betrekkelijk eenvoudig kunt uitvoeren. De laatste jaren is `tidymodels` ontwikkeld dat voor het modelleren van data het basispakket moet worden en het ontwikkelt zich vergelijkbaar de gereedschapskist van `tidyverse` maar dan op het gebied van machine learning.
 
