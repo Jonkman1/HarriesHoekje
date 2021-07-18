@@ -22,10 +22,10 @@ Individuen die ik graag volg:
 
 [Kieran Healey](https://github.com/kjhealy)   
 [Rens van de Schoot](https://www.rensvandeschoot.com)   
-[Suzan Baert](https://suzan.rbind.io/)   
-[Mark Clark](https://github.com/m-clark?tab=repositories)  
+[Alison Hill](https://alison.rbind.io/)   
+ 
 
-Hier tien boeken die op dit moment voor mij belangrijk zijn:
+Hier boeken die op dit moment voor mij belangrijk zijn:
 
 Baumer, B.S., Kaplan, D.T. & Horton, N.J. (2018). *Modern Data Science with R*. Boca Raton: CRC Press. 
 
