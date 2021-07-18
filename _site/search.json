@@ -1,0 +1,26 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "Harrie's Hoekje",
+      "description": "Met deze blog wil ik enkele ontwikkelingen op het terrein van moderne data-analyse bijhouden. Op dit terrein gebeurt op dit moment heel veel. Het zo nu en dan erover schrijven is voor mij een manier om een beetje bij te blijven en ontwikkelingen zichtbaar te maken.   ",
+      "author": [],
+      "contents": "\nDit zijn blogs die ik graag volg:\nSimply StatisticsRbloggersR4statsDataCampJASPMLwiNSTATA\nIndividuen die ik graag volg:\nKieran HealeyRens van de SchootSuzan BaertMark Clark\nHier tien boeken die op dit moment voor mij belangrijk zijn:\nBaumer, B.S., Kaplan, D.T. & Horton, N.J. (2018). Modern Data Science with R. Boca Raton: CRC Press.\nFreeman, M. & Ross, J. (2019). Programming Skills for Data Science. Start writing code to wrangle, analyze, and visualize data with R. Boston: Addison Wesley.\nGillespie, C. & Lovelace, R. (2017). Efficient R Programming. (https://csgillespie.github.io/efficientR/)\nGrolemund, G. & Wickham, H. (2019). R for Data Science. (https://r4ds.had.co.nz/)\nHealey, K. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press.\nIrizarry, R.A. (2019). Introduction to Data Science. Data Analysis and Prediction Algorithms with R. (https://rafalab.github.io/dsbook/)\nLovelace, R., Nowosad, J. & Muenchow, J. (2019). Geocomputation with R. (https://geocompr.robinlovelace.net/)\nMcElreath, R. (2015). Statistical Rethinking. A Bayesian Course with Examples in R and Stan. Boca Raton: Chapman and Hall/CRC Vooral met brms, ggplot2 and the tidyverse https://bookdown.org/connect/#/apps/1850/access\nXie, Y., Allaire, J.J. & Grolemund, G.(2019). R Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/\n\n\n",
+      "last_modified": "2020-03-13T23:28:59+01:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Harrie's Hoekje",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-07-18T08:50:02+02:00"
+    },
+    {
+      "path": "README.html",
+      "author": [],
+      "contents": "\nHH\n\n\n",
+      "last_modified": "2020-03-13T23:28:59+01:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
