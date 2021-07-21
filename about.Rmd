@@ -1,12 +1,18 @@
 ---
 title: "Harrie's Hoekje"
 description: |
-  Met deze blog wil ik enkele ontwikkelingen op het terrein van moderne data-analyse bijhouden. Op dit terrein gebeurt op dit moment heel veel. Het zo nu en dan erover schrijven is voor mij een manier om een beetje bij te blijven en ontwikkelingen zichtbaar te maken.   
+  Met deze blog Harrie's Hoekje wil ik enkele ontwikkelingen op het terrein van moderne data-analyse bijhouden. Op dit terrein gebeurt op dit moment heel veel. Het zo nu en dan erover schrijven is voor mij een manier om een beetje bij te blijven en ontwikkelingen die mij interesseren zichtbaar te maken.   
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+
+Foto
+
+Harrie's cv
+
 
 Dit zijn blogs die ik graag volg:
 
@@ -18,7 +24,7 @@ Dit zijn blogs die ik graag volg:
 [MLwiN](http://www.bristol.ac.uk/cmm/software/mlwin/)   
 [STATA](https://www.stata.com/)   
 
-Individuen die ik graag volg:   
+Individuen die ik graag volg zijn onder andere:   
 
 [Kieran Healey](https://github.com/kjhealy)   
 [Rens van de Schoot](https://www.rensvandeschoot.com)   
@@ -26,6 +32,10 @@ Individuen die ik graag volg:
  
 
 Hier boeken die op dit moment voor mij belangrijk zijn:
+
+Johnson, A.A., Ott, M., Dogucu, M. (2021). *Bayes Rules! Introduction to Bayesian Modeling with R*. https://www.bayesrulesbook.com/ 
+
+Batra, N. (ed, 2021). *The Epidemiologist R Handbook*. https://epirhandbook.com/index.html
 
 Baumer, B.S., Kaplan, D.T. & Horton, N.J. (2018). *Modern Data Science with R*. Boca Raton: CRC Press. 
 
@@ -43,6 +53,11 @@ Lovelace, R., Nowosad, J. & Muenchow, J. (2019). *Geocomputation with R*. (https
 
 McElreath, R. (2019). *Statistical Rethinking. A Bayesian Course with Examples in R and Stan*. (Second edition). Boca Raton: Chapman and Hall/CRC  Vooral met brms, ggplot2 and the tidyverse https://bookdown.org/connect/#/apps/1850/access 
 
+Poldrack, R.A. (2021). *Statistical Thinking for the 21st Century*.https://statsthinking21.github.io/statsthinking21-core-site/
+
 Xie, Y., Allaire, J.J. & Grolemund, G.(2019). *R Markdown: The Definitive Guide*. https://bookdown.org/yihui/rmarkdown/ 
+
+Xie, Y., Dervieux, C. & Riederer, E. (2021). *RMarkdown Cookbook*. https://bookdown.org/yihui/rmarkdown-cookbook/
+
 
 
