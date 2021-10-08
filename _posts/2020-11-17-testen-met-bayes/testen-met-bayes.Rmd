@@ -5,7 +5,7 @@ description: |
 author:
   - name: Makowski en anderen, vertaling Harrie Jonkman
     url: https://easystats.github.io/bayestestR/
-#date: 11-17-2020
+date: 11-17-2020
 output:
   distill::distill_article:
     self_contained: false
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 # Korte inleiding
-De laatste weken lees ik weer regelmatig over de achtergronden, de principes en de voordelen van bayesiaanse onderzoekstechnieken. De update van *Statistical Rethinking. A Bayesian Course with Examples in R and Stan* (McElreath, 2020) en het nieuwe boek *Regression and other stories* (Gelman, Hill & Vehtari, 2020) geven veel inspiratie. Daarover later meer. Ondertussen verscheen vorig jaar het R-pakket `bayestestR` met een hele duidelijke bijbehorende [website](https://easystats.github.io/bayestestR/) waarin een aantal uitgangspunten heel duidelijk worden uitgelegd en de voordelen van deze manier van onderzoek doen worden vergeleken met de klassieke onderzoekstechniek. Ik kon het niet laten om een aantal lessen te vertalen om dit goed in mijn vingers te krijgen. Mogelijk dat ik hier later nog een keer aandacht aan besteed. De website is gebaseerd op twee artikelen waar de wetenschappers naar refereren. Natuurlijk moet ik deze artikelen hier aan het begin noemen. 
+De laatste weken lees ik weer regelmatig over de achtergronden, de principes en de voordelen van bayesiaanse onderzoekstechnieken. De update van *Statistical Rethinking. A Bayesian Course with Examples in R and Stan* (McElreath, 2020) en het nieuwe boek *Regression and other stories* (Gelman, Hill & Vehtari, 2020) geven veel inspiratie. Daarover later meer. Ondertussen verscheen vorig jaar het R-pakket `bayestestR` met een hele duidelijke bijbehorende [website](https://easystats.github.io/bayestestR/) waarin een aantal uitgangspunten heel duidelijk worden uitgelegd en de voordelen van deze manier van onderzoek doen worden vergeleken met de klassieke onderzoekstechniek. Ik kon het niet laten om een aantal lessen te vertalen. Mogelijk dat ik hier later nog een keer aandacht aan besteed. De website is gebaseerd op twee artikelen waar de wetenschappers naar refereren. Natuurlijk moet ik deze artikelen hier aan het begin noemen. 
 
 Makowski, D., Ben-Shachar, M. S., & Lüdecke, D. (2019). bayestestR: Describing Effects and their Uncertainty, Existence and Significance within the Bayesian Framework. *Journal of Open Source Software, 4(40), 1541.* [10.21105/joss.01541](https://joss.theoj.org/papers/10.21105/joss.01541)
 
@@ -29,19 +29,19 @@ Makowski, D., Ben-Shachar, M. S., Chen, S. H. A., & Lüdecke, D. (2019). Indices
 ## Waarom zou je het Bayesiaanse kader gebruiken?
 Het Bayesiaanse statistische raamwerk wint snel aan populariteit onder wetenschappers, wat samenhangt met de algemene verschuiving naar **open en eerlijke wetenschap**. Redenen om de voorkeur te geven aan deze aanpak zijn **betrouwbaarheid, nauwkeurigheid** (in rommelige data en kleine steekproeven), de mogelijkheid om **prior  kennis** in de analyse te introduceren en, kritisch gezien, de intuïtiviteit van de resultaten en hun **rechtstreekse interpretatie** (Andrews & Baguley, 2013; Etz & Vandekerckhove, 2016; Kruschke, 2010; Kruschke, Aguinis, & Joo, 2012; Wagenmakers et al., 2018).
 
-In het algemeen wordt de frequentisttische aanpak geassocieerd met de focus op null hypothesetests, en het misbruik van p-waarden blijkt kritisch bij te dragen aan de reproduceerbaarheidscrisis van psychologische wetenschap (Chambers, Feredoes, Muthukumaraswamy, & Etchells, 2014; Szucs & Ioannidis, 2016). Men is het er algemeen over eens dat de veralgemening van de Bayesiaanse aanpak een manier is om deze problemen te overwinnen (Benjamin et al., 2018; Etz & Vandekerckhove, 2016).
+In het algemeen wordt de frequentistische aanpak geassocieerd met de focus op null hypothesetests en het misbruik van p-waarden blijkt kritisch bij te dragen aan de reproduceerbaarheidscrisis van psychologische wetenschap (Chambers, Feredoes, Muthukumaraswamy, & Etchells, 2014; Szucs & Ioannidis, 2016). Men is het er algemeen over eens dat de veralgemening van de Bayesiaanse aanpak een manier is om deze problemen te overwinnen (Benjamin et al., 2018; Etz & Vandekerckhove, 2016).
 
 Als we het er eenmaal over eens zijn dat het Bayesiaanse raamwerk de juiste weg is, kun je je vervolgens afvragen wat het Bayesiaanse raamwerk is.
 
 **Waar gaat al dat gedoe over?**
 
 ## Wat is het Bayesiaanse kader?
-Het aannemen van het Bayesiaanse raamwerk is meer een verschuiving in het paradigma dan een verandering in de methodologie. Inderdaad, alle gemeenschappelijke statistische procedures (t-tests, correlaties, ANOVA's, regressies, ...) kunnen nog steeds worden uitgevoerd met behulp van het Bayesiaanse raamwerk. Een van de kernverschillen is dat in het **frequentische perspectief** (de "klassieke" statistiek, met p- en t-waarden, evenals met die rare vrijheidsgraden), **de effecten vastliggen** (maar onbekend zijn) en **data random zijn**. Aan de andere kant wordt in het Bayesiaanse inferentieproces, in plaats van schattingen van het "ware effect", de waarschijnlijkheid van verschillende effecten berekend gegeven de waargenomen gegevens. Dat resulteert in een verdeling van mogelijke waarden voor de parameters, de zogenaamde **posterior-distributie**.
+Het aannemen van het Bayesiaanse raamwerk is meer een verschuiving in paradigma dan een verandering in methodologie. Inderdaad, alle gemeenschappelijke statistische procedures (t-tests, correlaties, ANOVA's, regressies, ...) kunnen nog steeds worden uitgevoerd met behulp van het Bayesiaanse raamwerk. Een van de kernverschillen is dat in het **frequentische perspectief** (de "klassieke" statistiek, met p- en t-waarden, evenals met die rare vrijheidsgraden), **de effecten vastliggen** (maar onbekend zijn) en **data random zijn**. Aan de andere kant wordt in het Bayesiaanse inferentieproces, in plaats van schattingen van het "ware effect", de waarschijnlijkheid van verschillende effecten berekend gegeven de waargenomen gegevens. Dat resulteert in een verdeling van mogelijke waarden voor de parameters, de zogenaamde **posterior-distributie**.
 
-De onzekerheid in de Bayesiaanse inferentie kan bijvoorbeeld worden samengevat door de **mediaan** van de verdeling, evenals een reeks waarden van de posterior distributie die de 95% meest waarschijnlijke waarden omvat (het 95% **waarschijnlijke interval**). Cum grano salis, deze worden beschouwd als de tegenhangers van de punt-schatting en het betrouwbaarheidsinterval in een frequentistisch kader. Om het verschil in interpretatie te illustreren, laat het Bayesiaanse raamwerk toe om te zeggen *"gezien de geobserveerde gegevens, heeft het effect een 95% kans om binnen dit bereik te vallen "*, terwijl het minder eenvoudige alternatief voor de frequentist zou zijn *"wanneer herhaaldelijk betrouwbaarheidsintervallen uit deze reeks  gegevens worden berekend, is er een 95% kans dat het effect binnen een bepaald bereik valt "*. In wezen geven de Bayesiaanse sampling algoritmen (zoals MCMC-bemonstering) een waarschijnlijkheidsverdeling (*de posterior*) van een effect dat compatibel is met de waargenomen gegevens. Zo kan een effect worden beschreven door de posterior verdeling te karakteriseren in relatie tot de centraliteit (punt-schattingen), de onzekerheid, en het bestaan en de betekenis ervan. 
+De onzekerheid in de Bayesiaanse inferentie kan bijvoorbeeld worden samengevat door de **mediaan** van de verdeling, evenals een reeks waarden van de posterior distributie die de 95% meest waarschijnlijke waarden omvat (het 95% **waarschijnlijke interval**). Deze kunnen worden beschouwd als de tegenhangers van de punt-schatting en het betrouwbaarheidsinterval in een frequentistisch kader. Om het verschil in interpretatie te illustreren, laat het Bayesiaanse raamwerk toe om te zeggen *"gezien de geobserveerde gegevens, heeft het effect een 95% kans om binnen dit bereik te vallen "*. Het minder eenvoudige alternatief voor de frequentist zou zijn *"wanneer herhaaldelijk betrouwbaarheidsintervallen uit deze reeks gegevens worden berekend, is er een 95% kans dat het effect binnen een bepaald bereik valt "*. In wezen geven de Bayesiaanse samplingsalgoritmen (met MCMC-technieken) een waarschijnlijkheidsverdeling (*de posterior*) van een effect dat compatibel is met de waargenomen gegevens. Zo kan een effect worden beschreven door de posterior verdeling te karakteriseren in relatie tot de centraliteit (punt-schattingen), en gaat het over onzekerheid en het bestaan en de betekenis ervan. 
 
 
-Met andere woorden, als we de wiskunde achterwege laten, kunnen we dat zeggen:   
+Met andere woorden, als we de ingewikkelde wiskunde achterwege laten, kunnen we zeggen dat:   
 
 - De frequentist probeert "het **reële effect**" in te schatten, bijvoorbeeld, de "echte" waarde van de correlatie tussen x en y. Vandaar dat de modellen van frequentisten een "**punt-schatting**" opleveren. (d.w.z. één enkele waarde) van de "echte" correlatie (bv. r = 0,42) die wordt geschat op basis van een aantal onduidelijke veronderstellingen (minimaal, aangezien de gegevens willekeurig worden onttrokken van een "ouder", meestal een normale verdeling).   
 - **De Bayesiaan gaat niet van zoiets uit**. De gegevens zijn wat ze zijn. Op basis van deze geobserveerde gegevens (en een eerdere overtuiging over het resultaat) geeft het Bayesiaanse samplingsalgoritme (soms ook wel **MCMC** sampling genoemd) een waarschijnlijkheidsverdeling (de zogenaamde **posterior**) van het effect dat compatibel is met de geobserveerde gegevens. Voor de correlatie tussen x en y geeft het een verdeling, die bijvoorbeeld zegt: "het meest waarschijnlijke effect is 0,42, maar deze gegevens zijn ook compatibel met correlaties tussen 0,12 en 0,74".   
@@ -58,7 +58,7 @@ Met andere woorden, als we de wiskunde even achterwege laten, kunnen we zeggen d
 
 ### Installatie van BayestestR
 
-U kunt bayestestR samen met de hele [easystats](https://github.com/easystats/easystats) suite installeren (of alleen `bayestestR` omdat de suite installeren bij mij niet werkte) door het volgende uit te voeren:
+U kunt bayestestR samen met de hele [easystats](https://github.com/easystats/easystats) suite installeren (of alleen `bayestestR`, omdat de suite installeren bij mij niet werkte) door het volgende uit te voeren:
 ## A simple example
 
 
@@ -79,14 +79,14 @@ library(rstanarm)
 ```
 
 ### Traditionele lineaire regressie
-Laten we beginnen met het aanbrengen van een eenvoudige frequentistische lineaire regressie (de `lm()` functie staat voor lineair model) tussen twee numerieke variabelen, Sepal.Length en Petal.Length uit de beroemde `iris`-dataset, standaard opgenomen in R.
+Laten we beginnen met een eenvoudige frequentistische lineaire regressie (de `lm()` functie staat voor lineair model) tussen twee numerieke variabelen, Sepal.Length en Petal.Length uit de beroemde `iris`-dataset, standaard opgenomen in R.
 
 ```{r}
 model <- lm(Sepal.Length ~ Petal.Length, data=iris)
 summary(model)
 ```
 
-Deze analyse suggereert dat er een **significante** (wat dat ook moge betekenen) en een *positieve** (met een coëfficiënt van 0,41) lineaire relatie bestaat tussen de twee variabelen.
+Deze analyse laat een **significante** (wat dat ook moge betekenen) en een **positieve** (met een coëfficiënt van 0,41) lineaire relatie zien tussen de twee variabelen.
 
 Het aanpassen en interpreteren van **frequentiemodellen is zo eenvoudig** dat het duidelijk is dat mensen het gebruiken in plaats van het Bayesiaanse kader... toch?
 
@@ -110,7 +110,7 @@ Nu je de beginsectie hebt gelezen, laten we een duik nemen in de **subtiliteiten
 
 
 ### Laden van pakketten
-Als je een keer de benodigde pakketten hebt geïnstalleerd, kun je `rstanarm` laden (om de modellen te draaien) en ook `bayestestR` (om bruikbare indices te berekenen) en `insight` (om toegang te krijgen tot de parameters).
+Als je de benodigde pakketten hebt geïnstalleerd, kun je `rstanarm` laden (om de modellen te draaien) en ook `bayestestR` (om bruikbare indices te berekenen) en `insight` (om toegang te krijgen tot de parameters).
 
 
 ```{r}
@@ -180,10 +180,10 @@ nrow(posteriors)  # Aantal rijen
 > Waarom zijn dit er 4000, en niet meer of minder?
 
 In de eerste plaats worden deze waarnemingen (de rijen) meestal aangeduid als **posterior 'draws' (trekkingen)**. De achterliggende gedachte is dat het Bayesiaanse samplingsalgoritme (b.v. **Monte Carlo Markov Chains - MCMC**) zal putten uit de verborgen ware posterior distributie
-. Het is dus door middel van deze 'posterior draws' dat we de onderliggende ware posterior distribution kunnen inschatten. **Hoe meer trekkingen je hebt, hoe beter je de posterior distriubtion kunt inschatten.** Meer trekkingen betekent echter ook een langere rekentijd.
+Het is dus door middel van deze 'posterior draws' dat we de onderliggende ware posterior distribution kunnen inschatten. **Hoe meer trekkingen je hebt, hoe beter je de posterior distriubtion kunt inschatten.** Meer trekkingen betekent echter ook een langere rekentijd.
 
 
-Als we kijken naar de documentatie (?sampling) voor het `rstanarm`"sampling"-algoritme dat standaard in het bovenstaande model wordt gebruikt, kunnen we verschillende parameters zien die het aantal posterior draws beïnvloeden. Standaard zijn er 4 ketens (je kunt het zien als aparte sampling runs), die elk **2000** iter (trekkingen, iteraties) aanmaken. Echter, slechts de helft van deze iteraties wordt behouden, aangezien de helft wordt gebruikt voor de opwarming (het convergeren van het algoritme). Het totaal is dus **4 ketens * (2000 iteraties - 1000 warming-up) = 4000** posterior trekkingen. Dat kunnen we aanpassen, bijvoorbeeld:
+Als we kijken naar de documentatie (?sampling) voor het `rstanarm`"sampling"-algoritme dat standaard in het bovenstaande model wordt gebruikt, kunnen we verschillende parameters zien die het aantal posterior draws beïnvloeden. Standaard zijn er 4 ketens (je kunt het zien als aparte sampling runs), die elk **2000** iter (trekkingen, iteraties) aanmaken. Echter, slechts de helft van deze iteraties wordt behouden, aangezien de helft wordt gebruikt voor de opwarming (het convergeren van het algoritme). Het totaal is dus **4 ketens * (2000 iteraties - 1000 warming-up) = 4000** posterior trekkingen. Dat kunnen we aanpassen naar 2 ketens, bijvoorbeeld:
 
 
 ```{r, results='hide'}
@@ -212,12 +212,12 @@ Deze verdeling vertegenwoordigt de **waarschijnlijkheid** (de y-as) van verschil
 
 En dit is het hart van de Bayesiaanse analyse. We hebben geen p-waarden, t-waarden of vrijheidsgraden nodig: **Alles is aanwezig**, binnen deze posterior verdeling.
 
-Onze beschrijving hierboven is consistent met de waarden verkregen uit de frequentistische regressie (die resulteerde in een bèta van **0,41**). Dit is geruststellend! Inderdaad, **in de meeste gevallen verandert een Bayesiaanse analyse de resultaten niet drastisch** of hun interpretatie. Het maakt de resultaten wel beter interpreteerbaar en intuïtief, en uiteindelijk gemakkelijker te begrijpen en te beschrijven.
+Onze beschrijving hierboven is consistent met de waarden verkregen uit de frequentistische regressie (die resulteerde in een bèta van **0,41**). Dit is geruststellend! Inderdaad, **in de meeste gevallen verandert een Bayesiaanse analyse de resultaten niet drastisch** of hun interpretatie. Het maakt de resultaten wel beter interpreteerbaar en intuïtief en uiteindelijk gemakkelijker te begrijpen en te beschrijven.
 
 We kunnen nu doorgaan en **deze posterior verdeling** nauwkeurig karakteriseren.
 
 ### De Posterior beschrijven
-Helaas, het is vaak niet praktisch om de hele posterieure verdelingen als grafiek te rapporteren. We moeten een **beknopte manier vinden om het samen te vatten**. We raden aan om de posterior verdeling te beschrijven op basis van **3 elementen**:   
+Helaas, het is vaak niet praktisch om de hele posterior verdelingen als grafiek te rapporteren. We moeten een **beknopte manier vinden om het samen te vatten**. We raden aan om de posterior verdeling te beschrijven op basis van **3 elementen**:   
 
 1. Een **puntschatting** die een samenvatting is van één waarde (vergelijkbaar met de bèta in frequente regressies).   
 2. Een **credible interval** die de bijbehorende onzekerheid weergeeft.   
@@ -228,7 +228,7 @@ Helaas, het is vaak niet praktisch om de hele posterieure verdelingen als grafie
 
 **Welke ene waarde kan het beste mijn posterior distributie representeren?**
 
-Centrum indices, zoals het gemiddelde, de mediaan of de modus worden meestal gebruikt als puntschatting - maar wat is het verschil tussen het frequentische en Bayesiaanse raamwerk? Laten we dit beantwoorden door eerst het **gemiddelde** te inspecteren: 
+Centrale indices, zoals het gemiddelde, de mediaan of de modus worden meestal gebruikt als puntschatting - maar wat is het verschil tussen het frequentische en Bayesiaanse raamwerk? Laten we dit beantwoorden door eerst het **gemiddelde** te inspecteren: 
 
 
 ```{r}
@@ -245,7 +245,7 @@ median(posteriors$Petal.Length)
 ```
 
 
-Nou, dit is **zeer dicht bij het gemiddelde** (en identiek als de waarden worden afgerond). Misschien kunnen we de modus nemen, dat wil zeggen, de piek van de posterior verdeling? In het Bayesiaanse kader wordt deze waarde de **Maximum A Posteriori (MAP)** genoemd. Laten we daar eens kijken:
+Nou, dit ligt **zeer dicht bij het gemiddelde** (en identiek als de waarden worden afgerond). Misschien kunnen we de modus nemen, dat wil zeggen, de piek van de posterior verdeling? In het Bayesiaanse kader wordt deze waarde de **Maximum A Posteriori (MAP)** genoemd. Laten we daar eens kijken:
 
 
 ```{r}
@@ -254,7 +254,7 @@ map_estimate(posteriors$Petal.Length)
 ```
 
 
-Ze zitten allemaal heel dichtbij elkaar! Laten we deze waarden visualiseren op de posterior distributie:
+Ze zitten allemaal heel dichtbij elkaar! Laten we deze drie waarden visualiseren op de posterior distributie:
 
 ```{r}
 ggplot(posteriors, aes(x = Petal.Length)) +
@@ -268,11 +268,10 @@ ggplot(posteriors, aes(x = Petal.Length)) +
 
 ```
 
-Nou, al deze waarden geven zeer gelijkaardige resultaten. Dus we zullen **de mediaan** kiezen, omdat deze waarde een directe betekenis heeft vanuit een probabilistisch perspectief: **er is 50% kans dat het werkelijke effect hoger is en 50% kans dat het effect lager is** (omdat het de verdeling in twee gelijke delen verdeelt).
+Nou, al deze waarden geven zeer gelijkaardige resultaten. We zullen **de mediaan** kiezen, omdat deze waarde een directe betekenis heeft vanuit een probabilistisch perspectief: **er is 50% kans dat het werkelijke effect hoger is en 50% kans dat het effect lager is** (omdat het de verdeling in twee gelijke delen verdeelt).
 
 #### Onzekerheid
 Nu we een puntschatting hebben, moeten we de onzekerheid beschrijven. We zouden het bereik kunnen berekenen:
-
 
 ```{r}
 range(posteriors$Petal.Length)
@@ -339,7 +338,7 @@ ggplot(posteriors, aes(x=feedsunflower)) +
 ```
 
 
-Dit representeert de **posterior distributie van het verschil tussen 'meatmeal' en 'sunflowers'**. Het lijkt erop dat het verschil eerder **positief** is (de waarden lijken geconcentreerd aan de rechterkant van 0)... Het eten van zonnebloemen maakt je dikker (tenminste, als je een kip bent). Maar, **door hoeveel? ** Laten we de **mediaan** en de **CI** berekenen:
+Dit representeert de **posterior distributie van het verschil tussen 'meatmeal' ('0') en 'sunflowers'('1')**. Het lijkt erop dat het verschil eerder **positief** is (de waarden lijken geconcentreerd aan de rechterkant van 0). Het eten van zonnebloemen maakt je dikker (tenminste, als je een kip bent). Maar, **door hoeveel? ** Laten we de **mediaan** en de **CI** berekenen:
 
 
 ```{r}
@@ -370,7 +369,7 @@ Een manier om **significantie** te beoordelen kan echter zijn om een gebied rond
 
 – **U spreekt met het easystatsteam. Hoe kunnen we u helpen?**    
 
-– **Ja met Prof. Sanders. Ik ben kippenexpert. Ik bel u vanwegen mijn expertkennis. Een effect tussen -20 en 20 is verwaarloosbaar. Tot ziens.**
+– **Ja met Prof. Sanders. Ik ben kippenexpert. Ik bel u vanwege mijn expertkennis. Een effect tussen -20 en 20 is verwaarloosbaar. Tot ziens.**
     
 Nou, dat komt goed uit. Nu weten we dat we de ROPE kunnen definiëren als het [-20, 20] bereik. Alle effecten binnen dit bereik worden als nihil (te verwaarlozen) beschouwd. We kunnen nu het **aandeel van de 89% meest waarschijnlijke waarden (de 89% CI) berekenen die niet nul zijn,** d.w.z., die buiten dit bereik liggen.
 
@@ -383,7 +382,7 @@ rope(posteriors$feedsunflower, range = c(-20, 20), ci=0.89)
 
 **5% van de 89% CI kan als nihil worden beschouwd**. Is dat veel? Gebaseerd op onze richtlijnen, ja, het is te veel. **Op basis van deze specifieke definitie van ROPE** concluderen we dat dit effect niet significant is (de kans dat het verwaarloosbaar is, is te groot).
 
-Hoewel, om eerlijk te zijn, heb ik **een aantal twijfels over deze Prof. Sanders**. Ik vertrouw zijn definitie van ROPE** niet echt. Is er een meer **objectieve** manier om het te definiëren?
+Hoewel, om eerlijk te zijn, heb ik **een aantal twijfels over deze Prof. Sanders**. Ik vertrouw zijn definitie van **ROPE** niet echt. Is er een meer **objectieve** manier om het te definiëren?
 
 **Ja**. Een betrouwbare manier is bijvoorbeeld het gebruik van een **tiende (1/10 = 0,1) van de standaardafwijking (SD)** van de responsvariabele, die als een "verwaarloosbare" effectomvang kan worden beschouwd (Cohen, 1988).
 
@@ -440,9 +439,6 @@ p_direction(posteriors$feedsunflower)
 
 
 Interessant is dat **deze index meestal sterk gecorreleerd is met de meest frequente p-waarde.** We kunnen de overeenkomstige p-waarde bijna ruwweg afleiden met een eenvoudige transformatie:
-
-Interestingly, it so happens that **this index is usually highly correlated with the frequentist p-value.** We could almost roughly infer the corresponding p-value with a simple transformation:
-
 
 ```{r}
 pd <- 97.82
